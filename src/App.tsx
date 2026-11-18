@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react';
 const SIGNES = ['belier', 'taureau', 'gemeaux', 'cancer', 'lion', 'vierge',
   'balance', 'scorpion', 'sagittaire', 'capricorne', 'verseau', 'poissons'];
 
-/** Formulaire : nom complet obligatoire ; date de naissance facultative (avec consentement). */
+/** Formulaire : nom complet et contacts obligatoires ; date de naissance facultative (avec consentement). */
 function Commande() {
   const [fullName, setFullName] = useState('');
   const [birthdate, setBirthdate] = useState('');
   const [signId, setSignId] = useState('belier');
-  const [contact, setContact] = useState('');
+  const [email, setEmail] = useState('');
+  const [telephone, setTelephone] = useState('');
   const [consent, setConsent] = useState(false);
   const [erreur, setErreur] = useState('');
   const [envoi, setEnvoi] = useState(false);
@@ -25,7 +26,13 @@ function Commande() {
       const r = await fetch('/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fullName, birthdate: birthdate || undefined, signId: birthdate ? signId : undefined, contact }),
+        body: JSON.stringify({
+          fullName,
+          birthdate: birthdate || undefined,
+          signId: birthdate ? signId : undefined,
+          email,
+          telephone,
+        }),
       });
       const data = await r.json();
       if (!r.ok) throw new Error(data.error ?? 'Erreur inattendue.');
@@ -65,8 +72,12 @@ function Commande() {
           </>
         )}
 
-        <label className="field">E-mail ou téléphone
-          <input required value={contact} onChange={(e) => setContact(e.target.value)} />
+        <label className="field">E-mail
+          <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
+
+        <label className="field">Numéro de téléphone
+          <input type="tel" required value={telephone} onChange={(e) => setTelephone(e.target.value)} placeholder="+229 00 00 00 00" />
         </label>
 
         {erreur && <p role="alert" className="erreur">{erreur}</p>}
@@ -88,12 +99,20 @@ function Suivi({ reference }: { reference: string }) {
   const jeton = localStorage.getItem(`mpa_token_${reference}`) ?? '';
 
   useEffect(() => {
-    if (!jeton) { setErreur('Jeton introuvable sur cet appareil.'); return; }
+    if (!jeton) {
+      setErreur('Jeton introuvable sur cet appareil.');
+      return;
+    }
     let arret = false;
     async function verifier() {
-      const r = await fetch(`/api/status?ref=${encodeURIComponent(reference)}`, { headers: { Authorization: `Bearer ${jeton}` } });
+      const r = await fetch(`/api/status?ref=${encodeURIComponent(reference)}`, {
+        headers: { Authorization: `Bearer ${jeton}` },
+      });
       const data = await r.json();
-      if (!r.ok) { setErreur(data.error ?? 'Erreur.'); return; }
+      if (!r.ok) {
+        setErreur(data.error ?? 'Erreur.');
+        return;
+      }
       setStatut(data.order.status);
       setDocs((data.documents as Array<{ doc_type: string }>).map((d) => d.doc_type));
       if (!arret && !['completed', 'failed'].includes(data.order.status)) setTimeout(verifier, 5000);
@@ -103,7 +122,9 @@ function Suivi({ reference }: { reference: string }) {
   }, [reference]);
 
   async function ouvrir(type: string) {
-    const r = await fetch(`/api/files?ref=${encodeURIComponent(reference)}&type=${type}`, { headers: { Authorization: `Bearer ${jeton}` } });
+    const r = await fetch(`/api/files?ref=${encodeURIComponent(reference)}&type=${type}`, {
+      headers: { Authorization: `Bearer ${jeton}` },
+    });
     if (r.redirected) window.open(r.url, '_blank');
     else setErreur(`Téléchargement impossible (${r.status}).`);
   }
@@ -115,8 +136,12 @@ function Suivi({ reference }: { reference: string }) {
       <p>Statut : {statut || '…'}</p>
       {statut === 'completed' && (
         <ul>
-          {docs.includes('pdf_36_pages') && <li><button className="lien" onClick={() => ouvrir('pdf_36_pages')}>Télécharger le document (PDF)</button></li>}
-          {docs.includes('receipt_pdf') && <li><button className="lien" onClick={() => ouvrir('receipt_pdf')}>Télécharger le reçu</button></li>}
+          {docs.includes('pdf_36_pages') && (
+            <li><button className="lien" onClick={() => ouvrir('pdf_36_pages')}>Télécharger le document (PDF)</button></li>
+          )}
+          {docs.includes('receipt_pdf') && (
+            <li><button className="lien" onClick={() => ouvrir('receipt_pdf')}>Télécharger le reçu</button></li>
+          )}
           {docs.filter((d) => d.startsWith('audio_')).map((d) => (
             <li key={d}><button className="lien" onClick={() => ouvrir(d)}>Écouter / télécharger {d}</button></li>
           ))}
