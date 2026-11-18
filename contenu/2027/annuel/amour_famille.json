@@ -1,0 +1,89 @@
+{
+  "theme": "amour_famille",
+  "libelle": "Amour & famille",
+  "lot": "amour_famille",
+  "statut": "redige_par_delegation",
+  "regle": "mode 'nom' = numérologie seule, utilisable avec ou sans date ; mode 'date' = suppose les positions tropicales, réservé au parcours avec date de naissance",
+  "repartition": {
+    "nom": 10,
+    "date": 5,
+    "part_nom": 0.67
+  },
+  "phrases": [
+    {
+      "ordre": 1,
+      "mode": "nom",
+      "texte": "L'année 2027 invite à renforcer les liens essentiels : des attentions régulières comptent davantage que les grands gestes ponctuels."
+    },
+    {
+      "ordre": 2,
+      "mode": "nom",
+      "texte": "Le cycle universel 2 favorise la coopération au sein du foyer : partager les responsabilités apaise bien des tensions."
+    },
+    {
+      "ordre": 3,
+      "mode": "nom",
+      "texte": "La communication sincère dans le couple et la famille demande des mots posés ; dire ce que l'on ressent évite les malentendus accumulés."
+    },
+    {
+      "ordre": 4,
+      "mode": "nom",
+      "texte": "Les liens familiaux gagnent à être entretenus par des rendez-vous réguliers, même brefs : un repas partagé vaut mieux qu'un long silence."
+    },
+    {
+      "ordre": 5,
+      "mode": "nom",
+      "texte": "Les décisions qui concernent le foyer se prennent mieux à plusieurs, après une écoute réelle de chacun."
+    },
+    {
+      "ordre": 6,
+      "mode": "nom",
+      "texte": "Une relation durable se nourrit de confiance : tenir ses engagements, petits comme grands, reste la première preuve d'attachement."
+    },
+    {
+      "ordre": 7,
+      "mode": "nom",
+      "texte": "Les moments de partage sans écran renforcent les liens ; ils deviennent plus précieux lorsqu'ils sont prévus à l'avance."
+    },
+    {
+      "ordre": 8,
+      "mode": "nom",
+      "texte": "Vers le milieu de l'année, les projets communs (voyage, installation, aménagement) demandent une discussion ouverte sur les attentes de chacun."
+    },
+    {
+      "ordre": 9,
+      "mode": "nom",
+      "texte": "Les tensions anciennes gagnent à être abordées avec calme plutôt que tues : un pardon exprimé libère autant celui qui le donne que celui qui le reçoit."
+    },
+    {
+      "ordre": 10,
+      "mode": "nom",
+      "texte": "En fin d'année, l'attention portée aux proches âgés ou fragiles renforce la solidarité familiale et la paix du foyer."
+    },
+    {
+      "ordre": 11,
+      "mode": "date",
+      "texte": "Vénus, en Lion du 28 juillet au 21 août puis en Vierge, invite à la tendresse concrète et aux gestes simples de l'été."
+    },
+    {
+      "ordre": 12,
+      "mode": "date",
+      "texte": "Vénus en Balance (du 14 septembre au 8 octobre) favorise l'harmonie et le dialogue : un moment de médiation peut dénouer une tension."
+    },
+    {
+      "ordre": 13,
+      "mode": "date",
+      "texte": "Vénus en Scorpion puis en Sagittaire à l'automne (du 8 octobre au 1er novembre) peut approfondir les liens, parfois en révélant des sujets sensibles à traiter avec délicatesse."
+    },
+    {
+      "ordre": 14,
+      "mode": "date",
+      "texte": "Les éclipses du 6 février et du 17 août, toutes deux en Verseau, concernent les équilibres du foyer : elles appellent à clarifier les rôles plutôt qu'à les bouleverser."
+    },
+    {
+      "ordre": 15,
+      "mode": "date",
+      "texte": "Jupiter en Vierge après le 26 juillet encourage l'organisation de la vie familiale : planifier les rendez-vous importants aide à maintenir la sérénité."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "signe": "Vierge",
+  "id": "vierge",
+  "domaines": {
+    "finances": [
+      "Saturne en 8e maison demande une gestion sérieuse des ressources partagées et des engagements à long terme.",
+      "Pluton en 6e maison invite à réviser l'organisation des revenus du travail.",
+      "Après juillet, Jupiter en 1re maison favorise l'autonomie financière."
+    ],
+    "sante": [
+      "Jupiter en 1re maison dès l'été ouvre une période de vitalité et de bien-être, à condition de garder des pauses régulières.",
+      "Le début d'année, avec Mars, invite à ralentir les routines physiques.",
+      "Un bilan de prévention est un bon investissement."
+    ],
+    "amour_famille": [
+      "Le premier semestre demande de la patience dans la vie affective : les liens gagnent à être pris à leur rythme.",
+      "Jupiter en 1re maison après l'été favorise la confiance et l'expression de soi dans le couple.",
+      "Les décisions à deux méritent d'être posées par écrit."
+    ],
+    "vie_sociale": [
+      "Uranus en 10e maison peut orienter une partie de la vie sociale vers des projets professionnels.",
+      "Le foyer et les amitiés se nourrissent d'échanges réguliers.",
+      "Les initiatives collectives gagnent à être structurées."
+    ],
+    "travail": [
+      "Mars en début d'année invite à réviser méthodes et priorités.",
+      "Dès juillet, Jupiter en 1re maison ouvre une phase de mise en lumière, de reconnaissance et de nouveaux projets.",
+      "Uranus en 10e maison peut annoncer une évolution de rôle."
+    ]
+  }
+}

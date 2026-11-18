@@ -1,0 +1,31 @@
+{
+  "signe": "Cancer",
+  "id": "cancer",
+  "domaines": {
+    "finances": [
+      "Jusqu'à l'été, Jupiter en 2e maison soutient vos revenus ; ensuite, en 3e maison, il appelle à mieux organiser les finances par la communication.",
+      "Pluton en 8e maison demande de la transparence sur les ressources partagées.",
+      "Un budget écrit reste votre meilleur repère."
+    ],
+    "sante": [
+      "Uranus en 12e maison invite à faire une place à l'intériorité, au sommeil et à la détente.",
+      "Saturne en 10e maison peut augmenter la pression professionnelle : pensez aux pauses.",
+      "Une alimentation régulière et un rythme stable soutiennent l'équilibre."
+    ],
+    "amour_famille": [
+      "Votre sensibilité se nourrit des liens proches.",
+      "Saturne en 10e maison peut déplacer le centre de gravité vers la carrière : la vie affective demande alors des moments dédiés.",
+      "Les échanges de cœur gagnent à être clairs et exempts de reproche."
+    ],
+    "vie_sociale": [
+      "Après l'été, Jupiter en 3e maison favorise les conversations, les apprentissages et les échanges de voisinage.",
+      "Le foyer reste un refuge à préserver.",
+      "Les amitiés peuvent se renouveler autour d'activités partagées."
+    ],
+    "travail": [
+      "Saturne en 10e maison confie à votre signe des responsabilités plus visibles.",
+      "La réussite passe par des résultats concrets et des limites claires.",
+      "Une évolution de rôle appelle une discussion précise sur les moyens et la rémunération."
+    ]
+  }
+}

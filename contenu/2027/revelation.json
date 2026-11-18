@@ -1,0 +1,78 @@
+{
+  "version": "2027.1",
+  "description": "Révélation annuelle individuelle, rédigée en bloc. Chaque bloc est choisi selon une donnée du client. Ordre du plan : intro, cycle, expression, âme, élément solaire (si date), clôture. Maximum 8 phrases.",
+  "phrases_max": 8,
+  "plan": [
+    {
+      "bloc": "intro",
+      "source": "fixe",
+      "phrases": [
+        "Cette révélation s'appuie sur votre nom complet et, lorsqu'elle est fournie, sur votre date de naissance."
+      ]
+    },
+    {
+      "bloc": "cycle",
+      "source": "annee_personnelle_ou_universelle",
+      "phrases": {
+        "1": "Cette année ouvre une étape d'initiative : c'est le moment de poser une intention claire et de la tenir.",
+        "2": "Cette année invite à la coopération : les alliances et les accords à deux comptent plus que les démarches isolées.",
+        "3": "Cette année favorise l'expression : vos idées, vos projets créatifs et vos rencontres peuvent prendre forme.",
+        "4": "Cette année demande de la méthode : construire pas à pas donne des bases solides pour la suite.",
+        "5": "Cette année apporte du mouvement : des changements et des ouvertures se présentent, à choisir avec discernement.",
+        "6": "Cette année met l'accent sur le foyer et les responsabilités : prendre soin des siens devient central.",
+        "7": "Cette année porte à la réflexion : le recul, l'étude et le silence éclairent les décisions à venir.",
+        "8": "Cette année tourne vers les résultats : les efforts engagés peuvent trouver une reconnaissance concrète.",
+        "9": "Cette année appelle au bilan : clore ce qui doit l'être prépare un nouveau départ."
+      }
+    },
+    {
+      "bloc": "expression",
+      "source": "nombre_expression",
+      "phrases": {
+        "1": "Votre expression porte une volonté directe : vous gagnez à dire clairement ce que vous attendez.",
+        "2": "Votre expression est fine et diplomate : l'écoute vous ouvre des portes.",
+        "3": "Votre expression est vive et imagée : la parole est l'un de vos atouts.",
+        "4": "Votre expression est sérieuse et précise : la fiabilité de vos engagements se voit.",
+        "5": "Votre expression est souple et curieuse : vous vous adaptez aisément aux situations.",
+        "6": "Votre expression est chaleureuse et attentionnée : vous savez apaiser un groupe.",
+        "7": "Votre expression est analytique : vous observez les détails que d'autres négligent.",
+        "8": "Votre expression est stratégique : vous savez mener une négociation et mobiliser des moyens.",
+        "9": "Votre expression est large et sincère : votre message touche au-delà de votre cercle."
+      }
+    },
+    {
+      "bloc": "ame",
+      "source": "nombre_ame",
+      "phrases": {
+        "1": "Au fond de vous, l'envie d'autonomie et de créer quelque chose qui vous ressemble reste forte.",
+        "2": "Au fond de vous, le besoin d'harmonie et de liens sincères guide vos choix.",
+        "3": "Au fond de vous, la joie, la couleur et les échanges nourrissent votre énergie.",
+        "4": "Au fond de vous, la stabilité et des bases claires vous rassurent.",
+        "5": "Au fond de vous, la liberté et les expériences nouvelles vous font vivre.",
+        "6": "Au fond de vous, le souci de protéger et de soutenir les autres donne du sens.",
+        "7": "Au fond de vous, la recherche de sens et le silence intérieur vous ressourcent.",
+        "8": "Au fond de vous, la réussite utile et la justice comptent beaucoup.",
+        "9": "Au fond de vous, le désir de contribuer au bien commun vous anime."
+      }
+    },
+    {
+      "bloc": "element_solaire",
+      "source": "element_du_signe_solaire",
+      "condition": "date_fournie",
+      "phrases": {
+        "feu": "Avec un soleil de feu, l'élan et l'enthousiasme peuvent vous porter, à condition de doser l'impatience.",
+        "terre": "Avec un soleil de terre, la patience et le concret soutiennent vos réalisations.",
+        "air": "Avec un soleil d'air, les idées et les échanges sont votre terrain, à relier à des actions concrètes.",
+        "eau": "Avec un soleil d'eau, l'intuition et la sensibilité vous guident, en veillant à ne pas absorber les tensions d'autrui."
+      }
+    },
+    {
+      "bloc": "cloture",
+      "source": "fixe",
+      "phrases": [
+        "Retenez une intention pour l'année et relisez-la à chaque mois : c'est le fil qui relie cette révélation à vos prévisions."
+      ]
+    }
+  ],
+  "statut": "valide"
+}

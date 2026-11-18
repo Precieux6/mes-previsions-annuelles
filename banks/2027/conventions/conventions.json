@@ -1,0 +1,80 @@
+{
+  "annee_personnelle": "jour + mois + annee en cours, chaque element reduit a 1-9 ; les nombres maitres ne sont pas conserves",
+  "mois_personnel": "annee personnelle + numero du mois civil, reduit a 1-9",
+  "annee_universelle_2027": {
+    "somme": 11,
+    "lecture_principale": 11,
+    "reduction": 2,
+    "portee": "commune a tous les souscripteurs"
+  },
+  "nom": "expression, ame, intime : methode validee ; la table cabalistique sert au nom seul",
+  "table_cabalistique": {
+    "800": "HJ",
+    "900": "HU",
+    "option": "B",
+    "sous_variante": "a confirmer (B1 recommandee : jeton explicite)",
+    "entree_9": "Muses"
+  },
+  "domaines": [
+    "finances",
+    "sante",
+    "amour_famille",
+    "vie_sociale",
+    "travail"
+  ],
+  "etiquettes": {
+    "planetes": [
+      "mars",
+      "mercure",
+      "venus",
+      "jupiter",
+      "saturne",
+      "soleil"
+    ],
+    "lunaison": "pleine ou nouvelle lune, éclipse",
+    "maisons_par_domaine": {
+      "finances": [
+        2,
+        8,
+        11
+      ],
+      "sante": [
+        1,
+        6,
+        12
+      ],
+      "amour_famille": [
+        4,
+        5,
+        7
+      ],
+      "vie_sociale": [
+        3,
+        9,
+        11
+      ],
+      "travail": [
+        6,
+        9,
+        10
+      ]
+    },
+    "regle_selection": "une phrase tagguée planète n'est éligible que si la maison de cette planète (pour le signe du lecteur) appartient aux maisons du domaine ; une phrase générique ou de lunaison est toujours éligible",
+    "convention_de_travail": "les maisons par domaine suivent l'astrologie traditionnelle des maisons ; elles sont documentées et modifiables dans conventions.json"
+  },
+  "tonalites": {
+    "description": "Chaque fragment porte une liste 'registres' (classement automatique par mots-clés, scripts/tonalites_2027.py). L'année personnelle et le mois personnel du lecteur font passer en tête les fragments de même registre (+2 chacun). Aucun fragment n'est exclu : la priorité ne fait que trier.",
+    "correspondance_nombre_registre": {
+      "1": "initiative",
+      "2": "coop",
+      "3": "expression",
+      "4": "structure",
+      "5": "changement",
+      "6": "foyer",
+      "7": "introspection",
+      "8": "realisation",
+      "9": "achevement"
+    },
+    "statut": "Mapping et mots-clés à valider par M. Tossou ; le classement automatique est une première approximation."
+  }
+}

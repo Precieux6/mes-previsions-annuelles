@@ -1,0 +1,83 @@
+{
+  "theme": "finances_argent",
+  "statut": "en_validation",
+  "lot": 1,
+  "regle": "source 'numerologie' : fondée sur le cycle universel 2027 (réduit à 2) ; source 'test' : jeu d'ajustement. Mode 'nom' : phrases numerologie uniquement ; mode 'date' : toutes.",
+  "phrases": [
+    {
+      "id": "fin_01",
+      "source": "numerologie",
+      "texte": "Le cycle universel de 2027, réduit à 2, fait de l'argent une affaire de partage : charges communes, accords écrits et décisions prises à plusieurs."
+    },
+    {
+      "id": "fin_02",
+      "source": "numerologie",
+      "texte": "La patience est la clé financière de l'année : les gains viennent par accumulation régulière plutôt que par coups d'éclat."
+    },
+    {
+      "id": "fin_03",
+      "source": "numerologie",
+      "texte": "Les partenariats financiers gagnent en importance ; avant tout engagement commun, vérifiez les clauses et la fiabilité de chacun."
+    },
+    {
+      "id": "fin_04",
+      "source": "numerologie",
+      "texte": "L'année invite à la prudence dans les dettes : un crédit contracté sans marge de manœuvre pèse davantage que prévu."
+    },
+    {
+      "id": "fin_05",
+      "source": "numerologie",
+      "texte": "Les ressources se consolident en fin de semestre, à condition de rester attentif aux dépenses de confort qui s'accumulent."
+    },
+    {
+      "id": "fin_06",
+      "source": "numerologie",
+      "texte": "Les projets financiers menés avec une personne de confiance réussissent mieux que ceux portés seul."
+    },
+    {
+      "id": "fin_07",
+      "source": "numerologie",
+      "texte": "Le moment est favorable pour négocier un accord de partage des revenus ou des frais, qui sécurise chacun sur la durée."
+    },
+    {
+      "id": "fin_08",
+      "source": "numerologie",
+      "texte": "Les dépenses partagées demandent une règle claire dès le départ, pour préserver la confiance et les relations."
+    },
+    {
+      "id": "fin_09",
+      "source": "numerologie",
+      "texte": "Un revenu complémentaire peut naître d'une collaboration plutôt que d'une initiative isolée, à condition qu'elle soit encadrée."
+    },
+    {
+      "id": "fin_10",
+      "source": "test",
+      "texte": "Janvier ouvre l'année avec un bilan financier qui sert de point de départ aux choix suivants."
+    },
+    {
+      "id": "fin_11",
+      "source": "test",
+      "texte": "Le printemps peut apporter une opportunité de revenu ; prendre le temps de l'évaluer évite les engagements précipités."
+    },
+    {
+      "id": "fin_12",
+      "source": "test",
+      "texte": "L'été demande de tenir un budget de loisirs précis, afin que la rentrée ne soit pas alourdie par des dépenses imprévues."
+    },
+    {
+      "id": "fin_13",
+      "source": "test",
+      "texte": "À l'automne, une révision des contrats d'assurance et d'abonnement peut libérer des ressources sans sacrifice."
+    },
+    {
+      "id": "fin_14",
+      "source": "test",
+      "texte": "En fin d'année, faire le point sur l'épargne donne une vision nette de ce qui a été construit en douze mois."
+    },
+    {
+      "id": "fin_15",
+      "source": "test",
+      "texte": "Les signes financiers les plus clairs apparaissent au fil des mois : un budget tenu, une dette qui recule, une épargne qui grandit."
+    }
+  ]
+}

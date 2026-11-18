@@ -1,0 +1,1445 @@
+{
+  "mois": "2027-08",
+  "statut": "étiqueté ; en attente de relecture éditoriale finale",
+  "ciel": "La nouvelle lune du 2 août, en Lion, est une éclipse totale. Mercure entre en Lion le 2 août puis en Vierge le 17. Vénus reste en Lion jusqu'au 21 août, puis entre en Vierge. Le Soleil passe en Vierge le 23 août. La pleine lune du 17 août, en Verseau, est une éclipse pénombrale. Mars reste en Balance jusqu'au 2 septembre.",
+  "tonalite": "Mois de charnière : l'éclipse totale ouvre une période de choix personnels, tandis que la rentrée se prépare.",
+  "maisons_par_signe": {
+    "belier": {
+      "mars": 7,
+      "mercure": 5,
+      "venus": 5,
+      "soleil": 5,
+      "jupiter": 6,
+      "saturne": 1
+    },
+    "taureau": {
+      "mars": 6,
+      "mercure": 4,
+      "venus": 4,
+      "soleil": 4,
+      "jupiter": 5,
+      "saturne": 12
+    },
+    "gemeaux": {
+      "mars": 5,
+      "mercure": 3,
+      "venus": 3,
+      "soleil": 3,
+      "jupiter": 4,
+      "saturne": 11
+    },
+    "cancer": {
+      "mars": 4,
+      "mercure": 2,
+      "venus": 2,
+      "soleil": 2,
+      "jupiter": 3,
+      "saturne": 10
+    },
+    "lion": {
+      "mars": 3,
+      "mercure": 1,
+      "venus": 1,
+      "soleil": 1,
+      "jupiter": 2,
+      "saturne": 9
+    },
+    "vierge": {
+      "mars": 2,
+      "mercure": 12,
+      "venus": 12,
+      "soleil": 12,
+      "jupiter": 1,
+      "saturne": 8
+    },
+    "balance": {
+      "mars": 1,
+      "mercure": 11,
+      "venus": 11,
+      "soleil": 11,
+      "jupiter": 12,
+      "saturne": 7
+    },
+    "scorpion": {
+      "mars": 12,
+      "mercure": 10,
+      "venus": 10,
+      "soleil": 10,
+      "jupiter": 11,
+      "saturne": 6
+    },
+    "sagittaire": {
+      "mars": 11,
+      "mercure": 9,
+      "venus": 9,
+      "soleil": 9,
+      "jupiter": 10,
+      "saturne": 5
+    },
+    "capricorne": {
+      "mars": 10,
+      "mercure": 8,
+      "venus": 8,
+      "soleil": 8,
+      "jupiter": 9,
+      "saturne": 4
+    },
+    "verseau": {
+      "mars": 9,
+      "mercure": 7,
+      "venus": 7,
+      "soleil": 7,
+      "jupiter": 8,
+      "saturne": 3
+    },
+    "poissons": {
+      "mars": 8,
+      "mercure": 6,
+      "venus": 6,
+      "soleil": 6,
+      "jupiter": 7,
+      "saturne": 2
+    }
+  },
+  "conventions": "mi-août",
+  "domaines": {
+    "finances": [
+      {
+        "texte": "La nouvelle lune du 2 août, en Lion, est une éclipse totale : elle invite à réexaminer les engagements financiers pris en début d'année.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure entre en Lion le 2 août : les échanges sur les prix et les conditions gagnent en franchise et en rapidité.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus reste en Lion jusqu'au 21 août : les dépenses de plaisir demandent un cadre clair pour rester équilibrées.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Lion, jusqu'au 23 août, met en avant la confiance en soi dans les décisions d'argent.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Jupiter en Vierge soutient la gestion méthodique des revenus et la recherche d'économies utiles.",
+        "planetes": [
+          "jupiter"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une révision des comptes après les vacances permet de repartir sur des bases claires.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets d'investissement gagnent à être comparés avant la rentrée, quand les offres se multiplient.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 17 août, en Verseau, invite à questionner les dépenses qui ne servent plus.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une réserve constituée pendant l'été rassure pour les dépenses de rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les factures de fin d'été méritent d'être vérifiées ligne par ligne.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les dépenses de scolarité ou de formation se préparent à l'avance, sur un budget dédié.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un partage des frais d'un projet commun gagne à être formalisé par écrit, avec une date de révision.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La prudence reste de mise devant les offres de gains rapides, souvent peu durables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les abonnements repris après l'été peuvent être renégociés au moment de la reprise.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Un justificatif classé le jour même prépare utilement la déclaration de la rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les achats importants gagnent à être mûris sur plusieurs jours avant d'être confirmés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une épargne régulière, même modeste, prend de la valeur au fil des saisons.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les revenus de services peuvent être réajustés en fonction du temps réellement consacré.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un point mensuel sur les finances permet de rester serein face aux dépenses de rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une négociation de tarif se prépare avec des comparaisons concrètes et une proposition écrite.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les décisions financières prises à deux se confirment après une semaine de réflexion.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Mars, en Balance jusqu'au 2 septembre, soutient les accords équilibrés et les partenariats bien écrits.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "coop"
+        ]
+      },
+      {
+        "texte": "Un budget de rentrée, préparé à l'avance, évite les décisions précipitées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "La mise à jour des garanties d'assurance se fait utilement avant septembre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage une gestion lucide, qui distingue l'essentiel du superflu.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les petites économies régulières produisent un effet notable au fil de l'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un budget de rentrée, préparé à l'avance, rend la reprise plus sereine.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les dépenses de scolarité se prévoient dès le mois d'août, avec un échéancier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une comparaison des assurances avant septembre permet d'ajuster la couverture.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "changement"
+        ]
+      },
+      {
+        "texte": "Les prélèvements automatiques se vérifient après les vacances, pour éviter les doublons.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une réserve de précaution, même petite, rassure à l'approche de la rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      }
+    ],
+    "sante": [
+      {
+        "texte": "La nouvelle lune du 2 août, en Lion, invite à se fixer un rythme de vie plus stable pour la rentrée.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Lion jusqu'au 21 août favorise les activités qui font plaisir et qui rendent énergique.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le Soleil en Lion, jusqu'au 23 août, encourage à retrouver de la vitalité par le mouvement et la joie.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "changement"
+        ]
+      },
+      {
+        "texte": "Jupiter en Vierge soutient les bilans de santé, les routines de prévention et les soins réguliers.",
+        "planetes": [
+          "jupiter"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 17 août, en Verseau, peut accentuer la fatigue ou l'agitation : le repos reste la meilleure réponse.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les excès de l'été, repas tardifs, boissons sucrées, nuits courtes, gagnent à être compensés par une reprise progressive.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une alimentation légère et fraîche accompagne bien les dernières chaleurs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les longues marches en soirée offrent une détente agréable après les journées chaudes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un sommeil régulier, même sans obligation de travail, protège l'énergie de la rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "En cas de malaise ou de symptôme inhabituel, l'avis d'un professionnel de santé reste la meilleure démarche.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une hydratation suffisante soutient la concentration et le bien-être général.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La baignade ou la natation sont des activités douces et agréables pour le corps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les rythmes de travail se réajustent progressivement avant la reprise.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une pause numérique pendant les vacances aide à retrouver le calme intérieur.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les repas partagés en plein air renforcent le bien-être et la convivialité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Le retour à des horaires réguliers prépare un meilleur équilibre physique.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les bilans de prévention, dentiste, vue, tension, peuvent être prévus avant la rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une respiration lente, quelques minutes par jour, aide à apaiser les tensions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les efforts sportifs se reprennent avec douceur, après une période de moindre activité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une sieste courte peut restaurer l'attention lors des journées les plus longues.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le contact avec la nature, un bord de mer, un parc, offre un ressourcement précieux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois invite à trouver un équilibre entre plaisir, activité et repos.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un soin attentif du corps, hydratation et étirements, prépare bien la reprise.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les fatigues accumulées pendant l'été méritent un vrai temps de récupération.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "L'écoute des signaux du corps reste la meilleure boussole, en particulier en période de transition.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "changement"
+        ]
+      },
+      {
+        "texte": "Ce mois encourage à reprendre ses habitudes de santé avec simplicité et régularité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une marche au lever du jour, avant la chaleur, apporte fraîcheur et clarté.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les bilans de prévention de la rentrée se programment dès l'été.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une alimentation légère, avec des produits frais, accompagne bien la fin de saison.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un temps de repos après les vacances aide à reprendre le rythme en douceur.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les activités de détente, lecture ou musique, apaisent les tensions de la reprise.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ],
+    "amour_famille": [
+      {
+        "texte": "La nouvelle lune du 2 août, en Lion, est une éclipse totale : elle peut éclairer une question affective importante, à regarder avec franchise.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Lion jusqu'au 21 août rend l'expression de l'affection chaleureuse et généreuse.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le Soleil en Lion, jusqu'au 23 août, met en lumière la place de chacun dans le couple et la famille.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mercure en Lion, à partir du 2 août, favorise les conversations sincères et les déclarations simples.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 17 août, en Verseau, peut inviter à revoir certaines attentes dans la vie commune.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les vacances offrent l'occasion de partager des moments de complicité sans obligations.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un projet de couple se discute à deux, en fixant un calendrier réaliste.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les liens familiaux se renforcent par les repas partagés et les souvenirs communs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un moment de confidence, choisi au calme, ouvre souvent des échanges plus profonds.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les décisions concernant la rentrée scolaire ou le logement se prennent en concertation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "La tendresse se manifeste par des gestes simples, répétés au quotidien.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les désaccords gagnent à être exprimés calmement, sans chercher à gagner.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Une attention pour les aînés, un appel ou une visite, rapproche durablement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les jeunes de la famille apprécient les projets partagés et les activités communes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une parole de reconnaissance, dite spontanément, renforce la confiance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les attentes implicites gagnent à devenir des demandes claires et respectueuses.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Vierge, à partir du 21 août, incite à la précision et au soin dans les attentions.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un temps de complicité sans écran, en soirée, nourrit la relation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les anniversaires de l'été méritent une attention sincère, même simple.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La jalousie ou l'inquiétude peuvent être exprimées avec des mots posés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Une soirée à deux, sans programme, ravive la proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La famille élargie se retrouve volontiers pour un moment convivial avant la rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une décision à deux gagne à être prise après écoute de l'avis de chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "L'humour partagé allège les petites tensions de la fin d'été.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La tendresse se vit dans la régularité plus que dans les grands gestes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage à cultiver la chaleur des liens et la sincérité des échanges.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un dîner en tête à tête, à la fin de l'été, renouvelle le plaisir d'être ensemble.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les retrouvailles après les vacances se préparent avec de la douceur et de la patience.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Une parole de reconnaissance, dite après une période chargée, touche profondément.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les projets de la rentrée gagnent à être partagés dans le foyer, dès maintenant.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un moment de calme à deux, sans programme, renforce la complicité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      }
+    ],
+    "vie_sociale": [
+      {
+        "texte": "La nouvelle lune du 2 août, en Lion, est une éclipse totale : elle invite à redéfinir ses engagements dans les groupes.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure en Lion, à partir du 2 août, favorise les échanges vifs et les projets collectifs enthousiastes.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Lion jusqu'au 21 août renforce les liens d'amitié et les moments de partage.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Lion jusqu'au 23 août encourage à prendre sa place dans les projets de quartier ou d'association.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Jupiter en Vierge favorise les actions collectives bien organisées et utiles.",
+        "planetes": [
+          "jupiter"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les fêtes de fin d'été sont des occasions de créer des liens durables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un projet collectif gagne à être précisé avant la rentrée : objectifs, rôles, calendrier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les rencontres de voisinage se multiplient en fin de saison.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 17 août, en Verseau, met en avant les projets collectifs innovants et solidaires.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une invitation à un repas partagé renforce la convivialité du groupe.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les messages de groupe gagnent à rester courts et précis, surtout pendant les déplacements.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une activité associative peut reprendre dès la rentrée, avec de nouveaux volontaires.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les décisions de groupe se prennent en s'assurant de l'accord de chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Un service rendu à un proche renforce la confiance mutuelle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les échanges en ligne demandent de la vigilance : vérifier avant de relayer évite bien des erreurs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Une sortie culturelle entre amis crée des souvenirs communs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La famille élargie apprécie les retrouvailles de fin d'été.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Savoir se retirer d'un échange qui épuise préserve l'énergie des relations qui nourrissent.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets solidaires trouvent un écho favorable en fin de saison.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un moment de partage autour d'un verre renforce la proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La générosité envers l'entourage porte ses fruits lorsqu'elle reste équilibrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les réseaux de proximité se consolident par des gestes réguliers et sincères.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une rencontre de quartier peut donner naissance à un projet utile.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les invitations gagnent à être acceptées avec plaisir, en gardant du temps pour soi.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure en Vierge, à partir du 17 août, favorise les échanges précis et les réunions bien cadrées.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage à entretenir des liens simples, chaleureux et ouverts.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une fête de fin d'été entre amis crée des souvenirs communs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les rencontres de quartier reprennent avec la rentrée, dans une ambiance chaleureuse.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un projet associatif peut être présenté aux nouveaux membres avant septembre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les échanges avec les voisins se poursuivent avec des gestes simples et sincères.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une invitation à reprendre une activité commune donne de l'élan au groupe.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ],
+    "travail": [
+      {
+        "texte": "La nouvelle lune du 2 août, en Lion, est une éclipse totale : elle invite à clarifier une orientation professionnelle importante.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure entre en Lion le 2 août : les propositions et les présentations gagnent en visibilité.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Vénus en Lion jusqu'au 21 août favorise la mise en valeur des réalisations.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Lion jusqu'au 23 août soutient les prises d'initiative et les décisions affirmées.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Jupiter en Vierge encourage la rigueur, l'organisation et la qualité du travail livré.",
+        "planetes": [
+          "jupiter"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Mercure en Vierge, à partir du 17 août, favorise les dossiers détaillés et les plannings précis.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 17 août, en Verseau, invite à revoir les méthodes de travail et les outils utilisés.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Un bilan de l'été permet de préparer la rentrée avec des priorités claires.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les dossiers de rentrée gagnent à être préparés en amont, avec des échéances réalistes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Une demande de moyens ou de formation se prépare avec des données précises.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les équipes se réorganisent utilement après les congés : un point de relance est précieux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "structure"
+        ]
+      },
+      {
+        "texte": "Un passage de relais bien documenté facilite la reprise.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les collaborations nouvelles gagnent à démarrer par une première mission de test.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les démarches administratives en attente méritent d'être traitées avant la fin du mois.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une rencontre avec une personne expérimentée peut éclairer une décision d'orientation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les réunions de rentrée se préparent avec un ordre du jour court et des responsables identifiés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une formation courte, choisie pour un besoin réel, peut être programmée pour septembre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les compétences se développent par la pratique et les retours des collègues.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La qualité de la communication écrite influence l'image professionnelle : relire reste essentiel.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets en pause peuvent être relancés par une première action concrète.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Un outil de suivi partagé facilite la coordination pendant la reprise.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les conflits se résolvent mieux par un échange direct que par des messages répétés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une démarche de reconnaissance professionnelle se prépare avec patience et méthode.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les idées nouvelles méritent d'être testées sur un périmètre limité avant d'être généralisées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un temps de travail concentré, sans sollicitations, améliore nettement la qualité des livrables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage une démarche méthodique, qui prépare solidement la rentrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un bilan de l'été permet d'identifier les priorités de la rentrée avec clarté.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les réunions de reprise gagnent à être préparées avec un ordre du jour précis.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une mise à jour des plannings d'équipe évite les conflits de disponibilité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Une demande de formation pour l'automne se prépare dès le mois d'août.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les idées nouvelles nées pendant l'été méritent d'être notées pour être reprises.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      }
+    ]
+  }
+}

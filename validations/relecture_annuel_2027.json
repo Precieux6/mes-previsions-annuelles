@@ -1,0 +1,836 @@
+{
+  "approuve": true,
+  "approuve_par": "Précieux Trésor Tossou (chef de projet), après inspection des contenus",
+  "statut": "approuve",
+  "portee": "Contenus annuels 2027 : 75 phrases thématiques, 10 conseils généraux, blocs de la révélation annuelle.",
+  "date_preparation": "2026-11-18",
+  "nb_textes": 118,
+  "repartition": {
+    "tendances_thematiques": 75,
+    "conseils_generaux": 10,
+    "revelation": 33
+  },
+  "note": "Pour valider : passer 'approuve' à true et renseigner 'approuve_par'. Toute modification d'un texte doit être reportée ici.",
+  "textes": [
+    "L'année 2027 invite à regarder vos finances avec méthode : les décisions prises après un bilan simple auront plus de solidité que les élans du moment.",
+    "Le cycle universel de 2027, réduit à 2, favorise les partenariats financiers : un accord clair, écrit et équitable protège autant la relation que le portefeuille.",
+    "Les dépenses qui reviennent chaque mois méritent un examen attentif dès le début de l'année ; réduire une seule charge inutile peut libérer une marge durable.",
+    "Les revenus de 2027 se construisent par la régularité plus que par les coups de chance : une activité entretenue avec constance porte ses fruits progressivement.",
+    "Une épargne mise de côté chaque mois, même modeste, prend de la valeur avec le temps et installe une sécurité qui apaise les décisions.",
+    "Le début de l'année se prête à la comparaison des offres avant tout engagement financier durable ; prendre le temps de lire les conditions évite bien des regrets.",
+    "Les projets d'investissement gagnent à être étudiés par étapes, avec un budget défini et une marge pour les imprévus.",
+    "La prudence reste une alliée : un prêt ou une dette doit être évalué au regard de sa durée réelle et de son coût total.",
+    "Vers le milieu de l'année, un point d'étape sur les objectifs financiers permet d'ajuster sans renoncer ; un bilan écrit rend les progrès visibles.",
+    "En fin d'année, la gestion d'un patrimoine familial ou partagé demande des règles claires, pour que chacun sache ce qui revient à qui.",
+    "Jupiter, en Lion jusqu'au 26 juillet 2027, soutient l'élan de vos projets de revenus au premier semestre ; ce n'est pas une promesse de gain, mais une période favorable pour tester une idée.",
+    "Après le 26 juillet, Jupiter en Vierge invite à passer des intentions aux chiffres : organisez vos comptes, vos prix et vos échéances.",
+    "Saturne, en Bélier jusqu'en 2028, demande de la patience dans la constitution de vos réserves : les résultats viennent par paliers.",
+    "Les rétrogradations de Mercure (du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre) sont des moments pour relire les contrats et vérifier les montants avant de signer.",
+    "Vénus en Scorpion puis en Sagittaire à l'automne peut inviter à revoir la part des dépenses liées au plaisir et à l'image.",
+    "Le cycle universel 2027 invite à écouter les signaux du corps plutôt qu'à les ignorer ; un bilan régulier reste le meilleur allié de la vitalité.",
+    "La régularité des horaires de repas et de sommeil soutient l'énergie tout au long de l'année, davantage que les efforts ponctuels.",
+    "Une activité physique choisie pour le plaisir tient mieux dans la durée qu'une discipline imposée ; elle s'accorde avec les saisons.",
+    "Les tensions accumulées par le rythme de travail se logent souvent dans le dos et la nuque : des pauses régulières les allègent.",
+    "Une alimentation simple, variée et prise dans le calme accompagne un équilibre durable ; les excès comme les privations pèsent sur l'organisme.",
+    "Le sommeil est le socle de la récupération : protéger ses heures de coucher est l'un des gestes les plus efficaces de l'année.",
+    "Les émotions prolongées pèsent sur l'organisme ; parler, écrire ou marcher aide à les relâcher avant qu'elles ne s'installent.",
+    "Vers le milieu de l'année, un point d'étape sur ses habitudes de santé permet d'ajuster sans renoncer à ce qui fonctionne.",
+    "En fin d'année, la fatigue cumulée demande une attention particulière : accorder un repos véritable est une forme de prévention.",
+    "Un suivi préventif, même sans symptôme, rassure et permet d'agir tôt ; toute douleur persistante mérite l'avis d'un professionnel de santé.",
+    "Saturne, en Bélier jusqu'en avril 2028, invite à une hygiène de vie structurée : les progrès de santé se construisent par étapes régulières.",
+    "Mars rétrograde du 12 janvier au 3 avril 2027 : c'est une période pour ralentir l'élan physique et éviter les efforts brusques.",
+    "Mars en Vierge puis en Balance (à partir du 15 mai puis du 15 juillet) peut favoriser une attention plus fine à l'alimentation et au mouvement doux.",
+    "Les éclipses du 20 février (Vierge) et du 2 août (Lion) sont des moments de bascule : elles encouragent des changements d'habitudes progressifs plutôt que brutaux.",
+    "Jupiter, en Lion puis en Vierge après le 26 juillet, invite à soigner le bien-être par des routines simples plutôt que par des excès.",
+    "L'année 2027 invite à renforcer les liens essentiels : des attentions régulières comptent davantage que les grands gestes ponctuels.",
+    "Le cycle universel 2 favorise la coopération au sein du foyer : partager les responsabilités apaise bien des tensions.",
+    "La communication sincère dans le couple et la famille demande des mots posés ; dire ce que l'on ressent évite les malentendus accumulés.",
+    "Les liens familiaux gagnent à être entretenus par des rendez-vous réguliers, même brefs : un repas partagé vaut mieux qu'un long silence.",
+    "Les décisions qui concernent le foyer se prennent mieux à plusieurs, après une écoute réelle de chacun.",
+    "Une relation durable se nourrit de confiance : tenir ses engagements, petits comme grands, reste la première preuve d'attachement.",
+    "Les moments de partage sans écran renforcent les liens ; ils deviennent plus précieux lorsqu'ils sont prévus à l'avance.",
+    "Vers le milieu de l'année, les projets communs (voyage, installation, aménagement) demandent une discussion ouverte sur les attentes de chacun.",
+    "Les tensions anciennes gagnent à être abordées avec calme plutôt que tues : un pardon exprimé libère autant celui qui le donne que celui qui le reçoit.",
+    "En fin d'année, l'attention portée aux proches âgés ou fragiles renforce la solidarité familiale et la paix du foyer.",
+    "Vénus, en Lion du 28 juillet au 21 août puis en Vierge, invite à la tendresse concrète et aux gestes simples de l'été.",
+    "Vénus en Balance (du 14 septembre au 8 octobre) favorise l'harmonie et le dialogue : un moment de médiation peut dénouer une tension.",
+    "Vénus en Scorpion puis en Sagittaire à l'automne (du 8 octobre au 1er novembre) peut approfondir les liens, parfois en révélant des sujets sensibles à traiter avec délicatesse.",
+    "Les éclipses du 6 février et du 17 août, toutes deux en Verseau, concernent les équilibres du foyer : elles appellent à clarifier les rôles plutôt qu'à les bouleverser.",
+    "Jupiter en Vierge après le 26 juillet encourage l'organisation de la vie familiale : planifier les rendez-vous importants aide à maintenir la sérénité.",
+    "L'année 2027 favorise les liens de proximité : voisins, amis et réseaux d'entraide deviennent des appuis précieux.",
+    "Le cycle universel 2 invite à la coopération collective : un projet partagé gagne à être réparti clairement entre ses membres.",
+    "Les réseaux sociaux et les échanges en groupe demandent de la mesure : une parole brève et vérifiée vaut mieux qu'une réaction rapide.",
+    "Les engagements associatifs et communautaires s'inscrivent dans la durée ; un calendrier simple permet de tenir la régularité.",
+    "Les rencontres nouvelles naissent souvent d'activités partagées : une invitation sincère ouvre fréquemment des relations durables.",
+    "Les obligations familiales et sociales demandent de l'équilibre ; savoir dire non avec tact protège la disponibilité réelle.",
+    "Un groupe qui communique clairement avance mieux : des règles connues de tous évitent bien des malentendus.",
+    "Vers le milieu de l'année, les projets collectifs gagnent à être relus ensemble pour rester fidèles à leur sens initial.",
+    "Les solidarités de quartier se renforcent par de petits gestes réguliers, plus durables que les actions ponctuelles.",
+    "En fin d'année, un bilan partagé avec ses proches ou son groupe permet de reconnaître les efforts de chacun et de préparer la suite.",
+    "Mercure rétrograde du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre : des périodes pour relire les messages et confirmer les rendez-vous.",
+    "Jupiter, en Lion jusqu'au 26 juillet puis en Vierge, favorise les rencontres et l'ouverture vers les autres, avec une tournure plus organisée à partir de l'été.",
+    "Mercure en Lion (du 2 au 17 août) puis en Vierge (jusqu'au 3 septembre) peut activer les échanges et les déplacements courts entre proches.",
+    "Pluton, en Verseau pendant toute l'année, touche aux réseaux et aux causes collectives : les engagements de fond gagnent à être réfléchis avant d'être lancés.",
+    "Uranus, en Gémeaux, et sa rétrogradation à partir du 16 septembre invitent à renouveler les façons de se réunir et de s'organiser.",
+    "L'année 2027 invite à structurer son activité : des priorités claires et un rythme régulier donnent des résultats plus solides que l'urgence.",
+    "Le cycle universel 2 favorise la collaboration : les projets menés en binôme ou en équipe bien répartie avancent avec plus de fluidité.",
+    "Une compétence entretenue avec constance devient un atout reconnu ; une formation ciblée ouvre des possibilités concrètes.",
+    "Les responsabilités accrues demandent des limites nettes : accepter tout expose à l'épuisement et à la baisse de qualité.",
+    "Les initiatives professionnelles gagnent à être testées à petite échelle avant d'être développées.",
+    "La qualité des écrits et des échanges professionnels influence la confiance : relire et clarifier avant d'envoyer reste essentiel.",
+    "Vers le milieu de l'année, un bilan des objectifs permet de réajuster la trajectoire sans en changer la direction générale.",
+    "Les projets de long terme se construisent par étapes : chaque livrable achevé consolide la réputation et la suite du parcours.",
+    "Les relations avec les collègues et les partenaires demandent de la transparence : dire tôt ce qui bloque évite les tensions plus tard.",
+    "En fin d'année, un bilan de compétences et de réalisations prépare les choix de l'année suivante avec lucidité.",
+    "Mars rétrograde du 12 janvier au 3 avril 2027 : une période pour reprendre les dossiers en attente et relire les décisions prises.",
+    "Saturne, en Bélier jusqu'en 2028, invite à consolider les fondations professionnelles plutôt qu'à les multiplier ; sa rétrogradation du 11 août au 25 décembre favorise ce recentrage.",
+    "Mars passe ensuite par la Vierge, la Balance, le Scorpion (2 septembre) et le Sagittaire (16 octobre) : l'énergie d'action gagne à être ciblée selon chaque période.",
+    "Jupiter en Vierge après le 26 juillet encourage l'organisation professionnelle, la méthode et la précision dans les dossiers.",
+    "Mercure en Vierge (du 17 août au 3 septembre), puis en Capricorne à partir du 18 décembre, invite aux échanges écrits précis et à la structuration des missions.",
+    "Fixez-vous trois priorités annuelles, notées par écrit, et relisez-les chaque trimestre.",
+    "Protégez un créneau fixe chaque semaine pour vos projets personnels, à l'abri des sollicitations.",
+    "Tenez un carnet de bord mensuel : notez ce qui fonctionne et ce qui mérite d'être ajusté.",
+    "Avant toute décision financière importante, laissez passer un délai de réflexion et demandez un avis extérieur.",
+    "Gardez un réseau de soutien varié : amis, famille, professionnels de confiance.",
+    "Confirmez par écrit les engagements pris à l'oral, en particulier pendant les périodes de rétrogradation de Mercure.",
+    "Prévoyez des temps de repos réels dans le calendrier, et non seulement après l'effort.",
+    "Consultez un professionnel pour toute question de santé, de droit ou de finances : ce document n'en tient pas lieu.",
+    "Relisez le document à mi-année pour mesurer le chemin parcouru et ajuster vos objectifs.",
+    "Gardez une part de souplesse : les tendances indiquent des directions, non des certitudes.",
+    "Cette révélation s'appuie sur votre nom complet et, lorsqu'elle est fournie, sur votre date de naissance.",
+    "Cette année ouvre une étape d'initiative : c'est le moment de poser une intention claire et de la tenir.",
+    "Cette année invite à la coopération : les alliances et les accords à deux comptent plus que les démarches isolées.",
+    "Cette année favorise l'expression : vos idées, vos projets créatifs et vos rencontres peuvent prendre forme.",
+    "Cette année demande de la méthode : construire pas à pas donne des bases solides pour la suite.",
+    "Cette année apporte du mouvement : des changements et des ouvertures se présentent, à choisir avec discernement.",
+    "Cette année met l'accent sur le foyer et les responsabilités : prendre soin des siens devient central.",
+    "Cette année porte à la réflexion : le recul, l'étude et le silence éclairent les décisions à venir.",
+    "Cette année tourne vers les résultats : les efforts engagés peuvent trouver une reconnaissance concrète.",
+    "Cette année appelle au bilan : clore ce qui doit l'être prépare un nouveau départ.",
+    "Votre expression porte une volonté directe : vous gagnez à dire clairement ce que vous attendez.",
+    "Votre expression est fine et diplomate : l'écoute vous ouvre des portes.",
+    "Votre expression est vive et imagée : la parole est l'un de vos atouts.",
+    "Votre expression est sérieuse et précise : la fiabilité de vos engagements se voit.",
+    "Votre expression est souple et curieuse : vous vous adaptez aisément aux situations.",
+    "Votre expression est chaleureuse et attentionnée : vous savez apaiser un groupe.",
+    "Votre expression est analytique : vous observez les détails que d'autres négligent.",
+    "Votre expression est stratégique : vous savez mener une négociation et mobiliser des moyens.",
+    "Votre expression est large et sincère : votre message touche au-delà de votre cercle.",
+    "Au fond de vous, l'envie d'autonomie et de créer quelque chose qui vous ressemble reste forte.",
+    "Au fond de vous, le besoin d'harmonie et de liens sincères guide vos choix.",
+    "Au fond de vous, la joie, la couleur et les échanges nourrissent votre énergie.",
+    "Au fond de vous, la stabilité et des bases claires vous rassurent.",
+    "Au fond de vous, la liberté et les expériences nouvelles vous font vivre.",
+    "Au fond de vous, le souci de protéger et de soutenir les autres donne du sens.",
+    "Au fond de vous, la recherche de sens et le silence intérieur vous ressourcent.",
+    "Au fond de vous, la réussite utile et la justice comptent beaucoup.",
+    "Au fond de vous, le désir de contribuer au bien commun vous anime.",
+    "Avec un soleil de feu, l'élan et l'enthousiasme peuvent vous porter, à condition de doser l'impatience.",
+    "Avec un soleil de terre, la patience et le concret soutiennent vos réalisations.",
+    "Avec un soleil d'air, les idées et les échanges sont votre terrain, à relier à des actions concrètes.",
+    "Avec un soleil d'eau, l'intuition et la sensibilité vous guident, en veillant à ne pas absorber les tensions d'autrui.",
+    "Retenez une intention pour l'année et relisez-la à chaque mois : c'est le fil qui relie cette révélation à vos prévisions."
+  ],
+  "entrees": [
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 1,
+      "texte": "L'année 2027 invite à regarder vos finances avec méthode : les décisions prises après un bilan simple auront plus de solidité que les élans du moment."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 2,
+      "texte": "Le cycle universel de 2027, réduit à 2, favorise les partenariats financiers : un accord clair, écrit et équitable protège autant la relation que le portefeuille."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 3,
+      "texte": "Les dépenses qui reviennent chaque mois méritent un examen attentif dès le début de l'année ; réduire une seule charge inutile peut libérer une marge durable."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 4,
+      "texte": "Les revenus de 2027 se construisent par la régularité plus que par les coups de chance : une activité entretenue avec constance porte ses fruits progressivement."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 5,
+      "texte": "Une épargne mise de côté chaque mois, même modeste, prend de la valeur avec le temps et installe une sécurité qui apaise les décisions."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 6,
+      "texte": "Le début de l'année se prête à la comparaison des offres avant tout engagement financier durable ; prendre le temps de lire les conditions évite bien des regrets."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 7,
+      "texte": "Les projets d'investissement gagnent à être étudiés par étapes, avec un budget défini et une marge pour les imprévus."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 8,
+      "texte": "La prudence reste une alliée : un prêt ou une dette doit être évalué au regard de sa durée réelle et de son coût total."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 9,
+      "texte": "Vers le milieu de l'année, un point d'étape sur les objectifs financiers permet d'ajuster sans renoncer ; un bilan écrit rend les progrès visibles."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 10,
+      "texte": "En fin d'année, la gestion d'un patrimoine familial ou partagé demande des règles claires, pour que chacun sache ce qui revient à qui."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 11,
+      "texte": "Jupiter, en Lion jusqu'au 26 juillet 2027, soutient l'élan de vos projets de revenus au premier semestre ; ce n'est pas une promesse de gain, mais une période favorable pour tester une idée."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 12,
+      "texte": "Après le 26 juillet, Jupiter en Vierge invite à passer des intentions aux chiffres : organisez vos comptes, vos prix et vos échéances."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 13,
+      "texte": "Saturne, en Bélier jusqu'en 2028, demande de la patience dans la constitution de vos réserves : les résultats viennent par paliers."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 14,
+      "texte": "Les rétrogradations de Mercure (du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre) sont des moments pour relire les contrats et vérifier les montants avant de signer."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Finances & argent",
+      "ordre": 15,
+      "texte": "Vénus en Scorpion puis en Sagittaire à l'automne peut inviter à revoir la part des dépenses liées au plaisir et à l'image."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 1,
+      "texte": "Le cycle universel 2027 invite à écouter les signaux du corps plutôt qu'à les ignorer ; un bilan régulier reste le meilleur allié de la vitalité."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 2,
+      "texte": "La régularité des horaires de repas et de sommeil soutient l'énergie tout au long de l'année, davantage que les efforts ponctuels."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 3,
+      "texte": "Une activité physique choisie pour le plaisir tient mieux dans la durée qu'une discipline imposée ; elle s'accorde avec les saisons."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 4,
+      "texte": "Les tensions accumulées par le rythme de travail se logent souvent dans le dos et la nuque : des pauses régulières les allègent."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 5,
+      "texte": "Une alimentation simple, variée et prise dans le calme accompagne un équilibre durable ; les excès comme les privations pèsent sur l'organisme."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 6,
+      "texte": "Le sommeil est le socle de la récupération : protéger ses heures de coucher est l'un des gestes les plus efficaces de l'année."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 7,
+      "texte": "Les émotions prolongées pèsent sur l'organisme ; parler, écrire ou marcher aide à les relâcher avant qu'elles ne s'installent."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 8,
+      "texte": "Vers le milieu de l'année, un point d'étape sur ses habitudes de santé permet d'ajuster sans renoncer à ce qui fonctionne."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 9,
+      "texte": "En fin d'année, la fatigue cumulée demande une attention particulière : accorder un repos véritable est une forme de prévention."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 10,
+      "texte": "Un suivi préventif, même sans symptôme, rassure et permet d'agir tôt ; toute douleur persistante mérite l'avis d'un professionnel de santé."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 11,
+      "texte": "Saturne, en Bélier jusqu'en avril 2028, invite à une hygiène de vie structurée : les progrès de santé se construisent par étapes régulières."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 12,
+      "texte": "Mars rétrograde du 12 janvier au 3 avril 2027 : c'est une période pour ralentir l'élan physique et éviter les efforts brusques."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 13,
+      "texte": "Mars en Vierge puis en Balance (à partir du 15 mai puis du 15 juillet) peut favoriser une attention plus fine à l'alimentation et au mouvement doux."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 14,
+      "texte": "Les éclipses du 20 février (Vierge) et du 2 août (Lion) sont des moments de bascule : elles encouragent des changements d'habitudes progressifs plutôt que brutaux."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Santé & vitalité",
+      "ordre": 15,
+      "texte": "Jupiter, en Lion puis en Vierge après le 26 juillet, invite à soigner le bien-être par des routines simples plutôt que par des excès."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 1,
+      "texte": "L'année 2027 invite à renforcer les liens essentiels : des attentions régulières comptent davantage que les grands gestes ponctuels."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 2,
+      "texte": "Le cycle universel 2 favorise la coopération au sein du foyer : partager les responsabilités apaise bien des tensions."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 3,
+      "texte": "La communication sincère dans le couple et la famille demande des mots posés ; dire ce que l'on ressent évite les malentendus accumulés."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 4,
+      "texte": "Les liens familiaux gagnent à être entretenus par des rendez-vous réguliers, même brefs : un repas partagé vaut mieux qu'un long silence."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 5,
+      "texte": "Les décisions qui concernent le foyer se prennent mieux à plusieurs, après une écoute réelle de chacun."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 6,
+      "texte": "Une relation durable se nourrit de confiance : tenir ses engagements, petits comme grands, reste la première preuve d'attachement."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 7,
+      "texte": "Les moments de partage sans écran renforcent les liens ; ils deviennent plus précieux lorsqu'ils sont prévus à l'avance."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 8,
+      "texte": "Vers le milieu de l'année, les projets communs (voyage, installation, aménagement) demandent une discussion ouverte sur les attentes de chacun."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 9,
+      "texte": "Les tensions anciennes gagnent à être abordées avec calme plutôt que tues : un pardon exprimé libère autant celui qui le donne que celui qui le reçoit."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 10,
+      "texte": "En fin d'année, l'attention portée aux proches âgés ou fragiles renforce la solidarité familiale et la paix du foyer."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 11,
+      "texte": "Vénus, en Lion du 28 juillet au 21 août puis en Vierge, invite à la tendresse concrète et aux gestes simples de l'été."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 12,
+      "texte": "Vénus en Balance (du 14 septembre au 8 octobre) favorise l'harmonie et le dialogue : un moment de médiation peut dénouer une tension."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 13,
+      "texte": "Vénus en Scorpion puis en Sagittaire à l'automne (du 8 octobre au 1er novembre) peut approfondir les liens, parfois en révélant des sujets sensibles à traiter avec délicatesse."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 14,
+      "texte": "Les éclipses du 6 février et du 17 août, toutes deux en Verseau, concernent les équilibres du foyer : elles appellent à clarifier les rôles plutôt qu'à les bouleverser."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Amour & famille",
+      "ordre": 15,
+      "texte": "Jupiter en Vierge après le 26 juillet encourage l'organisation de la vie familiale : planifier les rendez-vous importants aide à maintenir la sérénité."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 1,
+      "texte": "L'année 2027 favorise les liens de proximité : voisins, amis et réseaux d'entraide deviennent des appuis précieux."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 2,
+      "texte": "Le cycle universel 2 invite à la coopération collective : un projet partagé gagne à être réparti clairement entre ses membres."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 3,
+      "texte": "Les réseaux sociaux et les échanges en groupe demandent de la mesure : une parole brève et vérifiée vaut mieux qu'une réaction rapide."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 4,
+      "texte": "Les engagements associatifs et communautaires s'inscrivent dans la durée ; un calendrier simple permet de tenir la régularité."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 5,
+      "texte": "Les rencontres nouvelles naissent souvent d'activités partagées : une invitation sincère ouvre fréquemment des relations durables."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 6,
+      "texte": "Les obligations familiales et sociales demandent de l'équilibre ; savoir dire non avec tact protège la disponibilité réelle."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 7,
+      "texte": "Un groupe qui communique clairement avance mieux : des règles connues de tous évitent bien des malentendus."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 8,
+      "texte": "Vers le milieu de l'année, les projets collectifs gagnent à être relus ensemble pour rester fidèles à leur sens initial."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 9,
+      "texte": "Les solidarités de quartier se renforcent par de petits gestes réguliers, plus durables que les actions ponctuelles."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 10,
+      "texte": "En fin d'année, un bilan partagé avec ses proches ou son groupe permet de reconnaître les efforts de chacun et de préparer la suite."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 11,
+      "texte": "Mercure rétrograde du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre : des périodes pour relire les messages et confirmer les rendez-vous."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 12,
+      "texte": "Jupiter, en Lion jusqu'au 26 juillet puis en Vierge, favorise les rencontres et l'ouverture vers les autres, avec une tournure plus organisée à partir de l'été."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 13,
+      "texte": "Mercure en Lion (du 2 au 17 août) puis en Vierge (jusqu'au 3 septembre) peut activer les échanges et les déplacements courts entre proches."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 14,
+      "texte": "Pluton, en Verseau pendant toute l'année, touche aux réseaux et aux causes collectives : les engagements de fond gagnent à être réfléchis avant d'être lancés."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Vie familiale & sociale",
+      "ordre": 15,
+      "texte": "Uranus, en Gémeaux, et sa rétrogradation à partir du 16 septembre invitent à renouveler les façons de se réunir et de s'organiser."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 1,
+      "texte": "L'année 2027 invite à structurer son activité : des priorités claires et un rythme régulier donnent des résultats plus solides que l'urgence."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 2,
+      "texte": "Le cycle universel 2 favorise la collaboration : les projets menés en binôme ou en équipe bien répartie avancent avec plus de fluidité."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 3,
+      "texte": "Une compétence entretenue avec constance devient un atout reconnu ; une formation ciblée ouvre des possibilités concrètes."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 4,
+      "texte": "Les responsabilités accrues demandent des limites nettes : accepter tout expose à l'épuisement et à la baisse de qualité."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 5,
+      "texte": "Les initiatives professionnelles gagnent à être testées à petite échelle avant d'être développées."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 6,
+      "texte": "La qualité des écrits et des échanges professionnels influence la confiance : relire et clarifier avant d'envoyer reste essentiel."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 7,
+      "texte": "Vers le milieu de l'année, un bilan des objectifs permet de réajuster la trajectoire sans en changer la direction générale."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 8,
+      "texte": "Les projets de long terme se construisent par étapes : chaque livrable achevé consolide la réputation et la suite du parcours."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 9,
+      "texte": "Les relations avec les collègues et les partenaires demandent de la transparence : dire tôt ce qui bloque évite les tensions plus tard."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 10,
+      "texte": "En fin d'année, un bilan de compétences et de réalisations prépare les choix de l'année suivante avec lucidité."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 11,
+      "texte": "Mars rétrograde du 12 janvier au 3 avril 2027 : une période pour reprendre les dossiers en attente et relire les décisions prises."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 12,
+      "texte": "Saturne, en Bélier jusqu'en 2028, invite à consolider les fondations professionnelles plutôt qu'à les multiplier ; sa rétrogradation du 11 août au 25 décembre favorise ce recentrage."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 13,
+      "texte": "Mars passe ensuite par la Vierge, la Balance, le Scorpion (2 septembre) et le Sagittaire (16 octobre) : l'énergie d'action gagne à être ciblée selon chaque période."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 14,
+      "texte": "Jupiter en Vierge après le 26 juillet encourage l'organisation professionnelle, la méthode et la précision dans les dossiers."
+    },
+    {
+      "type": "tendance_thematique",
+      "theme": "Travail & réalités professionnelles",
+      "ordre": 15,
+      "texte": "Mercure en Vierge (du 17 août au 3 septembre), puis en Capricorne à partir du 18 décembre, invite aux échanges écrits précis et à la structuration des missions."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 1,
+      "texte": "Fixez-vous trois priorités annuelles, notées par écrit, et relisez-les chaque trimestre."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 2,
+      "texte": "Protégez un créneau fixe chaque semaine pour vos projets personnels, à l'abri des sollicitations."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 3,
+      "texte": "Tenez un carnet de bord mensuel : notez ce qui fonctionne et ce qui mérite d'être ajusté."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 4,
+      "texte": "Avant toute décision financière importante, laissez passer un délai de réflexion et demandez un avis extérieur."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 5,
+      "texte": "Gardez un réseau de soutien varié : amis, famille, professionnels de confiance."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 6,
+      "texte": "Confirmez par écrit les engagements pris à l'oral, en particulier pendant les périodes de rétrogradation de Mercure."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 7,
+      "texte": "Prévoyez des temps de repos réels dans le calendrier, et non seulement après l'effort."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 8,
+      "texte": "Consultez un professionnel pour toute question de santé, de droit ou de finances : ce document n'en tient pas lieu."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 9,
+      "texte": "Relisez le document à mi-année pour mesurer le chemin parcouru et ajuster vos objectifs."
+    },
+    {
+      "type": "conseil_general",
+      "ordre": 10,
+      "texte": "Gardez une part de souplesse : les tendances indiquent des directions, non des certitudes."
+    },
+    {
+      "type": "revelation",
+      "bloc": "intro",
+      "cle": "fixe",
+      "texte": "Cette révélation s'appuie sur votre nom complet et, lorsqu'elle est fournie, sur votre date de naissance."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "1",
+      "texte": "Cette année ouvre une étape d'initiative : c'est le moment de poser une intention claire et de la tenir."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "2",
+      "texte": "Cette année invite à la coopération : les alliances et les accords à deux comptent plus que les démarches isolées."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "3",
+      "texte": "Cette année favorise l'expression : vos idées, vos projets créatifs et vos rencontres peuvent prendre forme."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "4",
+      "texte": "Cette année demande de la méthode : construire pas à pas donne des bases solides pour la suite."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "5",
+      "texte": "Cette année apporte du mouvement : des changements et des ouvertures se présentent, à choisir avec discernement."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "6",
+      "texte": "Cette année met l'accent sur le foyer et les responsabilités : prendre soin des siens devient central."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "7",
+      "texte": "Cette année porte à la réflexion : le recul, l'étude et le silence éclairent les décisions à venir."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "8",
+      "texte": "Cette année tourne vers les résultats : les efforts engagés peuvent trouver une reconnaissance concrète."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cycle",
+      "cle": "9",
+      "texte": "Cette année appelle au bilan : clore ce qui doit l'être prépare un nouveau départ."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "1",
+      "texte": "Votre expression porte une volonté directe : vous gagnez à dire clairement ce que vous attendez."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "2",
+      "texte": "Votre expression est fine et diplomate : l'écoute vous ouvre des portes."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "3",
+      "texte": "Votre expression est vive et imagée : la parole est l'un de vos atouts."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "4",
+      "texte": "Votre expression est sérieuse et précise : la fiabilité de vos engagements se voit."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "5",
+      "texte": "Votre expression est souple et curieuse : vous vous adaptez aisément aux situations."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "6",
+      "texte": "Votre expression est chaleureuse et attentionnée : vous savez apaiser un groupe."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "7",
+      "texte": "Votre expression est analytique : vous observez les détails que d'autres négligent."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "8",
+      "texte": "Votre expression est stratégique : vous savez mener une négociation et mobiliser des moyens."
+    },
+    {
+      "type": "revelation",
+      "bloc": "expression",
+      "cle": "9",
+      "texte": "Votre expression est large et sincère : votre message touche au-delà de votre cercle."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "1",
+      "texte": "Au fond de vous, l'envie d'autonomie et de créer quelque chose qui vous ressemble reste forte."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "2",
+      "texte": "Au fond de vous, le besoin d'harmonie et de liens sincères guide vos choix."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "3",
+      "texte": "Au fond de vous, la joie, la couleur et les échanges nourrissent votre énergie."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "4",
+      "texte": "Au fond de vous, la stabilité et des bases claires vous rassurent."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "5",
+      "texte": "Au fond de vous, la liberté et les expériences nouvelles vous font vivre."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "6",
+      "texte": "Au fond de vous, le souci de protéger et de soutenir les autres donne du sens."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "7",
+      "texte": "Au fond de vous, la recherche de sens et le silence intérieur vous ressourcent."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "8",
+      "texte": "Au fond de vous, la réussite utile et la justice comptent beaucoup."
+    },
+    {
+      "type": "revelation",
+      "bloc": "ame",
+      "cle": "9",
+      "texte": "Au fond de vous, le désir de contribuer au bien commun vous anime."
+    },
+    {
+      "type": "revelation",
+      "bloc": "element_solaire",
+      "cle": "feu",
+      "texte": "Avec un soleil de feu, l'élan et l'enthousiasme peuvent vous porter, à condition de doser l'impatience."
+    },
+    {
+      "type": "revelation",
+      "bloc": "element_solaire",
+      "cle": "terre",
+      "texte": "Avec un soleil de terre, la patience et le concret soutiennent vos réalisations."
+    },
+    {
+      "type": "revelation",
+      "bloc": "element_solaire",
+      "cle": "air",
+      "texte": "Avec un soleil d'air, les idées et les échanges sont votre terrain, à relier à des actions concrètes."
+    },
+    {
+      "type": "revelation",
+      "bloc": "element_solaire",
+      "cle": "eau",
+      "texte": "Avec un soleil d'eau, l'intuition et la sensibilité vous guident, en veillant à ne pas absorber les tensions d'autrui."
+    },
+    {
+      "type": "revelation",
+      "bloc": "cloture",
+      "cle": "fixe",
+      "texte": "Retenez une intention pour l'année et relisez-la à chaque mois : c'est le fil qui relie cette révélation à vos prévisions."
+    }
+  ],
+  "date_approbation": "2026-11-18",
+  "reserve": "Signature écrite de M. Folly Valère Tossou non recueillie : à rattacher au document de validation."
+}

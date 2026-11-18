@@ -1,0 +1,1439 @@
+{
+  "mois": "2027-10",
+  "statut": "étiqueté ; en attente de relecture éditoriale finale",
+  "ciel": "La pleine lune du 15 octobre, en Bélier, ouvre le mois. Mercure rétrograde du 8 au 29 octobre, en Scorpion puis en Balance. Vénus entre en Scorpion le 8 octobre. Mars entre en Sagittaire le 16 octobre. Le Soleil entre en Scorpion le 24 octobre. La nouvelle lune du 29 octobre, en Scorpion, clôt la période.",
+  "tonalite": "Mois de réflexion : la rétrogradation de Mercure invite à relire, tandis que les initiatives trouvent leur place.",
+  "maisons_par_signe": {
+    "belier": {
+      "mars": 9,
+      "mercure": 8,
+      "venus": 8,
+      "soleil": 8,
+      "jupiter": 6,
+      "saturne": 1
+    },
+    "taureau": {
+      "mars": 8,
+      "mercure": 7,
+      "venus": 7,
+      "soleil": 7,
+      "jupiter": 5,
+      "saturne": 12
+    },
+    "gemeaux": {
+      "mars": 7,
+      "mercure": 6,
+      "venus": 6,
+      "soleil": 6,
+      "jupiter": 4,
+      "saturne": 11
+    },
+    "cancer": {
+      "mars": 6,
+      "mercure": 5,
+      "venus": 5,
+      "soleil": 5,
+      "jupiter": 3,
+      "saturne": 10
+    },
+    "lion": {
+      "mars": 5,
+      "mercure": 4,
+      "venus": 4,
+      "soleil": 4,
+      "jupiter": 2,
+      "saturne": 9
+    },
+    "vierge": {
+      "mars": 4,
+      "mercure": 3,
+      "venus": 3,
+      "soleil": 3,
+      "jupiter": 1,
+      "saturne": 8
+    },
+    "balance": {
+      "mars": 3,
+      "mercure": 2,
+      "venus": 2,
+      "soleil": 2,
+      "jupiter": 12,
+      "saturne": 7
+    },
+    "scorpion": {
+      "mars": 2,
+      "mercure": 1,
+      "venus": 1,
+      "soleil": 1,
+      "jupiter": 11,
+      "saturne": 6
+    },
+    "sagittaire": {
+      "mars": 1,
+      "mercure": 12,
+      "venus": 12,
+      "soleil": 12,
+      "jupiter": 10,
+      "saturne": 5
+    },
+    "capricorne": {
+      "mars": 12,
+      "mercure": 11,
+      "venus": 11,
+      "soleil": 11,
+      "jupiter": 9,
+      "saturne": 4
+    },
+    "verseau": {
+      "mars": 11,
+      "mercure": 10,
+      "venus": 10,
+      "soleil": 10,
+      "jupiter": 8,
+      "saturne": 3
+    },
+    "poissons": {
+      "mars": 10,
+      "mercure": 9,
+      "venus": 9,
+      "soleil": 9,
+      "jupiter": 7,
+      "saturne": 2
+    }
+  },
+  "conventions": "mi-octobre",
+  "domaines": {
+    "finances": [
+      {
+        "texte": "La pleine lune du 15 octobre, en Bélier, invite à relancer un projet financier resté en attente, avec un premier montant concret.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Mercure rétrograde du 8 au 29 octobre : les contrats et les devis se relisent avant toute signature.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": []
+      },
+      {
+        "texte": "Mars entre en Sagittaire le 16 octobre : les projets de formation ou de voyage se préparent avec un budget dédié.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "changement",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Vénus en Scorpion, à partir du 8 octobre, favorise les décisions patientes et les placements durables.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Scorpion, à partir du 24 octobre, rappelle l'importance de la gestion des ressources partagées.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 29 octobre, en Scorpion, invite à faire le bilan des dépenses de l'année écoulée.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les frais de fin d'année se prévoient à l'avance, sur une enveloppe fixée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une révision des abonnements et des garanties peut libérer une marge utile avant l'hiver.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les dettes à taux élevé méritent d'être soldées en priorité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Un investissement se décide après plusieurs semaines de réflexion, surtout en période de rétrogradation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": [
+          "foyer",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les comparaisons de prix restent précieuses avant les achats de fêtes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une négociation de tarif se prépare avec des données précises et une proposition écrite.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les revenus complémentaires gagnent à être évalués sur le temps réellement disponible.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un justificatif classé au fil de l'eau facilite la déclaration de fin d'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les prêts entre proches demandent un écrit précis, avec montant, durée et modalités.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une réserve de précaution rassure pour les dépenses de l'hiver.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets d'épargne se fixent à un montant tenable, reconduit chaque mois.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un point mensuel sur les finances permet de garder le cap jusqu'à la fin de l'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les offres d'investissement présentées comme rapides méritent une vérification approfondie.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une décision financière prise à deux gagne à être confirmée après quelques jours de réflexion.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Ce mois encourage une gestion sobre, tournée vers la solidité des fondations pour l'année suivante.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les petites économies régulières prennent un poids réel au moment des bilans.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Ce mois invite à choisir ses dépenses en fonction de leur utilité réelle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un plan d'économies pour l'hiver, simple et réaliste, rend la période plus sereine.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les dépenses de fin d'année gagnent à être réparties sur plusieurs semaines.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un bilan des dépenses de l'automne aide à anticiper celles de l'hiver.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les contrats d'assurance se relisent avant la fin de l'année civile.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une épargne de fin d'année se fixe à un montant réaliste et régulier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les frais de chauffage se prévoient dès octobre, en comparant les solutions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un point sur les dettes en cours permet d'en réduire le coût à moyen terme.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ],
+    "sante": [
+      {
+        "texte": "La pleine lune du 15 octobre, en Bélier, peut donner beaucoup d'énergie : mieux vaut canaliser cet élan dans une activité régulière.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure rétrograde du 8 au 29 octobre invite à protéger le sommeil, car la fatigue mentale peut s'accumuler.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": []
+      },
+      {
+        "texte": "Mars en Sagittaire, à partir du 16 octobre, favorise les activités de plein air et les sorties dynamiques.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Scorpion, à partir du 8 octobre, invite à des soins doux et à des moments de calme.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Scorpion, à partir du 24 octobre, encourage l'écoute des émotions et le repos intérieur.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 29 octobre, en Scorpion, est un bon moment pour instaurer des rituels de soin réguliers.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les bilans de prévention, dentaires, visuels et médicaux, sont utiles avant l'hiver.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une alimentation chaude et équilibrée, riche en légumes d'automne, soutient les défenses naturelles.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les vitamines et les minéraux se trouvent dans les produits de saison : mieux vaut les privilégier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "En cas de symptôme qui persiste, l'avis d'un professionnel de santé reste la meilleure réponse.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une activité physique régulière, même modérée, aide à passer l'automne avec énergie.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les sorties en forêt ou au bord de l'eau procurent un ressourcement appréciable.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La régularité du sommeil reste la base de la vitalité, surtout à l'approche de l'hiver.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une hydratation suffisante soutient la concentration et le confort.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les pauses de midi, même courtes, aident à recharger l'énergie.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les tensions de la nuque se soulagent par des étirements doux et une respiration calme.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un moment de détente avant le coucher, sans écran, favorise l'endormissement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "L'humeur peut varier avec le changement de saison : des activités plaisantes aident à la stabiliser.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "changement"
+        ]
+      },
+      {
+        "texte": "Un bain tiède ou une douche chaude en fin de journée apaise les tensions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les repas partagés et les moments de convivialité nourrissent autant le moral que le corps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une attention portée aux signaux du corps permet d'ajuster son rythme à temps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage à entretenir des habitudes de bien-être simples et régulières.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La prévention reste la meilleure façon d'aborder l'hiver sereinement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois invite à trouver un équilibre entre effort, repos et plaisir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un temps de respiration profonde, avant de se coucher, apaise les pensées de fin de journée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une alimentation chaude, avec des soupes et des légumes, soutient la vitalité de l'automne.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une activité physique régulière, même modérée, aide à passer la saison avec énergie.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les bilans de prévention de l'automne se planifient avant les premiers froids.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une respiration profonde, à l'air frais, éclaircit l'esprit et apaise la nuque.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un repos suffisant, les week-ends notamment, protège la santé hivernale.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      }
+    ],
+    "amour_famille": [
+      {
+        "texte": "La pleine lune du 15 octobre, en Bélier, peut faire naître des envies d'initiatives affectives : les proposer avec douceur.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Mercure rétrograde du 8 au 29 octobre invite à relire les messages personnels avant de les envoyer.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Scorpion, à partir du 8 octobre, rend les échanges affectifs plus profonds et plus sincères.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mars en Sagittaire, à partir du 16 octobre, encourage les projets à deux et les sorties à la découverte.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "changement"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Scorpion, à partir du 24 octobre, invite à aborder les sujets de confiance et d'engagement.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 29 octobre, en Scorpion, peut mettre en lumière des attentes à clarifier dans le couple.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les moments partagés au coin du feu renforcent la complicité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un projet de vie commune se discute à deux, avec des étapes réalistes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les liens familiaux se resserrent lors des premières réunions d'automne.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une conversation sincère sur les envies de chacun ouvre des pistes communes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les anniversaires d'octobre méritent une attention sincère et simple.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un désaccord peut devenir l'occasion d'approfondir la compréhension mutuelle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "La tendresse s'exprime par la régularité des petites attentions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les décisions de vie commune se prennent au calme, à deux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un proche qui traverse une période de changement appréciera une écoute patiente.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "changement",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les jeunes de la famille apprécient les activités partagées de la saison.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une parole de reconnaissance, dite au bon moment, renforce le lien.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "La confiance se construit par la fidélité aux engagements pris.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Une soirée à deux, sans écran, ravive la proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les visites aux aînés font plaisir et rapprochent les générations.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "La jalousie peut être nommée calmement, sans accusation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les attentes gagnent à être exprimées avec des mots clairs et respectueux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "L'humour partagé allège les petites tensions de l'automne.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les choix importants se préparent avec patience et sincérité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Ce mois encourage à cultiver la chaleur des liens et la sincérité des échanges.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une attention au quotidien vaut souvent plus qu'un grand geste.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un moment de complicité au coin du feu rapproche naturellement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les projets de couple se discutent avec sincérité, en laissant chacun s'exprimer.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une attention envers un proche qui traverse une période difficile apporte du réconfort.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les rendez-vous familiaux d'automne gagnent à être fixés à l'avance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une soirée à deux, loin des obligations, nourrit la tendresse.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ],
+    "vie_sociale": [
+      {
+        "texte": "La pleine lune du 15 octobre, en Bélier, met en avant les initiatives collectives et les projets qui réunissent.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Mercure rétrograde du 8 au 29 octobre invite à relire les invitations et les messages de groupe.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Scorpion, à partir du 8 octobre, favorise les échanges profonds et les soutiens entre proches.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mars en Sagittaire, à partir du 16 octobre, encourage les projets associatifs ouverts sur l'extérieur.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le Soleil en Scorpion, à partir du 24 octobre, invite à s'engager dans des actions de solidarité.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La nouvelle lune du 29 octobre, en Scorpion, ouvre une période propice à la réorganisation des groupes.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les activités associatives se relancent avec de nouveaux volontaires.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Une réunion de quartier peut déboucher sur un projet utile pour tous.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les rencontres autour d'un repas renforcent les liens de voisinage.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les décisions collectives gagnent à être prises après avoir entendu chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un service rendu à un voisin renforce la confiance mutuelle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les échanges en ligne demandent de la vigilance, surtout en période de rétrogradation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Une sortie culturelle entre amis crée des souvenirs partagés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La famille élargie se retrouve volontiers pour un moment convivial.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Savoir se retirer d'un échange qui épuise préserve l'énergie des relations qui nourrissent.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets solidaires trouvent un écho favorable à l'automne.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un moment de partage autour d'un thé renforce la proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La générosité envers l'entourage porte ses fruits lorsqu'elle est équilibrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les réseaux de proximité se consolident par des gestes réguliers et sincères.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une rencontre de quartier peut donner naissance à un projet utile.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les invitations gagnent à être acceptées avec plaisir, en gardant du temps pour soi.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les liens se renforcent par la présence régulière plus que par les grandes occasions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les messages de groupe gagnent à rester brefs et clairs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un bénévolat régulier peut donner du sens à la vie sociale de l'automne.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage à entretenir des liens simples, chaleureux et ouverts.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets communs gagnent à être répartis avec clarté entre les personnes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois invite à créer des ponts entre les personnes, dans un climat de confiance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Une activité de groupe pendant les soirées d'automne crée du lien.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les réunions de quartier se tiennent utilement avant l'hiver, pour préparer les fêtes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un service rendu à un voisin âgé renforce la solidarité de proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets associatifs gagnent à être présentés par étapes, avec des jalons visibles.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une invitation à partager un repas simple réunit facilement un groupe.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Mercure rétrograde du 8 au 29 octobre invite à relire les documents importants et à vérifier les échéances.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 15 octobre, en Bélier, encourage les initiatives et les propositions audacieuses, à mesurer avant de lancer.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Vénus en Scorpion, à partir du 8 octobre, soutient les projets qui demandent de la profondeur et de la rigueur.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Mars en Sagittaire, à partir du 16 octobre, favorise les projets de formation, de déplacement et de collaboration.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Scorpion, à partir du 24 octobre, invite à travailler sur la confiance et la qualité des relations.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 29 octobre, en Scorpion, est un bon moment pour fixer les objectifs de l'année suivante.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Une réunion de bilan d'automne permet de faire le point avec clarté.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les dossiers en cours gagnent à être découpés en étapes avec des échéances précises.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une demande de moyens se prépare avec des données vérifiées et une échéance réaliste.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les projets en attente peuvent être relancés par une première action simple.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Les compétences se développent par la pratique et les retours de l'équipe.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un outil de suivi partagé améliore la coordination pendant les semaines chargées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les engagements pris devant un responsable gagnent à être confirmés par écrit.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une formation courte, choisie pour un besoin réel, peut être suivie avant la fin de l'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "introspection",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "La qualité de la communication écrite façonne l'image professionnelle : relire reste essentiel.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les conflits se résolvent mieux par un échange direct que par des messages répétés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une démarche de reconnaissance professionnelle se prépare avec patience et méthode.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les idées nouvelles méritent d'être testées sur un périmètre limité avant d'être généralisées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une rencontre avec une personne expérimentée peut éclairer une décision d'orientation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les réunions gagnent à se conclure par un compte rendu court, avec des responsables identifiés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un temps de travail concentré, sans sollicitations, améliore nettement la qualité des livrables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les partenariats se consolident par des points réguliers et des engagements tenus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Ce mois encourage une démarche méthodique, qui prépare solidement la fin de l'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les décisions importantes gagnent à être prises après le retour direct de Mercure, le 29 octobre.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un bilan d'équipe, honnête et bienveillant, donne des repères utiles pour la suite.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un point d'étape sur les projets de fin d'année permet de les réajuster à temps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les dossiers à clore avant les fêtes gagnent à être priorisés par échéance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une formation de fin d'année, choisie pour un besoin précis, peut être suivie sans bousculer le planning.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La qualité des documents remis en fin de trimestre se vérifie avant envoi.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un temps de réflexion sur les méthodes employées aide à progresser sans tout changer.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "introspection"
+        ]
+      }
+    ]
+  }
+}

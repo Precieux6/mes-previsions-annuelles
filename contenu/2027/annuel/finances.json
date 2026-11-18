@@ -1,0 +1,89 @@
+{
+  "theme": "finances",
+  "libelle": "Finances & argent",
+  "lot": 1,
+  "statut": "redige_par_delegation",
+  "regle": "mode 'nom' = numérologie seule, utilisable avec ou sans date ; mode 'date' = suppose les positions tropicales, réservé au parcours avec date de naissance",
+  "phrases": [
+    {
+      "ordre": 1,
+      "mode": "nom",
+      "texte": "L'année 2027 invite à regarder vos finances avec méthode : les décisions prises après un bilan simple auront plus de solidité que les élans du moment."
+    },
+    {
+      "ordre": 2,
+      "mode": "nom",
+      "texte": "Le cycle universel de 2027, réduit à 2, favorise les partenariats financiers : un accord clair, écrit et équitable protège autant la relation que le portefeuille."
+    },
+    {
+      "ordre": 3,
+      "mode": "nom",
+      "texte": "Les dépenses qui reviennent chaque mois méritent un examen attentif dès le début de l'année ; réduire une seule charge inutile peut libérer une marge durable."
+    },
+    {
+      "ordre": 4,
+      "mode": "nom",
+      "texte": "Les revenus de 2027 se construisent par la régularité plus que par les coups de chance : une activité entretenue avec constance porte ses fruits progressivement."
+    },
+    {
+      "ordre": 5,
+      "mode": "nom",
+      "texte": "Une épargne mise de côté chaque mois, même modeste, prend de la valeur avec le temps et installe une sécurité qui apaise les décisions."
+    },
+    {
+      "ordre": 6,
+      "mode": "nom",
+      "texte": "Le début de l'année se prête à la comparaison des offres avant tout engagement financier durable ; prendre le temps de lire les conditions évite bien des regrets."
+    },
+    {
+      "ordre": 7,
+      "mode": "nom",
+      "texte": "Les projets d'investissement gagnent à être étudiés par étapes, avec un budget défini et une marge pour les imprévus."
+    },
+    {
+      "ordre": 8,
+      "mode": "nom",
+      "texte": "La prudence reste une alliée : un prêt ou une dette doit être évalué au regard de sa durée réelle et de son coût total."
+    },
+    {
+      "ordre": 9,
+      "mode": "nom",
+      "texte": "Vers le milieu de l'année, un point d'étape sur les objectifs financiers permet d'ajuster sans renoncer ; un bilan écrit rend les progrès visibles."
+    },
+    {
+      "ordre": 10,
+      "mode": "nom",
+      "texte": "En fin d'année, la gestion d'un patrimoine familial ou partagé demande des règles claires, pour que chacun sache ce qui revient à qui."
+    },
+    {
+      "ordre": 11,
+      "mode": "date",
+      "texte": "Jupiter, en Lion jusqu'au 26 juillet 2027, soutient l'élan de vos projets de revenus au premier semestre ; ce n'est pas une promesse de gain, mais une période favorable pour tester une idée."
+    },
+    {
+      "ordre": 12,
+      "mode": "date",
+      "texte": "Après le 26 juillet, Jupiter en Vierge invite à passer des intentions aux chiffres : organisez vos comptes, vos prix et vos échéances."
+    },
+    {
+      "ordre": 13,
+      "mode": "date",
+      "texte": "Saturne, en Bélier jusqu'en 2028, demande de la patience dans la constitution de vos réserves : les résultats viennent par paliers."
+    },
+    {
+      "ordre": 14,
+      "mode": "date",
+      "texte": "Les rétrogradations de Mercure (du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre) sont des moments pour relire les contrats et vérifier les montants avant de signer."
+    },
+    {
+      "ordre": 15,
+      "mode": "date",
+      "texte": "Vénus en Scorpion puis en Sagittaire à l'automne peut inviter à revoir la part des dépenses liées au plaisir et à l'image."
+    }
+  ],
+  "repartition": {
+    "nom": 10,
+    "date": 5,
+    "part_nom": 0.67
+  }
+}

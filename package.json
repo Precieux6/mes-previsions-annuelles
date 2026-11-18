@@ -1,0 +1,38 @@
+{
+  "name": "mes-previsions-annuelles",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "worker": "tsx worker/index.ts",
+    "rapport:test": "echo '{\"nom\":\"Précieux Trésor Tossou\",\"date_naissance\":null,\"signe\":null}' | python3 scripts/rapport_2027.py > /dev/null && echo 'rapport OK'",
+    "banks:check": "python3 scripts/valider_banques_2027.py"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/s3-request-presigner": "^3.600.0",
+    "@vercel/node": "^3.2.0",
+    "astronomy-engine": "^2.1.19",
+    "axios": "^1.7.0",
+    "pdf-lib": "^1.17.1",
+    "pg": "^8.11.3",
+    "puppeteer-core": "^22.0.0",
+    "qrcode": "^1.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}

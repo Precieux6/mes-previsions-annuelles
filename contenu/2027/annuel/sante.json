@@ -1,0 +1,89 @@
+{
+  "theme": "sante",
+  "libelle": "Santé & vitalité",
+  "lot": "sante",
+  "statut": "redige_par_delegation",
+  "regle": "mode 'nom' = numérologie seule, utilisable avec ou sans date ; mode 'date' = suppose les positions tropicales, réservé au parcours avec date de naissance",
+  "repartition": {
+    "nom": 10,
+    "date": 5,
+    "part_nom": 0.67
+  },
+  "phrases": [
+    {
+      "ordre": 1,
+      "mode": "nom",
+      "texte": "Le cycle universel 2027 invite à écouter les signaux du corps plutôt qu'à les ignorer ; un bilan régulier reste le meilleur allié de la vitalité."
+    },
+    {
+      "ordre": 2,
+      "mode": "nom",
+      "texte": "La régularité des horaires de repas et de sommeil soutient l'énergie tout au long de l'année, davantage que les efforts ponctuels."
+    },
+    {
+      "ordre": 3,
+      "mode": "nom",
+      "texte": "Une activité physique choisie pour le plaisir tient mieux dans la durée qu'une discipline imposée ; elle s'accorde avec les saisons."
+    },
+    {
+      "ordre": 4,
+      "mode": "nom",
+      "texte": "Les tensions accumulées par le rythme de travail se logent souvent dans le dos et la nuque : des pauses régulières les allègent."
+    },
+    {
+      "ordre": 5,
+      "mode": "nom",
+      "texte": "Une alimentation simple, variée et prise dans le calme accompagne un équilibre durable ; les excès comme les privations pèsent sur l'organisme."
+    },
+    {
+      "ordre": 6,
+      "mode": "nom",
+      "texte": "Le sommeil est le socle de la récupération : protéger ses heures de coucher est l'un des gestes les plus efficaces de l'année."
+    },
+    {
+      "ordre": 7,
+      "mode": "nom",
+      "texte": "Les émotions prolongées pèsent sur l'organisme ; parler, écrire ou marcher aide à les relâcher avant qu'elles ne s'installent."
+    },
+    {
+      "ordre": 8,
+      "mode": "nom",
+      "texte": "Vers le milieu de l'année, un point d'étape sur ses habitudes de santé permet d'ajuster sans renoncer à ce qui fonctionne."
+    },
+    {
+      "ordre": 9,
+      "mode": "nom",
+      "texte": "En fin d'année, la fatigue cumulée demande une attention particulière : accorder un repos véritable est une forme de prévention."
+    },
+    {
+      "ordre": 10,
+      "mode": "nom",
+      "texte": "Un suivi préventif, même sans symptôme, rassure et permet d'agir tôt ; toute douleur persistante mérite l'avis d'un professionnel de santé."
+    },
+    {
+      "ordre": 11,
+      "mode": "date",
+      "texte": "Saturne, en Bélier jusqu'en avril 2028, invite à une hygiène de vie structurée : les progrès de santé se construisent par étapes régulières."
+    },
+    {
+      "ordre": 12,
+      "mode": "date",
+      "texte": "Mars rétrograde du 12 janvier au 3 avril 2027 : c'est une période pour ralentir l'élan physique et éviter les efforts brusques."
+    },
+    {
+      "ordre": 13,
+      "mode": "date",
+      "texte": "Mars en Vierge puis en Balance (à partir du 15 mai puis du 15 juillet) peut favoriser une attention plus fine à l'alimentation et au mouvement doux."
+    },
+    {
+      "ordre": 14,
+      "mode": "date",
+      "texte": "Les éclipses du 20 février (Vierge) et du 2 août (Lion) sont des moments de bascule : elles encouragent des changements d'habitudes progressifs plutôt que brutaux."
+    },
+    {
+      "ordre": 15,
+      "mode": "date",
+      "texte": "Jupiter, en Lion puis en Vierge après le 26 juillet, invite à soigner le bien-être par des routines simples plutôt que par des excès."
+    }
+  ]
+}

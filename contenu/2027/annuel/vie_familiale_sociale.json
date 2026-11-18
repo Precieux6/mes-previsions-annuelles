@@ -1,0 +1,89 @@
+{
+  "theme": "vie_familiale_sociale",
+  "libelle": "Vie familiale & sociale",
+  "lot": "vie_familiale_sociale",
+  "statut": "redige_par_delegation",
+  "regle": "mode 'nom' = numérologie seule, utilisable avec ou sans date ; mode 'date' = suppose les positions tropicales, réservé au parcours avec date de naissance",
+  "repartition": {
+    "nom": 10,
+    "date": 5,
+    "part_nom": 0.67
+  },
+  "phrases": [
+    {
+      "ordre": 1,
+      "mode": "nom",
+      "texte": "L'année 2027 favorise les liens de proximité : voisins, amis et réseaux d'entraide deviennent des appuis précieux."
+    },
+    {
+      "ordre": 2,
+      "mode": "nom",
+      "texte": "Le cycle universel 2 invite à la coopération collective : un projet partagé gagne à être réparti clairement entre ses membres."
+    },
+    {
+      "ordre": 3,
+      "mode": "nom",
+      "texte": "Les réseaux sociaux et les échanges en groupe demandent de la mesure : une parole brève et vérifiée vaut mieux qu'une réaction rapide."
+    },
+    {
+      "ordre": 4,
+      "mode": "nom",
+      "texte": "Les engagements associatifs et communautaires s'inscrivent dans la durée ; un calendrier simple permet de tenir la régularité."
+    },
+    {
+      "ordre": 5,
+      "mode": "nom",
+      "texte": "Les rencontres nouvelles naissent souvent d'activités partagées : une invitation sincère ouvre fréquemment des relations durables."
+    },
+    {
+      "ordre": 6,
+      "mode": "nom",
+      "texte": "Les obligations familiales et sociales demandent de l'équilibre ; savoir dire non avec tact protège la disponibilité réelle."
+    },
+    {
+      "ordre": 7,
+      "mode": "nom",
+      "texte": "Un groupe qui communique clairement avance mieux : des règles connues de tous évitent bien des malentendus."
+    },
+    {
+      "ordre": 8,
+      "mode": "nom",
+      "texte": "Vers le milieu de l'année, les projets collectifs gagnent à être relus ensemble pour rester fidèles à leur sens initial."
+    },
+    {
+      "ordre": 9,
+      "mode": "nom",
+      "texte": "Les solidarités de quartier se renforcent par de petits gestes réguliers, plus durables que les actions ponctuelles."
+    },
+    {
+      "ordre": 10,
+      "mode": "nom",
+      "texte": "En fin d'année, un bilan partagé avec ses proches ou son groupe permet de reconnaître les efforts de chacun et de préparer la suite."
+    },
+    {
+      "ordre": 11,
+      "mode": "date",
+      "texte": "Mercure rétrograde du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre : des périodes pour relire les messages et confirmer les rendez-vous."
+    },
+    {
+      "ordre": 12,
+      "mode": "date",
+      "texte": "Jupiter, en Lion jusqu'au 26 juillet puis en Vierge, favorise les rencontres et l'ouverture vers les autres, avec une tournure plus organisée à partir de l'été."
+    },
+    {
+      "ordre": 13,
+      "mode": "date",
+      "texte": "Mercure en Lion (du 2 au 17 août) puis en Vierge (jusqu'au 3 septembre) peut activer les échanges et les déplacements courts entre proches."
+    },
+    {
+      "ordre": 14,
+      "mode": "date",
+      "texte": "Pluton, en Verseau pendant toute l'année, touche aux réseaux et aux causes collectives : les engagements de fond gagnent à être réfléchis avant d'être lancés."
+    },
+    {
+      "ordre": 15,
+      "mode": "date",
+      "texte": "Uranus, en Gémeaux, et sa rétrogradation à partir du 16 septembre invitent à renouveler les façons de se réunir et de s'organiser."
+    }
+  ]
+}

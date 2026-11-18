@@ -1,0 +1,442 @@
+{
+  "annee": 2027,
+  "source": "Liste des anges retenue (photos transmises par M. Tossou)",
+  "points_a_confirmer": [
+    "LEUVIAH conservé deux fois (ordre 33 et 35), confirmé par M. Tossou",
+    "Noms à traits d'union conservés (Iha-Hel, Nith-Haiah), confirmé par M. Tossou"
+  ],
+  "anges": [
+    {
+      "ordre": 1,
+      "nom": "Nemamiah",
+      "debut": "2027-01-01",
+      "fin": "2027-01-05"
+    },
+    {
+      "ordre": 2,
+      "nom": "Yeyalel",
+      "debut": "2027-01-06",
+      "fin": "2027-01-10"
+    },
+    {
+      "ordre": 3,
+      "nom": "Harahel",
+      "debut": "2027-01-11",
+      "fin": "2027-01-15"
+    },
+    {
+      "ordre": 4,
+      "nom": "Mitzlael",
+      "debut": "2027-01-16",
+      "fin": "2027-01-20"
+    },
+    {
+      "ordre": 5,
+      "nom": "Umabel",
+      "debut": "2027-01-21",
+      "fin": "2027-01-25"
+    },
+    {
+      "ordre": 6,
+      "nom": "Iha-Hel",
+      "debut": "2027-01-26",
+      "fin": "2027-01-30"
+    },
+    {
+      "ordre": 7,
+      "nom": "Anauel",
+      "debut": "2027-01-31",
+      "fin": "2027-02-04"
+    },
+    {
+      "ordre": 8,
+      "nom": "Mehiel",
+      "debut": "2027-02-05",
+      "fin": "2027-02-09"
+    },
+    {
+      "ordre": 9,
+      "nom": "Damabiah",
+      "debut": "2027-02-10",
+      "fin": "2027-02-14"
+    },
+    {
+      "ordre": 10,
+      "nom": "Manakel",
+      "debut": "2027-02-15",
+      "fin": "2027-02-19"
+    },
+    {
+      "ordre": 11,
+      "nom": "Eyael",
+      "debut": "2027-02-20",
+      "fin": "2027-02-24"
+    },
+    {
+      "ordre": 12,
+      "nom": "Abuhiah",
+      "debut": "2027-02-25",
+      "fin": "2027-02-29"
+    },
+    {
+      "ordre": 13,
+      "nom": "Rahael",
+      "debut": "2027-03-01",
+      "fin": "2027-03-05"
+    },
+    {
+      "ordre": 14,
+      "nom": "Jabamiah",
+      "debut": "2027-03-06",
+      "fin": "2027-03-10"
+    },
+    {
+      "ordre": 15,
+      "nom": "Haihaiel",
+      "debut": "2027-03-11",
+      "fin": "2027-03-15"
+    },
+    {
+      "ordre": 16,
+      "nom": "Mumiah",
+      "debut": "2027-03-16",
+      "fin": "2027-03-20"
+    },
+    {
+      "ordre": 17,
+      "nom": "Vehuiah",
+      "debut": "2027-03-21",
+      "fin": "2027-03-25"
+    },
+    {
+      "ordre": 18,
+      "nom": "Yeliel",
+      "debut": "2027-03-26",
+      "fin": "2027-03-30"
+    },
+    {
+      "ordre": 19,
+      "nom": "Sitael",
+      "debut": "2027-03-31",
+      "fin": "2027-04-04"
+    },
+    {
+      "ordre": 20,
+      "nom": "Elemiah",
+      "debut": "2027-04-05",
+      "fin": "2027-04-09"
+    },
+    {
+      "ordre": 21,
+      "nom": "Mahasiah",
+      "debut": "2027-04-10",
+      "fin": "2027-04-14"
+    },
+    {
+      "ordre": 22,
+      "nom": "Lelahel",
+      "debut": "2027-04-15",
+      "fin": "2027-04-20"
+    },
+    {
+      "ordre": 23,
+      "nom": "Achaiah",
+      "debut": "2027-04-21",
+      "fin": "2027-04-25"
+    },
+    {
+      "ordre": 24,
+      "nom": "Cahetel",
+      "debut": "2027-04-26",
+      "fin": "2027-04-30"
+    },
+    {
+      "ordre": 25,
+      "nom": "Aziel",
+      "debut": "2027-05-01",
+      "fin": "2027-05-05"
+    },
+    {
+      "ordre": 26,
+      "nom": "Aladiah",
+      "debut": "2027-05-06",
+      "fin": "2027-05-10"
+    },
+    {
+      "ordre": 27,
+      "nom": "Lauviah",
+      "debut": "2027-05-11",
+      "fin": "2027-05-15"
+    },
+    {
+      "ordre": 28,
+      "nom": "Hahaiah",
+      "debut": "2027-05-16",
+      "fin": "2027-05-20"
+    },
+    {
+      "ordre": 29,
+      "nom": "Yezalel",
+      "debut": "2027-05-21",
+      "fin": "2027-05-25"
+    },
+    {
+      "ordre": 30,
+      "nom": "Mebahel",
+      "debut": "2027-05-26",
+      "fin": "2027-05-31"
+    },
+    {
+      "ordre": 31,
+      "nom": "Hariel",
+      "debut": "2027-06-01",
+      "fin": "2027-06-05"
+    },
+    {
+      "ordre": 32,
+      "nom": "Hekamiah",
+      "debut": "2027-06-06",
+      "fin": "2027-06-10"
+    },
+    {
+      "ordre": 33,
+      "nom": "Leuviah",
+      "debut": "2027-06-11",
+      "fin": "2027-06-15"
+    },
+    {
+      "ordre": 34,
+      "nom": "Calier",
+      "debut": "2027-06-16",
+      "fin": "2027-06-21"
+    },
+    {
+      "ordre": 35,
+      "nom": "Leuviah",
+      "debut": "2027-06-22",
+      "fin": "2027-06-26"
+    },
+    {
+      "ordre": 36,
+      "nom": "Pahaliah",
+      "debut": "2027-06-27",
+      "fin": "2027-07-01"
+    },
+    {
+      "ordre": 37,
+      "nom": "Nelchael",
+      "debut": "2027-07-02",
+      "fin": "2027-07-06"
+    },
+    {
+      "ordre": 38,
+      "nom": "Yeiayel",
+      "debut": "2027-07-07",
+      "fin": "2027-07-11"
+    },
+    {
+      "ordre": 39,
+      "nom": "Melahel",
+      "debut": "2027-07-12",
+      "fin": "2027-07-16"
+    },
+    {
+      "ordre": 40,
+      "nom": "Haheuiah",
+      "debut": "2027-07-17",
+      "fin": "2027-07-22"
+    },
+    {
+      "ordre": 41,
+      "nom": "Nith-Haiah",
+      "debut": "2027-07-23",
+      "fin": "2027-07-27"
+    },
+    {
+      "ordre": 42,
+      "nom": "Haaiah",
+      "debut": "2027-07-28",
+      "fin": "2027-08-01"
+    },
+    {
+      "ordre": 43,
+      "nom": "Yeratel",
+      "debut": "2027-08-02",
+      "fin": "2027-08-06"
+    },
+    {
+      "ordre": 44,
+      "nom": "Seheiah",
+      "debut": "2027-08-07",
+      "fin": "2027-08-12"
+    },
+    {
+      "ordre": 45,
+      "nom": "Reitiel",
+      "debut": "2027-08-13",
+      "fin": "2027-08-17"
+    },
+    {
+      "ordre": 46,
+      "nom": "Omael",
+      "debut": "2027-08-18",
+      "fin": "2027-08-22"
+    },
+    {
+      "ordre": 47,
+      "nom": "Lecabel",
+      "debut": "2027-08-23",
+      "fin": "2027-08-28"
+    },
+    {
+      "ordre": 48,
+      "nom": "Vasariah",
+      "debut": "2027-08-29",
+      "fin": "2027-09-02"
+    },
+    {
+      "ordre": 49,
+      "nom": "Yehuiah",
+      "debut": "2027-09-03",
+      "fin": "2027-09-07"
+    },
+    {
+      "ordre": 50,
+      "nom": "Lehahiah",
+      "debut": "2027-09-08",
+      "fin": "2027-09-12"
+    },
+    {
+      "ordre": 51,
+      "nom": "Chavakhiah",
+      "debut": "2027-09-13",
+      "fin": "2027-09-17"
+    },
+    {
+      "ordre": 52,
+      "nom": "Menadel",
+      "debut": "2027-09-18",
+      "fin": "2027-09-23"
+    },
+    {
+      "ordre": 53,
+      "nom": "Aniel",
+      "debut": "2027-09-24",
+      "fin": "2027-09-28"
+    },
+    {
+      "ordre": 54,
+      "nom": "Haamiah",
+      "debut": "2027-09-29",
+      "fin": "2027-10-03"
+    },
+    {
+      "ordre": 55,
+      "nom": "Rehael",
+      "debut": "2027-10-04",
+      "fin": "2027-10-08"
+    },
+    {
+      "ordre": 56,
+      "nom": "Yeiazel",
+      "debut": "2027-10-09",
+      "fin": "2027-10-13"
+    },
+    {
+      "ordre": 57,
+      "nom": "Hahahel",
+      "debut": "2027-10-14",
+      "fin": "2027-10-18"
+    },
+    {
+      "ordre": 58,
+      "nom": "Mikhael",
+      "debut": "2027-10-19",
+      "fin": "2027-10-23"
+    },
+    {
+      "ordre": 59,
+      "nom": "Veuliah",
+      "debut": "2027-10-24",
+      "fin": "2027-10-28"
+    },
+    {
+      "ordre": 60,
+      "nom": "Yelahiah",
+      "debut": "2027-10-29",
+      "fin": "2027-11-02"
+    },
+    {
+      "ordre": 61,
+      "nom": "Sealiah",
+      "debut": "2027-11-03",
+      "fin": "2027-11-07"
+    },
+    {
+      "ordre": 62,
+      "nom": "Ariel",
+      "debut": "2027-11-08",
+      "fin": "2027-11-12"
+    },
+    {
+      "ordre": 63,
+      "nom": "Asaliah",
+      "debut": "2027-11-13",
+      "fin": "2027-11-17"
+    },
+    {
+      "ordre": 64,
+      "nom": "Miael",
+      "debut": "2027-11-18",
+      "fin": "2027-11-22"
+    },
+    {
+      "ordre": 65,
+      "nom": "Vehuel",
+      "debut": "2027-11-23",
+      "fin": "2027-11-27"
+    },
+    {
+      "ordre": 66,
+      "nom": "Daniel",
+      "debut": "2027-11-28",
+      "fin": "2027-12-02"
+    },
+    {
+      "ordre": 67,
+      "nom": "Hahasiah",
+      "debut": "2027-12-03",
+      "fin": "2027-12-07"
+    },
+    {
+      "ordre": 68,
+      "nom": "Imamiah",
+      "debut": "2027-12-08",
+      "fin": "2027-12-12"
+    },
+    {
+      "ordre": 69,
+      "nom": "Nanael",
+      "debut": "2027-12-13",
+      "fin": "2027-12-16"
+    },
+    {
+      "ordre": 70,
+      "nom": "Nithael",
+      "debut": "2027-12-17",
+      "fin": "2027-12-21"
+    },
+    {
+      "ordre": 71,
+      "nom": "Mebahiah",
+      "debut": "2027-12-22",
+      "fin": "2027-12-26"
+    },
+    {
+      "ordre": 72,
+      "nom": "Poyel",
+      "debut": "2027-12-27",
+      "fin": "2027-12-31"
+    }
+  ]
+}

@@ -1,0 +1,1380 @@
+{
+  "mois": "2027-05",
+  "statut": "étiqueté ; en attente de relecture éditoriale finale",
+  "ciel": "La nouvelle lune du 6 mai, en Taureau, ouvre le mois. Mars entre en Vierge le 15 mai. Mercure entre en Gémeaux le 9 mai, puis en Cancer le 29. Vénus entre en Taureau le 15 mai. Le Soleil passe en Gémeaux le 21 mai. La pleine lune du 20 mai, en Scorpion, clôt la période.",
+  "tonalite": "Mois de construction : les projets gagnent en ordre et en précision, et les relations s'équilibrent.",
+  "maisons_par_signe": {
+    "belier": {
+      "mars": 6,
+      "mercure": 3,
+      "venus": 2,
+      "soleil": 2,
+      "jupiter": 5,
+      "saturne": 1
+    },
+    "taureau": {
+      "mars": 5,
+      "mercure": 2,
+      "venus": 1,
+      "soleil": 1,
+      "jupiter": 4,
+      "saturne": 12
+    },
+    "gemeaux": {
+      "mars": 4,
+      "mercure": 1,
+      "venus": 12,
+      "soleil": 12,
+      "jupiter": 3,
+      "saturne": 11
+    },
+    "cancer": {
+      "mars": 3,
+      "mercure": 12,
+      "venus": 11,
+      "soleil": 11,
+      "jupiter": 2,
+      "saturne": 10
+    },
+    "lion": {
+      "mars": 2,
+      "mercure": 11,
+      "venus": 10,
+      "soleil": 10,
+      "jupiter": 1,
+      "saturne": 9
+    },
+    "vierge": {
+      "mars": 1,
+      "mercure": 10,
+      "venus": 9,
+      "soleil": 9,
+      "jupiter": 12,
+      "saturne": 8
+    },
+    "balance": {
+      "mars": 12,
+      "mercure": 9,
+      "venus": 8,
+      "soleil": 8,
+      "jupiter": 11,
+      "saturne": 7
+    },
+    "scorpion": {
+      "mars": 11,
+      "mercure": 8,
+      "venus": 7,
+      "soleil": 7,
+      "jupiter": 10,
+      "saturne": 6
+    },
+    "sagittaire": {
+      "mars": 10,
+      "mercure": 7,
+      "venus": 6,
+      "soleil": 6,
+      "jupiter": 9,
+      "saturne": 5
+    },
+    "capricorne": {
+      "mars": 9,
+      "mercure": 6,
+      "venus": 5,
+      "soleil": 5,
+      "jupiter": 8,
+      "saturne": 4
+    },
+    "verseau": {
+      "mars": 8,
+      "mercure": 5,
+      "venus": 4,
+      "soleil": 4,
+      "jupiter": 7,
+      "saturne": 3
+    },
+    "poissons": {
+      "mars": 7,
+      "mercure": 4,
+      "venus": 3,
+      "soleil": 3,
+      "jupiter": 6,
+      "saturne": 2
+    }
+  },
+  "conventions": "maison = ((signe_planete - signe_lecteur) mod 12) + 1 ; positions tropicales, mi-mai",
+  "domaines": {
+    "finances": [
+      {
+        "texte": "Le mois s'ouvre sous une nouvelle lune en Taureau : c'est un moment favorable pour fixer un objectif de revenus ou d'épargne réaliste.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les ressources se gèrent mieux lorsqu'elles sont réparties entre dépenses fixes, épargne et projets.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Taureau, à partir du 15 mai, soutient les décisions patientes et les placements durables.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Mercure en Gémeaux, à partir du 9 mai, favorise la comparaison d'offres, l'étude de devis et les échanges sur les prix.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un investissement modeste, réparti dans le temps, se révèle souvent plus sûr qu'un geste ponctuel important.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les dépenses de saison, vêtements, équipements, loisirs, se préparent avec une enveloppe fixée à l'avance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le Soleil en Taureau jusqu'au 21 mai encourage la sécurité matérielle et la constance dans la gestion.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 20 mai, en Scorpion, invite à revoir les engagements financiers contractés sous pression.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un contrat ou une assurance gagne à être relu avant son renouvellement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les revenus complémentaires se développent mieux lorsqu'ils s'appuient sur une compétence déjà maîtrisée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une négociation de tarif se prépare avec des chiffres vérifiés et une proposition écrite.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les dépenses partagées avec la famille gagnent à être réparties selon les moyens de chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un suivi hebdomadaire des dépenses permet de repérer tôt les écarts.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les abonnements saisonniers, sport ou loisirs, méritent d'être comparés avant la reconduction.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mars, entré en Vierge le 15 mai, invite à rendre les dépenses professionnelles plus méthodiques.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une vigilance accrue est utile face aux offres d'investissement présentées comme exceptionnelles.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les dettes à faible taux peuvent attendre ; les dettes coûteuses méritent un plan prioritaire.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Un temps de réflexion avant chaque achat important évite les regrets.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La constitution d'une réserve de précaution reste le socle de toute stabilité financière.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un bilan de la première moitié de l'année permet d'ajuster sans brusquer.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les frais bancaires et les commissions peuvent être réduits par une simple comparaison.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La recherche de solutions d'économie gagne à rester concrète et réaliste.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Une décision financière prise à deux se formalise par écrit, avec une date de révision.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage une gestion posée, sobre et lisible, au service de projets précis.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les petites économies régulières produisent, au fil des mois, un effet bien plus large que prévu.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un suivi mensuel de l'épargne, même modeste, rend les progrès visibles et motivants.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les dépenses liées au logement se revoient au printemps, avec les factures de l'hiver.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un investissement se décide après avoir comparé au moins trois options sérieuses.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les petits achats de confort se répartissent sur le mois pour rester maîtrisés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une décision de dépense importante gagne à être partagée avec la personne concernée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      }
+    ],
+    "sante": [
+      {
+        "texte": "La nouvelle lune du 6 mai, en Taureau, favorise les rythmes simples et les routines physiques régulières.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Vénus en Taureau, à partir du 15 mai, invite à savourer les plaisirs sains : repas partagé, promenade, détente.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mars entre en Vierge le 15 mai : les activités de soin et d'organisation du quotidien prennent une place utile.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Taureau puis en Gémeaux, à partir du 21 mai, appelle à varier ses activités pour garder l'énergie.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une alimentation fraîche, riche en légumes de saison, soutient la vitalité du printemps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les longues journées invitent à s'octroyer une pause de détente chaque après-midi.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 20 mai, en Scorpion, peut accentuer la fatigue émotionnelle : un temps de calme est bienvenu.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Une activité physique modérée, marche, vélo, natation, entretient l'endurance sans épuiser.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les tensions du dos se soulagent par des étirements réguliers et une bonne posture.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un bilan de prévention, visuel ou dentaire, peut être planifié avant l'été.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Le sommeil gagne à être protégé lorsque les soirées s'allongent.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure en Gémeaux favorise la gestion des rythmes de travail : mieux vaut des pauses courtes et fréquentes.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les excès de sucre et de café peuvent alourdir l'humeur ; les remplacer par de l'eau aide.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une respiration lente, au réveil, donne une clarté d'esprit appréciable.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les allergies de saison demandent une attention particulière ; en cas de gêne persistante, l'avis d'un médecin reste la bonne démarche.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un moment de jardinage ou de contact avec la terre apaise le mental.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La marche en plein air, sans téléphone, reste l'un des soutiens les plus simples de l'équilibre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Des horaires de repas réguliers stabilisent l'énergie tout au long de la journée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les efforts d'endurance se programment progressivement, en écoutant les signaux du corps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un soin attentif du visage et des mains procure un bien-être simple et régulier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Il est utile de noter ce qui apporte de la vitalité, pour ajuster ses journées au fil du mois.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une douche tiède le soir favorise la détente et un sommeil plus profond.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La vie au grand air, même dans un jardin ou un parc, renforce le moral.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois invite à entretenir ses habitudes de santé avec régularité, plutôt qu'à les bouleverser.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une pause au calme, loin des sollicitations, aide à retrouver l'équilibre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Une pause déjeuner en plein air, même brève, recharge l'énergie de l'après-midi.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une alimentation colorée, avec des légumes de saison, soutient la vitalité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les étirements de fin de journée soulagent les tensions de la station debout.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un moment de détente sans écran, avant le coucher, favorise un sommeil plus profond.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les activités douces, marche, yoga ou natation, conviennent bien à ce mois.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ],
+    "amour_famille": [
+      {
+        "texte": "La nouvelle lune du 6 mai, en Taureau, ouvre une période propice aux engagements sincères et aux projets de couple.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Taureau, à partir du 15 mai, rend la tendresse plus sensible et plus stable.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mars en Vierge invite à partager les tâches du foyer avec équité et à reconnaître le travail de chacun.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Gémeaux, à partir du 21 mai, favorise les conversations animées et les échanges légers en famille.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 20 mai, en Scorpion, peut faire remonter des attentes non exprimées : les dire calmement libère.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Un repas partagé en famille, sans écran, renforce les liens et apaise les tensions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les décisions concernant le logement ou la vie commune se préparent à deux, avec calme.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Une attention sincère, un petit mot ou une tâche allégée, touche plus qu'un long discours.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les liens avec les parents ou les aînés gagnent à être entretenus par des visites régulières.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un désaccord peut devenir l'occasion d'approfondir la compréhension mutuelle, à condition d'écouter sans interrompre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "La patience reste une forme de tendresse, en particulier avec les enfants ou les jeunes proches.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un projet de sortie à deux, simple et prévu à l'avance, rapproche naturellement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les anniversaires et fêtes des proches méritent une attention sincère, sans excès de moyens.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "La confiance se construit par la régularité des gestes et la fidélité aux engagements.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Une parole de reconnaissance, dite spontanément, renforce le sentiment d'être soutenu.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les conversations sur l'avenir gagnent à rester concrètes : projets, moyens, calendrier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Un moment de complicité autour d'une activité manuelle ou culinaire crée de beaux souvenirs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "La jalousie ou l'inquiétude peuvent être exprimées avec des mots simples, sans accusation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Mars en Vierge rappelle que l'organisation du foyer est une manière concrète d'aimer.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les relations familiales demandent parfois de la disponibilité : planifier un moment commun évite les regrets.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une décision à deux, prise après écoute, renforce la solidité du lien.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les liens affectifs gagnent à être nourris de petites attentions répétées plutôt que de grands gestes rares.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage à cultiver la douceur, la considération et la présence.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le couple gagne à se retrouver régulièrement, même pour un court moment sans obligation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un geste de considération inattendu rappelle à l'autre qu'il compte.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une soirée de cuisine partagée crée une complicité naturelle et agréable.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les projets de vacances se préparent à deux, en gardant des marges de liberté.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une attention envers les proches éloignés, un appel ou une lettre, touche beaucoup.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les désaccords gagnent à être exprimés en parlant de soi plutôt que de l'autre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      },
+      {
+        "texte": "La tendresse s'exprime aussi par la disponibilité et l'écoute attentive.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      }
+    ],
+    "vie_sociale": [
+      {
+        "texte": "Mercure en Gémeaux, à partir du 9 mai, multiplie les échanges, les rencontres et les messages.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La nouvelle lune du 6 mai invite à rejoindre un groupe ou une activité qui fait écho à ses centres d'intérêt.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Vénus en Taureau favorise les rencontres autour d'un repas, d'un café ou d'une promenade.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mars en Vierge, à partir du 15 mai, encourage les projets collectifs organisés et utiles.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Gémeaux, à partir du 21 mai, invite à la curiosité et à l'ouverture aux autres.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "changement"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 20 mai, en Scorpion, peut mettre en lumière des tensions de groupe : mieux vaut les traiter par le dialogue.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une activité associative peut donner du sens à la vie sociale au printemps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les rencontres de quartier et les marchés locaux sont des occasions d'échanges naturels.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un projet commun gagne à être réparti avec des rôles clairs et un calendrier partagé.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les invitations gagnent à être acceptées avec plaisir, tout en gardant un temps personnel.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les anciennes connaissances peuvent être recontactées par un message simple et chaleureux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une participation à un événement culturel ou sportif local crée des liens inattendus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les décisions du groupe gagnent à être prises après avoir entendu chaque voix.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un service rendu à un voisin ou à un ami renforce la confiance mutuelle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les échanges en ligne demandent de la prudence : vérifier une information avant de la relayer évite bien des malentendus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Une rencontre professionnelle informelle peut ouvrir une perspective utile.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les liens de la famille élargie se renouent facilement lors d'une réunion conviviale.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Savoir se retirer d'un échange qui épuise préserve l'énergie pour les relations qui nourrissent.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets solidaires trouvent un écho favorable au cours de ce mois.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un moment de partage autour d'un thé ou d'un café renforce la proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La générosité envers l'entourage porte ses fruits lorsqu'elle est équilibrée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les réseaux de proximité se consolident par des gestes réguliers et sincères.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage à entretenir des liens simples, chaleureux et ouverts.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les rendez-vous réguliers entre amis entretiennent des liens solides dans la durée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une sortie à plusieurs, simple et joyeuse, renforce le sentiment d'appartenance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un moment de convivialité autour d'un barbecue ou d'un pique-nique renforce les liens.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les activités sportives collectives, en plein air, favorisent les rencontres.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une participation à un projet de quartier donne du sens aux relations de proximité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les amis se retrouvent volontiers lors des beaux jours : une invitation simple suffit.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une règle claire de fonctionnement dans un groupe évite de nombreux malentendus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Mars entre en Vierge le 15 mai : c'est un bon moment pour revoir les méthodes et les outils de travail.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Mercure en Gémeaux, à partir du 9 mai, favorise les échanges, les propositions et la rédaction de documents.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 6 mai invite à poser un objectif professionnel réaliste pour la seconde moitié de l'année.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Vénus en Taureau, à partir du 15 mai, soutient les projets patients et la qualité du travail livré.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Gémeaux, à partir du 21 mai, encourage la communication et la diffusion des idées.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 20 mai, en Scorpion, invite à revoir les décisions de carrière prises dans l'urgence.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une réunion d'équipe bien préparée permet de conclure plus vite et plus clairement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les compétences se développent par la pratique régulière et les retours des collègues.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une demande de moyens se prépare avec des données précises et une échéance claire.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets en attente peuvent être relancés par une première étape simple et visible.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Un bilan de la première moitié de l'année aide à corriger le tir sans attendre la fin de l'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les dossiers complexes se découpent utilement en lots, avec des points d'étape réguliers.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une évolution de poste gagne à être discutée sur la base de résultats mesurables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les échanges avec les partenaires gagnent à être écrits et confirmés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une formation courte, choisie pour un besoin réel, peut apporter une compétence immédiatement utile.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Mars en Vierge rend les tâches répétitives plus faciles à automatiser ou à simplifier.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La qualité de la communication écrite influence l'image professionnelle : relire avant d'envoyer reste essentiel.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un outil de suivi partagé améliore la coordination entre les personnes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les réunions gagnent à se terminer par un compte rendu court, avec les décisions et les responsables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une démarche de reconnaissance professionnelle se prépare avec méthode et patience.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les idées nouvelles méritent d'être testées sur un périmètre limité avant d'être généralisées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une rencontre avec une personne expérimentée peut éclairer une décision d'orientation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les conflits professionnels se résolvent mieux par un échange direct et posé.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le mois encourage une démarche méthodique, qui solidifie les avancées du printemps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois invite à avancer par étapes régulières, avec une énergie disponible et claire.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un point hebdomadaire court avec l'équipe maintient la cohérence des actions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les objectifs de mi-année gagnent à être revus avec des indicateurs précis.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Une formation de quelques heures peut suffire à acquérir un outil utile.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les demandes de soutien se formulent mieux lorsqu'elles sont accompagnées d'un plan.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un rythme de travail régulier, sans heures supplémentaires répétées, préserve la qualité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ]
+  }
+}

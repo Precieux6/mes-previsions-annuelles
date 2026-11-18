@@ -1,0 +1,31 @@
+{
+  "signe": "Poissons",
+  "id": "poissons",
+  "domaines": {
+    "finances": [
+      "Saturne en 2e maison, dans le signe du Bélier, invite à relier le talent et la rémunération : tarifs, contrats et budget méritent une révision.",
+      "Pluton en 12e maison encourage la discrétion dans la gestion de vos ressources.",
+      "Après l'été, Jupiter en 7e maison favorise les accords financiers conclus à deux."
+    ],
+    "sante": [
+      "Jusqu'à l'été, Jupiter en 6e maison soutient l'organisation des journées et les routines de santé.",
+      "Pluton en 12e maison invite à faire une place au repos et à l'intériorité.",
+      "Le sommeil et la détente méritent une attention régulière."
+    ],
+    "amour_famille": [
+      "Jupiter en 7e maison, après juillet, est particulièrement favorable aux partenariats et au couple.",
+      "Uranus en 4e maison invite à renouveler le cadre familial, avec douceur.",
+      "Les décisions affectives gagnent à être prises avec une parole claire."
+    ],
+    "vie_sociale": [
+      "Uranus en 4e maison peut renouveler la vie de famille : nouvelle organisation, nouveau lieu, nouvelles habitudes.",
+      "La vie sociale s'élargit avec les nouvelles rencontres.",
+      "Les échanges avec l'entourage gagnent à être directs."
+    ],
+    "travail": [
+      "Jusqu'à l'été, Jupiter en 6e maison favorise l'organisation et l'efficacité au quotidien.",
+      "Après juillet, il appuie les partenariats de travail.",
+      "Saturne en 2e maison invite à négocier la rémunération sur des faits précis."
+    ]
+  }
+}

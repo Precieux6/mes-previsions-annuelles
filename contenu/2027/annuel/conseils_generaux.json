@@ -1,0 +1,47 @@
+{
+  "libelle": "Conseils généraux de l'année 2027",
+  "nombre": 10,
+  "statut": "redige_par_delegation",
+  "phrases": [
+    {
+      "ordre": 1,
+      "texte": "Fixez-vous trois priorités annuelles, notées par écrit, et relisez-les chaque trimestre."
+    },
+    {
+      "ordre": 2,
+      "texte": "Protégez un créneau fixe chaque semaine pour vos projets personnels, à l'abri des sollicitations."
+    },
+    {
+      "ordre": 3,
+      "texte": "Tenez un carnet de bord mensuel : notez ce qui fonctionne et ce qui mérite d'être ajusté."
+    },
+    {
+      "ordre": 4,
+      "texte": "Avant toute décision financière importante, laissez passer un délai de réflexion et demandez un avis extérieur."
+    },
+    {
+      "ordre": 5,
+      "texte": "Gardez un réseau de soutien varié : amis, famille, professionnels de confiance."
+    },
+    {
+      "ordre": 6,
+      "texte": "Confirmez par écrit les engagements pris à l'oral, en particulier pendant les périodes de rétrogradation de Mercure."
+    },
+    {
+      "ordre": 7,
+      "texte": "Prévoyez des temps de repos réels dans le calendrier, et non seulement après l'effort."
+    },
+    {
+      "ordre": 8,
+      "texte": "Consultez un professionnel pour toute question de santé, de droit ou de finances : ce document n'en tient pas lieu."
+    },
+    {
+      "ordre": 9,
+      "texte": "Relisez le document à mi-année pour mesurer le chemin parcouru et ajuster vos objectifs."
+    },
+    {
+      "ordre": 10,
+      "texte": "Gardez une part de souplesse : les tendances indiquent des directions, non des certitudes."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Révélation annuelle individuelle : assemble les blocs du plan contenu/2027/revelation.json.
+
+Entrée : nombres issus du nom (expression, âme), année personnelle ou universelle, élément solaire si date fournie.
+Sortie : liste de phrases, 8 au maximum, dans l'ordre du plan.
+"""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+PLAN = json.load(open(os.path.join(HERE, "..", "contenu", "2027", "revelation.json"), encoding="utf-8"))
+
+def revelation(annee_cycle: int, expression: int, ame: int, element_solaire: str | None) -> list[str]:
+    sortie = []
+    for bloc in PLAN["plan"]:
+        b = bloc["bloc"]
+        if b == "intro":
+            sortie.append(bloc["phrases"][0])
+        elif b == "cycle":
+            sortie.append(bloc["phrases"][str(annee_cycle)])
+        elif b == "expression":
+            sortie.append(bloc["phrases"][str(expression)])
+        elif b == "ame":
+            sortie.append(bloc["phrases"][str(ame)])
+        elif b == "element_solaire":
+            if element_solaire:
+                sortie.append(bloc["phrases"][element_solaire.lower()])
+        elif b == "cloture":
+            sortie.append(bloc["phrases"][0])
+    return sortie[: PLAN["phrases_max"]]
+
+if __name__ == "__main__":
+    print(json.dumps(revelation(2, 9, 4, "terre"), ensure_ascii=False, indent=2))

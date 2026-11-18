@@ -1,0 +1,6 @@
+ALTER TABLE documents ADD COLUMN IF NOT EXISTS size_bytes BIGINT;
+ALTER TABLE documents ADD COLUMN IF NOT EXISTS sha256 VARCHAR(64);
+ALTER TABLE documents ADD COLUMN IF NOT EXISTS expires_at TIMESTAMP WITH TIME ZONE DEFAULT (CURRENT_TIMESTAMP + INTERVAL '12 months');
+CREATE UNIQUE INDEX IF NOT EXISTS documents_order_type_uniq ON documents (order_id, doc_type);
+ALTER TABLE receipts ADD COLUMN IF NOT EXISTS verify_code VARCHAR(32);
+CREATE UNIQUE INDEX IF NOT EXISTS receipts_verify_code_uniq ON receipts (verify_code);

@@ -1,0 +1,31 @@
+{
+  "signe": "Verseau",
+  "id": "verseau",
+  "domaines": {
+    "finances": [
+      "Saturne en 3e maison invite à structurer les échanges financiers et les contrats.",
+      "Uranus en 5e maison peut ouvrir des revenus liés à la créativité et aux loisirs.",
+      "Après l'été, Jupiter en 8e maison favorise la gestion des ressources communes."
+    ],
+    "sante": [
+      "Pluton en 1re maison invite à une transformation personnelle en profondeur : habitudes, rythme, énergie.",
+      "Le corps réclame de la progressivité.",
+      "Une consultation de routine accompagne bien ce mouvement."
+    ],
+    "amour_famille": [
+      "Uranus en 5e maison éveille la créativité et l'envie de liberté dans les relations.",
+      "Jusqu'à l'été, Jupiter en 7e maison favorise les rencontres et les partenariats.",
+      "Dans le couple, la liberté de chacun reste la base du lien."
+    ],
+    "vie_sociale": [
+      "Saturne en 3e maison invite à organiser les échanges et les contacts de voisinage.",
+      "Les amitiés peuvent se renouveler par des projets concrets.",
+      "La vie associative peut prendre une place plus importante."
+    ],
+    "travail": [
+      "Pluton en 1re maison peut se traduire par un changement d'approche professionnelle.",
+      "Saturne en 3e maison invite à formaliser les projets.",
+      "Après l'été, Jupiter en 8e maison soutient les partenariats de travail."
+    ]
+  }
+}

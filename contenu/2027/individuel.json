@@ -1,0 +1,44 @@
+{
+  "version": "2027.1",
+  "description": "Partie individuelle : calculée à partir des données du client.",
+  "entrees": {
+    "obligatoire": [
+      "nom_complet"
+    ],
+    "facultative": [
+      "date_naissance"
+    ]
+  },
+  "parties": [
+    {
+      "id": "revelation_annuelle",
+      "titre": "Révélation annuelle 2027",
+      "format": "bloc",
+      "phrases_max": 8,
+      "sources": [
+        "numerologie : nombre d'expression, nombre d'âme, nombre intime (nom et prénoms complets)",
+        "année personnelle si date de naissance, sinon cycle universel 2027",
+        "transits tropicaux de 2027 uniquement si date de naissance"
+      ],
+      "statut": "valide",
+      "fichier": "contenu/2027/revelation.json",
+      "script": "scripts/revelation_2027.py"
+    },
+    {
+      "id": "previsions_mensuelles",
+      "titre": "Prévisions mensuelles 2027",
+      "format": "par_mois_et_par_theme",
+      "phrases_par_theme": 10,
+      "themes": [
+        "finances",
+        "sante",
+        "amour_famille",
+        "vie_familiale_sociale",
+        "travail"
+      ],
+      "source": "banques 2027 mensuel/ (moteur rapport_2027.py)",
+      "statut": "valide",
+      "notes": "Mode nom : critère élargi pour les conseils (6 minimum par domaine et par mois au lieu de 1)."
+    }
+  ]
+}

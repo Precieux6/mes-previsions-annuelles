@@ -1,0 +1,89 @@
+{
+  "theme": "travail",
+  "libelle": "Travail & réalités professionnelles",
+  "lot": "travail",
+  "statut": "redige_par_delegation",
+  "regle": "mode 'nom' = numérologie seule, utilisable avec ou sans date ; mode 'date' = suppose les positions tropicales, réservé au parcours avec date de naissance",
+  "repartition": {
+    "nom": 10,
+    "date": 5,
+    "part_nom": 0.67
+  },
+  "phrases": [
+    {
+      "ordre": 1,
+      "mode": "nom",
+      "texte": "L'année 2027 invite à structurer son activité : des priorités claires et un rythme régulier donnent des résultats plus solides que l'urgence."
+    },
+    {
+      "ordre": 2,
+      "mode": "nom",
+      "texte": "Le cycle universel 2 favorise la collaboration : les projets menés en binôme ou en équipe bien répartie avancent avec plus de fluidité."
+    },
+    {
+      "ordre": 3,
+      "mode": "nom",
+      "texte": "Une compétence entretenue avec constance devient un atout reconnu ; une formation ciblée ouvre des possibilités concrètes."
+    },
+    {
+      "ordre": 4,
+      "mode": "nom",
+      "texte": "Les responsabilités accrues demandent des limites nettes : accepter tout expose à l'épuisement et à la baisse de qualité."
+    },
+    {
+      "ordre": 5,
+      "mode": "nom",
+      "texte": "Les initiatives professionnelles gagnent à être testées à petite échelle avant d'être développées."
+    },
+    {
+      "ordre": 6,
+      "mode": "nom",
+      "texte": "La qualité des écrits et des échanges professionnels influence la confiance : relire et clarifier avant d'envoyer reste essentiel."
+    },
+    {
+      "ordre": 7,
+      "mode": "nom",
+      "texte": "Vers le milieu de l'année, un bilan des objectifs permet de réajuster la trajectoire sans en changer la direction générale."
+    },
+    {
+      "ordre": 8,
+      "mode": "nom",
+      "texte": "Les projets de long terme se construisent par étapes : chaque livrable achevé consolide la réputation et la suite du parcours."
+    },
+    {
+      "ordre": 9,
+      "mode": "nom",
+      "texte": "Les relations avec les collègues et les partenaires demandent de la transparence : dire tôt ce qui bloque évite les tensions plus tard."
+    },
+    {
+      "ordre": 10,
+      "mode": "nom",
+      "texte": "En fin d'année, un bilan de compétences et de réalisations prépare les choix de l'année suivante avec lucidité."
+    },
+    {
+      "ordre": 11,
+      "mode": "date",
+      "texte": "Mars rétrograde du 12 janvier au 3 avril 2027 : une période pour reprendre les dossiers en attente et relire les décisions prises."
+    },
+    {
+      "ordre": 12,
+      "mode": "date",
+      "texte": "Saturne, en Bélier jusqu'en 2028, invite à consolider les fondations professionnelles plutôt qu'à les multiplier ; sa rétrogradation du 11 août au 25 décembre favorise ce recentrage."
+    },
+    {
+      "ordre": 13,
+      "mode": "date",
+      "texte": "Mars passe ensuite par la Vierge, la Balance, le Scorpion (2 septembre) et le Sagittaire (16 octobre) : l'énergie d'action gagne à être ciblée selon chaque période."
+    },
+    {
+      "ordre": 14,
+      "mode": "date",
+      "texte": "Jupiter en Vierge après le 26 juillet encourage l'organisation professionnelle, la méthode et la précision dans les dossiers."
+    },
+    {
+      "ordre": 15,
+      "mode": "date",
+      "texte": "Mercure en Vierge (du 17 août au 3 septembre), puis en Capricorne à partir du 18 décembre, invite aux échanges écrits précis et à la structuration des missions."
+    }
+  ]
+}

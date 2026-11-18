@@ -1,0 +1,31 @@
+{
+  "signe": "Bélier",
+  "id": "belier",
+  "domaines": {
+    "finances": [
+      "Saturne et Neptune dans votre signe invitent à relier vos ambitions à un budget réaliste.",
+      "Pluton en 11e maison peut ouvrir des projets collectifs ou des alliances financières à examiner avec soin.",
+      "Après l'été, Jupiter soutient les démarches de consolidation plutôt que les paris rapides."
+    ],
+    "sante": [
+      "Mars en début d'année invite à ralentir l'effort et à mieux répartir l'énergie.",
+      "Votre vitalité gagne à être régulière : sommeil, mouvement et pauses sont les meilleurs alliés du printemps.",
+      "Après juillet, Jupiter en 6e maison soutient les routines de bien-être et les bilans de prévention."
+    ],
+    "amour_famille": [
+      "Jusqu'à l'été, Jupiter en 5e maison ravive l'élan amoureux et le goût de créer à deux.",
+      "Ensuite, l'année demande d'accepter de partager la décision dans le couple.",
+      "Saturne dans votre signe peut faire ressentir le besoin de clarifier vos limites affectives."
+    ],
+    "vie_sociale": [
+      "Uranus en 3e maison invite à des échanges directs, parfois inattendus, avec l'entourage proche.",
+      "Les amitiés et les projets de groupe prennent de l'importance vers la fin de l'année.",
+      "Le foyer demande un équilibre entre autonomie et présence."
+    ],
+    "travail": [
+      "Saturne dans votre signe place la responsabilité personnelle au centre de la carrière.",
+      "Après juillet, Jupiter en 6e maison favorise l'organisation du quotidien et les améliorations de méthode.",
+      "Une proposition peut se préciser à l'automne ; elle gagne à être examinée selon des critères clairs."
+    ]
+  }
+}

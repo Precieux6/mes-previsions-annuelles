@@ -1,0 +1,1386 @@
+{
+  "mois": "2027-01",
+  "statut": "étiqueté ; en attente de relecture éditoriale finale",
+  "ciel": "Le Soleil traverse le Capricorne jusqu'au 19 janvier, puis le Verseau. La nouvelle lune du 7 janvier est en Capricorne ; la pleine lune du 22 janvier est en Lion. Mars rétrograde dès le 11 janvier, dans la Vierge. Mercure entre en Verseau le 13 janvier. Vénus traverse le Sagittaire, puis entre en Capricorne le 4 février.",
+  "tonalite": "Mois d'ouverture, où l'on pose ses intentions. La rétrogradation de Mars invite à relire ses méthodes avant de les accélérer.",
+  "maisons_par_signe": {
+    "belier": {
+      "mars": 6,
+      "mercure": 11,
+      "venus": 9,
+      "soleil": 10,
+      "jupiter": 5,
+      "saturne": 1
+    },
+    "taureau": {
+      "mars": 5,
+      "mercure": 10,
+      "venus": 8,
+      "soleil": 9,
+      "jupiter": 4,
+      "saturne": 12
+    },
+    "gemeaux": {
+      "mars": 4,
+      "mercure": 9,
+      "venus": 7,
+      "soleil": 8,
+      "jupiter": 3,
+      "saturne": 11
+    },
+    "cancer": {
+      "mars": 3,
+      "mercure": 8,
+      "venus": 6,
+      "soleil": 7,
+      "jupiter": 2,
+      "saturne": 10
+    },
+    "lion": {
+      "mars": 2,
+      "mercure": 7,
+      "venus": 5,
+      "soleil": 6,
+      "jupiter": 1,
+      "saturne": 9
+    },
+    "vierge": {
+      "mars": 1,
+      "mercure": 6,
+      "venus": 4,
+      "soleil": 5,
+      "jupiter": 12,
+      "saturne": 8
+    },
+    "balance": {
+      "mars": 12,
+      "mercure": 5,
+      "venus": 3,
+      "soleil": 4,
+      "jupiter": 11,
+      "saturne": 7
+    },
+    "scorpion": {
+      "mars": 11,
+      "mercure": 4,
+      "venus": 2,
+      "soleil": 3,
+      "jupiter": 10,
+      "saturne": 6
+    },
+    "sagittaire": {
+      "mars": 10,
+      "mercure": 3,
+      "venus": 1,
+      "soleil": 2,
+      "jupiter": 9,
+      "saturne": 5
+    },
+    "capricorne": {
+      "mars": 9,
+      "mercure": 2,
+      "venus": 12,
+      "soleil": 1,
+      "jupiter": 8,
+      "saturne": 4
+    },
+    "verseau": {
+      "mars": 8,
+      "mercure": 1,
+      "venus": 11,
+      "soleil": 12,
+      "jupiter": 7,
+      "saturne": 3
+    },
+    "poissons": {
+      "mars": 7,
+      "mercure": 12,
+      "venus": 10,
+      "soleil": 11,
+      "jupiter": 6,
+      "saturne": 2
+    }
+  },
+  "conventions": "maison = ((signe_planete - signe_lecteur) mod 12) + 1 ; positions tropicales, mi-mois",
+  "domaines": {
+    "finances": [
+      {
+        "texte": "Ce début d'année invite à faire le point sur les comptes avant de fixer de nouveaux objectifs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Un budget écrit, même simple, devient un repère précieux pour les semaines à venir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les petites dépenses récurrentes méritent d'être revues : abonnements, prélèvements, frais divers.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Avant un achat important, un délai de réflexion de quelques jours permet souvent un choix plus serein.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 7 janvier encourage à définir une intention financière claire et réaliste.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les revenus gagnent à être suivis mois par mois, pour anticiper les périodes plus légères.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mars en Vierge, en rétrogradation, invite à reprendre ses méthodes de gestion plutôt qu'à en changer brusquement.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Une épargne régulière, même modeste, se construit mieux grâce à un virement programmé.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les engagements pris en fin d'année méritent d'être relus à tête reposée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Comparer deux ou trois offres avant de souscrire évite de payer davantage que nécessaire.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les dépenses partagées avec un proche gagnent à être notées par écrit, pour éviter les malentendus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Ce mois favorise la simplification : moins de comptes, moins d'abonnements, plus de lisibilité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une réserve de précaution, même petite, apporte une sécurité appréciable face aux imprévus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "changement"
+        ]
+      },
+      {
+        "texte": "Les démarches administratives liées aux revenus ou aux impôts peuvent être engagées dès maintenant.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le Soleil en Capricorne, jusqu'au 19 janvier, soutient la discipline financière et la prévoyance.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une dépense de bien-être ou de formation se justifie si elle s'inscrit dans un plan clair.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Vérifier ses relevés bancaires ligne à ligne permet de repérer erreurs et doublons.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 22 janvier, en Lion, invite à valoriser un travail déjà accompli et à le faire connaître.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets de revenus complémentaires gagnent à être testés à petite échelle avant tout investissement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une négociation de tarif ou de délai se prépare avec des arguments chiffrés et un ton posé.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les cadeaux de début d'année se choisissent avec attention, dans un budget fixé à l'avance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Il est utile de classer les justificatifs du trimestre passé, pour gagner du temps plus tard.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "La prudence reste de mise devant les offres de gains rapides, rarement durables.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un point mensuel de quinze minutes sur les finances aide à garder le cap sans effort excessif.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce mois encourage une gestion sobre et réfléchie, qui laisse de la souplesse pour les projets à venir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le suivi des premiers prélèvements de l'année révèle vite les ajustements utiles.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une liste des dépenses fixes du mois permet de voir en un coup d'œil la marge disponible.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les achats de début d'année gagnent à être comparés avant d'être confirmés.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La constitution d'une réserve de précaution commence par un montant modeste, mais régulier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un rendez-vous annuel avec ses finances, même court, aide à garder le cap.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Ce début d'année invite à installer des repères réguliers : horaires de sommeil, repas, mouvement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "changement",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mars en rétrogradation rappelle de doser l'effort et de respecter les temps de récupération.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Une marche quotidienne, même courte, soutient l'énergie et la clarté d'esprit.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le sommeil reste la base de la vitalité : une heure de coucher stable fait souvent la différence.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La nouvelle lune du 7 janvier encourage à se fixer une habitude de bien-être simple et tenable.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les pauses régulières au travail, loin des écrans, soulagent la nuque et les yeux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une alimentation variée, avec des repas à heures régulières, stabilise l'humeur et l'énergie.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "En cas de fatigue persistante ou de symptôme qui dure, l'avis d'un professionnel de santé reste la meilleure réponse.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les étirements doux au réveil aident à retrouver de la souplesse après les fêtes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une hydratation régulière tout au long de la journée contribue au confort et à la concentration.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Une activité qui procure du plaisir soutient autant que l'effort physique.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le début d'année peut être l'occasion de planifier un bilan de prévention : dentiste, vue, tension.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les tensions accumulées se relâchent souvent par une respiration lente et quelques minutes de calme.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Limiter les excitants en fin de journée favorise un sommeil plus profond.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Le Soleil dans le Capricorne soutient la régularité : de petites habitudes tenues valent mieux qu'un grand programme.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une sortie au grand air, même brève, redonne vitalité et bonne humeur.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les efforts intenses gagnent à être progressifs, surtout après une période de repos.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 22 janvier, en Lion, peut accentuer l'envie de se dépenser : mieux vaut doser.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Un moment de détente sans écran avant le coucher prépare un repos plus réparateur.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Il est utile d'écouter les signaux du corps : fatigue, tension, besoin de pause.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Des repas légers le soir favorisent la digestion et la qualité du sommeil.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un bain tiède ou une douche détendante aide à relâcher les tensions de la journée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mieux vaut un rythme soutenu mais régulier qu'une alternance entre excès et épuisement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le contact avec la nature ou un espace calme apaise le mental.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Ce mois invite à prendre soin de soi comme d'un projet précieux : avec constance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une courte pause de respiration, avant de démarrer la journée, donne un élan plus calme.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La lumière du matin, même hivernale, aide à régler l'horloge intérieure.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Une collation saine, prise à heure régulière, évite les grignotages du soir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les étirements du dos après une longue station assise soulagent la fatigue.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un temps de repos à la maison, sans obligation, recharge l'énergie du début d'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer",
+          "introspection"
+        ]
+      }
+    ],
+    "amour_famille": [
+      {
+        "texte": "Ce début d'année invite à partager ses projets avec la personne qui compte, pour les rendre plus clairs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Mercure en Verseau favorise les conversations franches sur les envies de chacun.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une attention simple, un message ou un geste, peut rapprocher davantage qu'un long discours.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mars en rétrogradation invite à éviter les décisions affectives prises dans la précipitation.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": []
+      },
+      {
+        "texte": "La nouvelle lune du 7 janvier peut ouvrir une période d'intention nouvelle dans la vie de couple.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les attentes gagnent à être exprimées sans reproche, pour éviter les malentendus.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Le temps partagé à deux, même court et régulier, nourrit la complicité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      },
+      {
+        "texte": "Vénus en Sagittaire, puis en Capricorne le 4 février, invite à la sincérité et à la constance.",
+        "planetes": [
+          "venus"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une soirée sans programme, loin des obligations, renforce souvent le lien familial.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les projets communs méritent d'être posés par écrit, avec un calendrier réaliste.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Un désaccord apaisé vaut mieux qu'un silence qui s'installe.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La famille proche peut demander une présence plus régulière : une organisation claire aide à concilier les envies.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un moment de confidence, choisi au calme, ouvre souvent des échanges plus profonds.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les anniversaires et les petites attentions ont un poids particulier ce mois-ci.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 22 janvier, en Lion, met en valeur la chaleur et la générosité dans les relations.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Il est utile de reconnaître ce que l'autre apporte, même dans le quotidien.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les liens familiaux gagnent à être entretenus par des rendez-vous réguliers.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une décision à deux se prend après avoir écouté l'avis de chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "L'inquiétude ou la jalousie peuvent être dites simplement, sans accusation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Ce mois encourage la douceur dans les mots, surtout lorsque la fatigue se fait sentir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un repas partagé en famille peut devenir un moment de rapprochement très simple.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les attentes implicites gagnent à devenir des demandes claires.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Le couple tire profit de temps personnel, respecté de part et d'autre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une rencontre amicale ou familiale peut redonner de la légèreté aux liens.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce début d'année invite à la patience : les liens se renforcent par la régularité plus que par l'intensité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Un projet de sortie commune, prévu à l'avance, crée une attente agréable et partagée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les attentions discrètes, un plat préféré ou un message au bon moment, touchent durablement.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La parole donnée se tient, et cette constance nourrit la confiance du couple.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un moment de conversation sans téléphone rapproche plus que bien des explications.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une décision de famille gagne à se prendre après avoir entendu chacun sans interruption.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      }
+    ],
+    "vie_sociale": [
+      {
+        "texte": "Les échanges de voisinage et les réseaux amicaux se réactivent en début d'année.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une invitation ou une visite peut relancer un lien qui s'était distendu.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "Mercure en Verseau favorise les discussions de groupe, les idées partagées et les échanges vifs.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Les projets collectifs gagnent à être relus avant d'être lancés, pour s'assurer de l'accord de tous.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "coop"
+        ]
+      },
+      {
+        "texte": "Le foyer demande une organisation claire : répartition des tâches, horaires, espaces.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "La nouvelle lune du 7 janvier ouvre la possibilité de nouveaux liens à construire.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une activité associative ou solidaire peut apporter du sens et de la chaleur à la vie sociale.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les conversations en petit comité sont souvent plus fructueuses que les grands rassemblements.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un proche qui traverse une période difficile trouve parfois du réconfort dans une présence simple.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Mars en Vierge rappelle de rester attentif aux besoins de l'entourage, sans s'épuiser.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les rendez-vous réguliers avec les amis aident à entretenir les liens dans la durée.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une décision familiale gagne à être prise avec la participation de chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Des anciennes connaissances peuvent réapparaître, avec l'occasion de renouer.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La pleine lune du 22 janvier, en Lion, favorise les moments de fête et de reconnaissance mutuelle.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Les échanges sur les projets de quartier ou de groupe trouvent un nouveau souffle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un ami proche peut apporter un point de vue utile sur une décision personnelle.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Savoir dire non à une sollicitation qui dépasse ses disponibilités est un atout précieux.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La vie sociale gagne à être équilibrée entre sorties et temps calme.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop",
+          "introspection"
+        ]
+      },
+      {
+        "texte": "Les règles de vie collective gagnent à être clarifiées pour éviter les tensions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Une participation à un projet commun peut renforcer le sentiment d'appartenance.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les échanges avec les voisins peuvent devenir une vraie ressource au quotidien.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les messages et appels entre proches prennent beaucoup de place ce mois-ci : mieux vaut les choisir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Un moment de partage autour d'un café ou d'un repas peut ouvrir des conversations nouvelles.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "foyer"
+        ]
+      },
+      {
+        "texte": "La générosité envers l'entourage a un écho, à condition de rester attentif à ses propres limites.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Ce début d'année encourage à tisser des liens simples, réguliers et sincères.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une invitation chez soi, même simple, renouvelle le plaisir de recevoir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les réunions de quartier prennent de l'élan en début d'année, avec de nouvelles idées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un coup de main offert à un voisin installe une relation de confiance durable.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "coop"
+        ]
+      },
+      {
+        "texte": "Les amitiés se renouent facilement lors d'une activité partagée, sans enjeu particulier.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une règle simple de partage des tâches collectives évite bien des tensions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "structure"
+        ]
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Ce début d'année invite à clarifier les priorités avant de multiplier les initiatives.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "structure"
+        ]
+      },
+      {
+        "texte": "Mars en rétrogradation, en Vierge, incite à revoir les méthodes de travail et les outils.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Une liste de tâches hebdomadaire aide à mieux répartir l'énergie.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Les propositions professionnelles gagnent à être examinées selon des critères clairs.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "La nouvelle lune du 7 janvier peut servir à poser un objectif de carrière réaliste.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "structure",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Une réunion bien préparée, avec un ordre du jour, fait gagner beaucoup de temps.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Mercure en Verseau favorise les échanges, les idées nouvelles et la mise en commun des compétences.",
+        "planetes": [
+          "mercure"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Un bilan de l'année écoulée permet de repérer ce qui a fonctionné et ce qu'il faut ajuster.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les engagements pris devant un responsable gagnent à être confirmés par écrit.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Une compétence que l'on souhaite développer peut faire l'objet d'une formation courte ce trimestre.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Le Soleil en Capricorne soutient la rigueur : tenir les délais et les promesses renforce la crédibilité.",
+        "planetes": [
+          "soleil"
+        ],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Une conversation avec son responsable sur les attentes mutuelles peut éclairer la suite.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "foyer"
+        ]
+      },
+      {
+        "texte": "Les projets en attente peuvent être relancés en commençant par la première étape concrète.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative"
+        ]
+      },
+      {
+        "texte": "La pleine lune du 22 janvier, en Lion, valorise la présentation de ses réalisations.",
+        "planetes": [],
+        "lunaison": true,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "realisation"
+        ]
+      },
+      {
+        "texte": "Mieux vaut un projet mené à terme que de nombreuses initiatives inachevées.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "initiative",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les dossiers complexes gagnent à être découpés en étapes courtes.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une demande d'évolution professionnelle se prépare en réunissant des exemples précis.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les tâches répétitives peuvent être simplifiées par un modèle ou un outil.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un temps de concentration sans sollicitation améliore nettement la qualité du travail.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les décisions de carrière gagnent à être prises après réflexion, et non sous la pression.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "introspection"
+        ]
+      },
+      {
+        "texte": "La rétrogradation de Mars invite à ne pas se disperser sur plusieurs chantiers à la fois.",
+        "planetes": [
+          "mars"
+        ],
+        "lunaison": false,
+        "retrograde": true,
+        "registres": []
+      },
+      {
+        "texte": "Les compétences partagées avec une équipe renforcent la cohésion et l'efficacité.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression"
+        ]
+      },
+      {
+        "texte": "Une veille régulière sur son secteur permet d'anticiper les évolutions.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Relire ses documents avant envoi évite bien des erreurs coûteuses.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure"
+        ]
+      },
+      {
+        "texte": "Ce mois encourage une démarche méthodique, qui donne de la solidité aux projets à venir.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une liste d'objectifs trimestriels rend les priorités plus lisibles pour toute l'équipe.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "structure",
+          "realisation",
+          "achevement"
+        ]
+      },
+      {
+        "texte": "Les retours d'expérience, notés sans jugement, améliorent les pratiques de chacun.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Un créneau fixe chaque semaine pour les tâches administratives évite leur accumulation.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Les compétences recherchées se repèrent en lisant les offres de son secteur.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": []
+      },
+      {
+        "texte": "Une présentation claire de ses réalisations facilite les entretiens et les échanges.",
+        "planetes": [],
+        "lunaison": false,
+        "retrograde": false,
+        "registres": [
+          "expression",
+          "realisation"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "signe": "Balance",
+  "id": "balance",
+  "domaines": {
+    "finances": [
+      "Saturne en 7e maison invite à clarifier les engagements financiers conclus avec un partenaire.",
+      "Pluton en 5e maison peut relancer des projets d'investissement personnel ou créatif.",
+      "Après l'été, Jupiter en 12e maison favorise la prudence et la réflexion avant de s'engager."
+    ],
+    "sante": [
+      "Saturne en 7e maison peut peser sur l'équilibre relationnel, donc sur le moral.",
+      "Le repos et la détente comptent autant que le sport.",
+      "Une consultation de prévention est utile en cette période."
+    ],
+    "amour_famille": [
+      "Pluton en 5e maison réveille la créativité et l'élan amoureux.",
+      "Saturne en 7e maison invite à rendre les engagements concrets et à poser des limites saines.",
+      "Les relations de couple gagnent à être discutées avec franchise."
+    ],
+    "vie_sociale": [
+      "Uranus en 9e maison ouvre les horizons : voyages, formations, rencontres venues d'ailleurs.",
+      "Les liens de voisinage et de famille peuvent évoluer ; la place de chacun se négocie.",
+      "Les projets de groupe demandent des règles claires."
+    ],
+    "travail": [
+      "Uranus en 9e maison favorise les démarches de formation et les projets internationaux.",
+      "Saturne en 7e maison invite à formaliser les accords professionnels.",
+      "Après l'été, Jupiter en 12e maison encourage le travail de fond, loin de l'agitation."
+    ]
+  }
+}

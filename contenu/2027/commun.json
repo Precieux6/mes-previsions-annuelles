@@ -1,0 +1,286 @@
+{
+  "version": "2027.1",
+  "description": "Partie commune à tous les clients : identique pour chaque commande, générée une seule fois.",
+  "sections": [
+    {
+      "id": "presentation",
+      "titre": "Présentation de l'étude",
+      "pages": 1,
+      "statut": "valide",
+      "paragraphes": [
+        "Cette étude annuelle présente les grandes tendances de 2027, communes à tous les lecteurs, puis une lecture personnelle de votre année et de chacun de vos mois."
+      ]
+    },
+    {
+      "id": "grandes_tendances",
+      "titre": "Grandes tendances 2027 : lecture de M. Folly Valère Tossou",
+      "pages": 3,
+      "statut": "valide",
+      "paragraphes": [
+        "Cette lecture géomantique, établie par Folly Valère Tossou, présente les grandes tendances de l'année 2027 pour l'ensemble des lecteurs. Elle repose sur le calendrier des transits vérifié pour l'année : chaque grande phase de l'année est rattachée à une étape précise du ciel.",
+        "Le début de l'année se joue sous le signe de la clarté. Saturne et Neptune sont en Bélier, Uranus en Gémeaux et Pluton en Verseau. Le 6 février, une éclipse annulaire en Verseau, puis le 20 février une éclipse pénombrale en Vierge, invitent à vérifier les engagements avant de les prendre.",
+        "Mercure rétrograde du 10 février au 4 mars : une période pour relire les contrats, confirmer les rendez-vous et ne pas se fier aux informations non vérifiées. Mars, qui rétrograde du 12 janvier au 3 avril, passe en Lion vers la fin du mois de février. Les rivalités et les mésententes peuvent se réveiller ; les dissiper tôt, par la discussion, évite qu'elles prennent de l'ampleur.",
+        "Au printemps, Mars entre en Vierge le 15 mai : l'énergie d'action devient plus méthodique. Sur le plan collectif, la vigilance porte sur la sécurité du quotidien : prudence dans les déplacements, respect des consignes et attention aux équipements et aux sources de chaleur ou d'électricité.",
+        "Le monde agricole est invité à la surveillance. Les cultures peuvent être menacées par des insectes, des oiseaux ou des rongeurs qui se déplacent. La prévention, la surveillance régulière des champs et les mesures prises à temps protègent les récoltes et les investissements.",
+        "L'été est une phase charnière. Jupiter quitte le Lion pour la Vierge le 26 juillet 2027 : l'élan de confiance du premier semestre se transforme en exigence d'organisation. L'éclipse totale du 2 août, en Lion, marque un moment de bascule dans la vie personnelle et collective ; elle appelle à la prudence plutôt qu'à la précipitation.",
+        "Mars entre en Balance le 15 juillet, puis en Scorpion le 2 septembre et en Sagittaire le 16 octobre : les initiatives gagnent à être choisies selon leur sens, et les différends d'intérêts se règlent par la négociation. Vénus traverse le Lion, la Vierge puis la Balance entre fin juillet et septembre, favorisant les relations harmonieuses et les projets partagés.",
+        "Mercure rétrograde à nouveau du 8 au 29 octobre : la période est propice à la révision des accords, des budgets et des promesses. Un point d'étape sur les engagements prend tout son sens à cette saison.",
+        "À l'automne et en fin d'année, Saturne rétrograde du 11 août au 25 décembre, et Neptune du 11 juillet au 16 décembre. Ces mouvements invitent à consolider ce qui tient, à clarifier les intentions et à distinguer le souhaité du vérifié. Vénus entre en Verseau le 20 décembre, ouvrant une fin d'année tournée vers les réseaux et les projets collectifs.",
+        "Les maladies à surveiller cette année sont les troubles de la tension artérielle, les accidents cardio-vasculaires, les douleurs sciatiques, les maladies du foie, les embolies pulmonaires, les troubles digestifs et gastro-intestinaux, les hernies, l'appendicite, les lésions cutanées et les ulcères. Chacune demande un suivi médical régulier et un avis professionnel dès les premiers signes. Les questions de grossesse et de santé reproductive, ainsi que la prévention et le dépistage des infections sexuellement transmissibles, méritent aussi un suivi attentif.",
+        "Des décès, des disparitions et des séparations peuvent marquer l'année, parfois de façon brusque. Ces épreuves se traversent mieux grâce à la solidarité familiale et au soutien de l'entourage. Les jeunes et les personnes âgées ne doivent pas être négligés. Cette période invite chacun à mieux prendre soin de soi, à faire les choses comme il se doit et à rester dans les normes.",
+        "Des incidents de toutes sortes sont à prévoir : accidents domestiques, incendies, brûlures par gaz, électrocution et produits inflammables. La prudence dans l'usage du gaz, de l'électricité et des produits dangereux réduit fortement ces risques, car les jeunes sont particulièrement exposés.",
+        "Des conflits de famille peuvent éclater, notamment autour des héritages, des terres et des intérêts partagés, entre frères et proches. Les accords écrits et la médiation d'un tiers évitent les ruptures durables.",
+        "Les insectes, les oiseaux et les rongeurs peuvent quitter les régions chaudes et envahir les champs, au point de détruire certaines cultures. La surveillance régulière, les mesures de protection et l'entraide entre producteurs sont essentielles pour limiter les pertes.",
+        "Dans les couples, des tensions de confiance peuvent apparaître, de même que des difficultés intimes qui fragilisent certains foyers. La transparence, le dialogue et, si besoin, un accompagnement extérieur permettent de les traverser.",
+        "Des croyances occultes et des paroles malveillantes peuvent semer l'inquiétude. La protection passe par la prière, la prudence dans les relations et la confiance envers ses proches.",
+        "Des questions de terrains, de propriété et de déplacements de marchés peuvent se poser. Documenter ses droits et suivre les démarches officielles protège les personnes concernées. Les dossiers fonciers et judiciaires risquent de se multiplier : les démarches soignées et les conseils qualifiés comptent.",
+        "Les dépenses et les recettes peuvent être difficiles à équilibrer. La prudence dans l'endettement, la comparaison des offres et le respect des échéances protègent le budget des familles.",
+        "Les forces de sécurité et les citoyens sont appelés à la responsabilité : respecter le code de la route et les consignes réduit les tracasseries et les sanctions. Des mouvements de contestation peuvent se manifester ; la prévention et le respect des lois restent la meilleure réponse.",
+        "Une structure d'envergure peut traverser des difficultés cette année : anticiper par la prévoyance reste la meilleure protection.",
+        "La dimension spirituelle occupe une place centrale en 2027. Les divinités à prendre en considération cette année sont Hèviesso, Sakpata, Gou, Nan, Hoho (les Jumeaux) et les divinités familiales. Il est recommandé de les prier pour la paix, l'harmonie et la stabilité du pays, afin de traverser les périodes difficiles avec sérénité. La prière, le recueillement et la réflexion restent pour beaucoup un appui à la décision.",
+        "Les projets réussissent à ceux qui les préparent avec prudence, discernement et persévérance. Les mesures préventives font la différence, et l'année récompense la patience."
+      ],
+      "axes": [
+        {
+          "domaine": "Travail et carrière",
+          "points": [
+            "Les alliances, les réseaux et la coopération prennent la première place : les projets menés à plusieurs avancent plus sûrement que les initiatives isolées.",
+            "Le rythme est plus lent que d'habitude. Il demande de la patience, de la diplomatie et une capacité à accepter des compromis.",
+            "Les partenariats doivent être évalués avec lucidité : certains nourrissent l'évolution, d'autres absorbent l'énergie sans contrepartie. Il est sage de faire le tri."
+          ]
+        },
+        {
+          "domaine": "Finances",
+          "points": [
+            "La gestion gagne à être modérée : économies régulières, attention aux dépenses et aux engagements pris pour les autres.",
+            "Les rentrées d'argent sont souvent progressives et passent par des accords, des associations ou des collaborations plutôt que par des gains soudains."
+          ]
+        },
+        {
+          "domaine": "Amour et relations",
+          "points": [
+            "Le passage du « je » au « nous » traverse l'année : les couples renforcent leurs liens par l'écoute mutuelle et le dialogue.",
+            "Pour les personnes seules, l'année favorise les connexions profondes. Il vaut mieux attendre le bon moment que répondre aux élans précipités."
+          ]
+        },
+        {
+          "domaine": "Santé et forme",
+          "points": [
+            "La sensibilité est accrue, et le risque est d'absorber le stress de l'entourage. Apprendre à le relâcher devient une priorité.",
+            "Ralentir, préserver son sommeil et installer des pratiques de détente, comme le yoga ou la relaxation, aide à traverser l'année avec énergie."
+          ]
+        }
+      ],
+      "annee_universelle": [
+        "L'année universelle 2027 se calcule en additionnant ses chiffres : 2 + 0 + 2 + 7 = 11, puis 1 + 1 = 2. Le chiffre 2 symbolise le duo, l'association et l'harmonie.",
+        "Cette année invite à privilégier la qualité des relations plutôt que les résultats immédiats. Elle favorise ce qui est appelé à grandir dans le temps : unions, projets familiaux, partenariats, création et engagements porteurs de sens.",
+        "Le chiffre 2 révèle aussi les désaccords et les jeux d'influence latents. Il demande du discernement, de la patience et une volonté réelle de coopérer, pour transformer les tensions en compréhension mutuelle.",
+        "Sur le plan collectif, l'année encourage le dialogue, la concertation et la recherche de projets fondés sur l'intérêt commun. Elle met en avant la solidarité, l'équité et la défense des plus vulnérables, et rappelle que les réalisations durables naissent de la complémentarité et de l'entraide.",
+        "Pour progresser pendant l'année, trois pratiques ressortent : l'écoute attentive et la reformulation, l'expression régulière de la gratitude, et un temps quotidien de réflexion sur les relations importantes."
+      ],
+      "notes_redaction": [
+        "Dates corrigées et vérifiées : Jupiter quitte le Lion le 26 juillet 2027 ; la période est limitée à 2027.",
+        "Version corrigée et ton validés par M. Tossou.",
+        "Divinités intégrées : Hèviesso, Sakpata, Gou, Nan, Hoho (les Jumeaux) et les divinités familiales.",
+        "Maladies : affections du document d'origine reprises telles quelles, avec avis professionnel. Les mentions de santé reproductive et d'infections sexuellement transmissibles sont formulées sous l'angle du suivi et du dépistage.",
+        "Décès, disparitions et séparations : formulés directement comme épreuves à traverser, sans date ni cause.",
+        "Incidents, conflits familiaux et d'héritage, cultures et insectes : repris sans adoucissement particulier.",
+        "Autres points : adoucis (occultisme, intimité, foncier, sécurité, finances).",
+        "Idées extraites de la source compilée, reformulées : aucune citation ni phrase reprise.",
+        "Règle « pas de prédiction de décès » : levée sur décision de M. Tossou ; mention maintenue comme possibilité générale, avec exhortation à prendre soin de soi et à rester dans les normes."
+      ],
+      "calendrier_transits": [
+        "6 février : éclipse annulaire (Verseau)",
+        "10 février–4 mars : Mercure rétrograde",
+        "20 février : éclipse pénombrale (Vierge)",
+        "12 janvier–3 avril : Mars rétrograde",
+        "15 mai : Mars entre en Vierge",
+        "26 juillet : Jupiter entre en Vierge",
+        "2 août : éclipse totale (Lion)",
+        "15 juillet : Mars entre en Balance",
+        "2 septembre : Mars en Scorpion",
+        "16 octobre : Mars en Sagittaire",
+        "26 novembre : Mars en Capricorne",
+        "8–29 octobre : Mercure rétrograde",
+        "11 juillet–16 décembre : Neptune rétrograde",
+        "11 août–25 décembre : Saturne rétrograde",
+        "16 septembre : Uranus commence à rétrograder",
+        "20 décembre : Vénus en Verseau"
+      ],
+      "divinites": [
+        "Hèviesso",
+        "Sakpata",
+        "Gou",
+        "Nan",
+        "Hoho (les Jumeaux)",
+        "les divinités familiales"
+      ]
+    },
+    {
+      "id": "tendances_thematiques",
+      "titre": "Tendances de l'année par thème",
+      "pages": 3,
+      "statut": "valide",
+      "themes": [
+        {
+          "theme": "finances",
+          "libelle": "Finances & argent",
+          "phrases": [
+            "L'année 2027 invite à regarder vos finances avec méthode : les décisions prises après un bilan simple auront plus de solidité que les élans du moment.",
+            "Le cycle universel de 2027, réduit à 2, favorise les partenariats financiers : un accord clair, écrit et équitable protège autant la relation que le portefeuille.",
+            "Les dépenses qui reviennent chaque mois méritent un examen attentif dès le début de l'année ; réduire une seule charge inutile peut libérer une marge durable.",
+            "Les revenus de 2027 se construisent par la régularité plus que par les coups de chance : une activité entretenue avec constance porte ses fruits progressivement.",
+            "Une épargne mise de côté chaque mois, même modeste, prend de la valeur avec le temps et installe une sécurité qui apaise les décisions.",
+            "Le début de l'année se prête à la comparaison des offres avant tout engagement financier durable ; prendre le temps de lire les conditions évite bien des regrets.",
+            "Les projets d'investissement gagnent à être étudiés par étapes, avec un budget défini et une marge pour les imprévus.",
+            "La prudence reste une alliée : un prêt ou une dette doit être évalué au regard de sa durée réelle et de son coût total.",
+            "Vers le milieu de l'année, un point d'étape sur les objectifs financiers permet d'ajuster sans renoncer ; un bilan écrit rend les progrès visibles.",
+            "En fin d'année, la gestion d'un patrimoine familial ou partagé demande des règles claires, pour que chacun sache ce qui revient à qui.",
+            "Jupiter, en Lion jusqu'au 26 juillet 2027, soutient l'élan de vos projets de revenus au premier semestre ; ce n'est pas une promesse de gain, mais une période favorable pour tester une idée.",
+            "Après le 26 juillet, Jupiter en Vierge invite à passer des intentions aux chiffres : organisez vos comptes, vos prix et vos échéances.",
+            "Saturne, en Bélier jusqu'en 2028, demande de la patience dans la constitution de vos réserves : les résultats viennent par paliers.",
+            "Les rétrogradations de Mercure (du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre) sont des moments pour relire les contrats et vérifier les montants avant de signer.",
+            "Vénus en Scorpion puis en Sagittaire à l'automne peut inviter à revoir la part des dépenses liées au plaisir et à l'image."
+          ]
+        },
+        {
+          "theme": "sante",
+          "libelle": "Santé & vitalité",
+          "phrases": [
+            "Le cycle universel 2027 invite à écouter les signaux du corps plutôt qu'à les ignorer ; un bilan régulier reste le meilleur allié de la vitalité.",
+            "La régularité des horaires de repas et de sommeil soutient l'énergie tout au long de l'année, davantage que les efforts ponctuels.",
+            "Une activité physique choisie pour le plaisir tient mieux dans la durée qu'une discipline imposée ; elle s'accorde avec les saisons.",
+            "Les tensions accumulées par le rythme de travail se logent souvent dans le dos et la nuque : des pauses régulières les allègent.",
+            "Une alimentation simple, variée et prise dans le calme accompagne un équilibre durable ; les excès comme les privations pèsent sur l'organisme.",
+            "Le sommeil est le socle de la récupération : protéger ses heures de coucher est l'un des gestes les plus efficaces de l'année.",
+            "Les émotions prolongées pèsent sur l'organisme ; parler, écrire ou marcher aide à les relâcher avant qu'elles ne s'installent.",
+            "Vers le milieu de l'année, un point d'étape sur ses habitudes de santé permet d'ajuster sans renoncer à ce qui fonctionne.",
+            "En fin d'année, la fatigue cumulée demande une attention particulière : accorder un repos véritable est une forme de prévention.",
+            "Un suivi préventif, même sans symptôme, rassure et permet d'agir tôt ; toute douleur persistante mérite l'avis d'un professionnel de santé.",
+            "Saturne, en Bélier jusqu'en avril 2028, invite à une hygiène de vie structurée : les progrès de santé se construisent par étapes régulières.",
+            "Mars rétrograde du 12 janvier au 3 avril 2027 : c'est une période pour ralentir l'élan physique et éviter les efforts brusques.",
+            "Mars en Vierge puis en Balance (à partir du 15 mai puis du 15 juillet) peut favoriser une attention plus fine à l'alimentation et au mouvement doux.",
+            "Les éclipses du 20 février (Vierge) et du 2 août (Lion) sont des moments de bascule : elles encouragent des changements d'habitudes progressifs plutôt que brutaux.",
+            "Jupiter, en Lion puis en Vierge après le 26 juillet, invite à soigner le bien-être par des routines simples plutôt que par des excès."
+          ]
+        },
+        {
+          "theme": "amour_famille",
+          "libelle": "Amour & famille",
+          "phrases": [
+            "L'année 2027 invite à renforcer les liens essentiels : des attentions régulières comptent davantage que les grands gestes ponctuels.",
+            "Le cycle universel 2 favorise la coopération au sein du foyer : partager les responsabilités apaise bien des tensions.",
+            "La communication sincère dans le couple et la famille demande des mots posés ; dire ce que l'on ressent évite les malentendus accumulés.",
+            "Les liens familiaux gagnent à être entretenus par des rendez-vous réguliers, même brefs : un repas partagé vaut mieux qu'un long silence.",
+            "Les décisions qui concernent le foyer se prennent mieux à plusieurs, après une écoute réelle de chacun.",
+            "Une relation durable se nourrit de confiance : tenir ses engagements, petits comme grands, reste la première preuve d'attachement.",
+            "Les moments de partage sans écran renforcent les liens ; ils deviennent plus précieux lorsqu'ils sont prévus à l'avance.",
+            "Vers le milieu de l'année, les projets communs (voyage, installation, aménagement) demandent une discussion ouverte sur les attentes de chacun.",
+            "Les tensions anciennes gagnent à être abordées avec calme plutôt que tues : un pardon exprimé libère autant celui qui le donne que celui qui le reçoit.",
+            "En fin d'année, l'attention portée aux proches âgés ou fragiles renforce la solidarité familiale et la paix du foyer.",
+            "Vénus, en Lion du 28 juillet au 21 août puis en Vierge, invite à la tendresse concrète et aux gestes simples de l'été.",
+            "Vénus en Balance (du 14 septembre au 8 octobre) favorise l'harmonie et le dialogue : un moment de médiation peut dénouer une tension.",
+            "Vénus en Scorpion puis en Sagittaire à l'automne (du 8 octobre au 1er novembre) peut approfondir les liens, parfois en révélant des sujets sensibles à traiter avec délicatesse.",
+            "Les éclipses du 6 février et du 17 août, toutes deux en Verseau, concernent les équilibres du foyer : elles appellent à clarifier les rôles plutôt qu'à les bouleverser.",
+            "Jupiter en Vierge après le 26 juillet encourage l'organisation de la vie familiale : planifier les rendez-vous importants aide à maintenir la sérénité."
+          ]
+        },
+        {
+          "theme": "vie_familiale_sociale",
+          "libelle": "Vie familiale & sociale",
+          "phrases": [
+            "L'année 2027 favorise les liens de proximité : voisins, amis et réseaux d'entraide deviennent des appuis précieux.",
+            "Le cycle universel 2 invite à la coopération collective : un projet partagé gagne à être réparti clairement entre ses membres.",
+            "Les réseaux sociaux et les échanges en groupe demandent de la mesure : une parole brève et vérifiée vaut mieux qu'une réaction rapide.",
+            "Les engagements associatifs et communautaires s'inscrivent dans la durée ; un calendrier simple permet de tenir la régularité.",
+            "Les rencontres nouvelles naissent souvent d'activités partagées : une invitation sincère ouvre fréquemment des relations durables.",
+            "Les obligations familiales et sociales demandent de l'équilibre ; savoir dire non avec tact protège la disponibilité réelle.",
+            "Un groupe qui communique clairement avance mieux : des règles connues de tous évitent bien des malentendus.",
+            "Vers le milieu de l'année, les projets collectifs gagnent à être relus ensemble pour rester fidèles à leur sens initial.",
+            "Les solidarités de quartier se renforcent par de petits gestes réguliers, plus durables que les actions ponctuelles.",
+            "En fin d'année, un bilan partagé avec ses proches ou son groupe permet de reconnaître les efforts de chacun et de préparer la suite.",
+            "Mercure rétrograde du 10 février au 4 mars, du 11 ou 12 juin au 5 ou 6 juillet, puis du 8 au 29 octobre : des périodes pour relire les messages et confirmer les rendez-vous.",
+            "Jupiter, en Lion jusqu'au 26 juillet puis en Vierge, favorise les rencontres et l'ouverture vers les autres, avec une tournure plus organisée à partir de l'été.",
+            "Mercure en Lion (du 2 au 17 août) puis en Vierge (jusqu'au 3 septembre) peut activer les échanges et les déplacements courts entre proches.",
+            "Pluton, en Verseau pendant toute l'année, touche aux réseaux et aux causes collectives : les engagements de fond gagnent à être réfléchis avant d'être lancés.",
+            "Uranus, en Gémeaux, et sa rétrogradation à partir du 16 septembre invitent à renouveler les façons de se réunir et de s'organiser."
+          ]
+        },
+        {
+          "theme": "travail",
+          "libelle": "Travail & réalités professionnelles",
+          "phrases": [
+            "L'année 2027 invite à structurer son activité : des priorités claires et un rythme régulier donnent des résultats plus solides que l'urgence.",
+            "Le cycle universel 2 favorise la collaboration : les projets menés en binôme ou en équipe bien répartie avancent avec plus de fluidité.",
+            "Une compétence entretenue avec constance devient un atout reconnu ; une formation ciblée ouvre des possibilités concrètes.",
+            "Les responsabilités accrues demandent des limites nettes : accepter tout expose à l'épuisement et à la baisse de qualité.",
+            "Les initiatives professionnelles gagnent à être testées à petite échelle avant d'être développées.",
+            "La qualité des écrits et des échanges professionnels influence la confiance : relire et clarifier avant d'envoyer reste essentiel.",
+            "Vers le milieu de l'année, un bilan des objectifs permet de réajuster la trajectoire sans en changer la direction générale.",
+            "Les projets de long terme se construisent par étapes : chaque livrable achevé consolide la réputation et la suite du parcours.",
+            "Les relations avec les collègues et les partenaires demandent de la transparence : dire tôt ce qui bloque évite les tensions plus tard.",
+            "En fin d'année, un bilan de compétences et de réalisations prépare les choix de l'année suivante avec lucidité.",
+            "Mars rétrograde du 12 janvier au 3 avril 2027 : une période pour reprendre les dossiers en attente et relire les décisions prises.",
+            "Saturne, en Bélier jusqu'en 2028, invite à consolider les fondations professionnelles plutôt qu'à les multiplier ; sa rétrogradation du 11 août au 25 décembre favorise ce recentrage.",
+            "Mars passe ensuite par la Vierge, la Balance, le Scorpion (2 septembre) et le Sagittaire (16 octobre) : l'énergie d'action gagne à être ciblée selon chaque période.",
+            "Jupiter en Vierge après le 26 juillet encourage l'organisation professionnelle, la méthode et la précision dans les dossiers.",
+            "Mercure en Vierge (du 17 août au 3 septembre), puis en Capricorne à partir du 18 décembre, invite aux échanges écrits précis et à la structuration des missions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conseils_generaux",
+      "titre": "Conseils généraux de l'année",
+      "pages": 1,
+      "statut": "valide",
+      "phrases": [
+        "Fixez-vous trois priorités annuelles, notées par écrit, et relisez-les chaque trimestre.",
+        "Protégez un créneau fixe chaque semaine pour vos projets personnels, à l'abri des sollicitations.",
+        "Tenez un carnet de bord mensuel : notez ce qui fonctionne et ce qui mérite d'être ajusté.",
+        "Avant toute décision financière importante, laissez passer un délai de réflexion et demandez un avis extérieur.",
+        "Gardez un réseau de soutien varié : amis, famille, professionnels de confiance.",
+        "Confirmez par écrit les engagements pris à l'oral, en particulier pendant les périodes de rétrogradation de Mercure.",
+        "Prévoyez des temps de repos réels dans le calendrier, et non seulement après l'effort.",
+        "Consultez un professionnel pour toute question de santé, de droit ou de finances : ce document n'en tient pas lieu.",
+        "Relisez le document à mi-année pour mesurer le chemin parcouru et ajuster vos objectifs.",
+        "Gardez une part de souplesse : les tendances indiquent des directions, non des certitudes."
+      ]
+    },
+    {
+      "id": "anges",
+      "titre": "Les anges de l'année 2027",
+      "pages": 2,
+      "statut": "valide",
+      "paragraphes": [
+        "Cette section présente, pour chaque période de l'année 2027, l'ange retenu dans la liste de référence. Les périodes suivent le calendrier de la liste : elles durent généralement cinq jours, parfois six, et une période peut déborder sur le mois suivant.",
+        "En janvier : Nemamiah (1 au 5), Yeyalel (6 au 10), Harahel (11 au 15), Mitzlael (16 au 20), Umabel (21 au 25), Iha-Hel (26 au 30), Anauel (31 au 4 février).",
+        "En février : Mehiel (5 au 9), Damabiah (10 au 14), Manakel (15 au 19), Eyael (20 au 24), Abuhiah (25 au 29).",
+        "En mars : Rahael (1 au 5), Jabamiah (6 au 10), Haihaiel (11 au 15), Mumiah (16 au 20), Vehuiah (21 au 25), Yeliel (26 au 30), Sitael (31 au 4 avril).",
+        "En avril : Elemiah (5 au 9), Mahasiah (10 au 14), Lelahel (15 au 20), Achaiah (21 au 25), Cahetel (26 au 30).",
+        "En mai : Aziel (1 au 5), Aladiah (6 au 10), Lauviah (11 au 15), Hahaiah (16 au 20), Yezalel (21 au 25), Mebahel (26 au 31).",
+        "En juin : Hariel (1 au 5), Hekamiah (6 au 10), Leuviah (11 au 15), Calier (16 au 21), Leuviah (22 au 26), Pahaliah (27 au 1 juillet).",
+        "En juillet : Nelchael (2 au 6), Yeiayel (7 au 11), Melahel (12 au 16), Haheuiah (17 au 22), Nith-Haiah (23 au 27), Haaiah (28 au 1 août).",
+        "En août : Yeratel (2 au 6), Seheiah (7 au 12), Reitiel (13 au 17), Omael (18 au 22), Lecabel (23 au 28), Vasariah (29 au 2 septembre).",
+        "En septembre : Yehuiah (3 au 7), Lehahiah (8 au 12), Chavakhiah (13 au 17), Menadel (18 au 23), Aniel (24 au 28), Haamiah (29 au 3 octobre).",
+        "En octobre : Rehael (4 au 8), Yeiazel (9 au 13), Hahahel (14 au 18), Mikhael (19 au 23), Veuliah (24 au 28), Yelahiah (29 au 2 novembre).",
+        "En novembre : Sealiah (3 au 7), Ariel (8 au 12), Asaliah (13 au 17), Miael (18 au 22), Vehuel (23 au 27), Daniel (28 au 2 décembre).",
+        "En décembre : Hahasiah (3 au 7), Imamiah (8 au 12), Nanael (13 au 16), Nithael (17 au 21), Mebahiah (22 au 26), Poyel (27 au 31)."
+      ]
+    },
+    {
+      "id": "synthese",
+      "titre": "Synthèse et orientations",
+      "pages": 1,
+      "statut": "valide",
+      "paragraphes": [
+        "Ce rapport combine deux approches. Lorsque la date de naissance est connue, il s'appuie sur l'astrologie tropicale : position des planètes au moment de la naissance, année et mois personnels, et numérologie du nom. Lorsque la date n'est pas connue, il s'appuie uniquement sur les prénoms et le nom complets : expression, âme et nombre intime, avec le cycle universel de 2027.",
+        "Les deux approches donnent des lectures différentes, mais elles répondent à la même question : comment aborder l'année 2027 avec des repères concrets. Une lecture numérologique gagne à être relue avec la même attention qu'une lecture astrologique, car elle décrit des tendances et non des faits.",
+        "Pour lire ce document, commencez par les grandes tendances, puis votre année ou votre cycle universel, puis le mois qui vous intéresse. Les conseils pratiques de chaque mois sont les plus directement applicables : choisissez-en un ou deux à mettre en œuvre, plutôt que de tout tenter à la fois.",
+        "Les repères présentés ici n'ont pas valeur d'avis professionnel. Pour les questions de santé, il faut consulter un médecin ; pour les questions financières ou juridiques, un professionnel compétent. Les conseils sont des pistes de réflexion, à confronter à la réalité de votre situation.",
+        "L'année se construit par des gestes réguliers : un bilan trimestriel, une décision prise après réflexion, une relation entretenue avec attention. Le document vous invite à en faire un outil de suivi, en notant ce qui fonctionne et ce qui mérite d'être ajusté.",
+        "Ce rapport est un point de départ. Il peut être relu à mi-année pour vérifier le chemin parcouru, et réutilisé les années suivantes pour comparer les cycles et mesurer les évolutions personnelles."
+      ]
+    }
+  ]
+}
