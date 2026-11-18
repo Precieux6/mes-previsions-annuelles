@@ -16,11 +16,15 @@ function Commande() {
   async function soumettre(e: React.FormEvent) {
     e.preventDefault();
     setErreur('');
-    if (birthdate && !consent) { setErreur('Merci de confirmer votre accord pour l’utilisation de votre date de naissance.'); return; }
+    if (birthdate && !consent) {
+      setErreur('Merci de confirmer votre accord pour l’utilisation de votre date de naissance.');
+      return;
+    }
     setEnvoi(true);
     try {
       const r = await fetch('/api/orders', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ fullName, birthdate: birthdate || undefined, signId: birthdate ? signId : undefined, contact }),
       });
       const data = await r.json();
@@ -35,36 +39,44 @@ function Commande() {
   }
 
   return (
-    <form onSubmit={soumettre} className="space-y-4 max-w-md mx-auto p-6">
-      <h1 className="text-2xl font-bold text-indigo-950">Mes prévisions annuelles 2027</h1>
-      <label className="block text-sm">Nom et prénoms complets
-        <input required value={fullName} onChange={(e) => setFullName(e.target.value)} className="w-full border rounded p-2" />
-      </label>
-      <label className="block text-sm">Date de naissance (facultative)
-        <input type="date" value={birthdate} onChange={(e) => setBirthdate(e.target.value)} className="w-full border rounded p-2" />
-      </label>
-      {birthdate && (
-        <>
-          <label className="block text-sm">Signe
-            <select value={signId} onChange={(e) => setSignId(e.target.value)} className="w-full border rounded p-2">
-              {SIGNES.map((s) => <option key={s} value={s}>{s}</option>)}
-            </select>
-          </label>
-          <label className="flex gap-2 text-xs">
-            <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
-            J’accepte que ma date de naissance soit utilisée uniquement pour calculer mon année personnelle et les repères astrologiques de mon étude.
-          </label>
-        </>
-      )}
-      <label className="block text-sm">E-mail ou téléphone
-        <input required value={contact} onChange={(e) => setContact(e.target.value)} className="w-full border rounded p-2" />
-      </label>
-      {erreur && <p role="alert" className="text-sm text-rose-700">{erreur}</p>}
-      <button disabled={envoi} className="w-full bg-indigo-900 text-white rounded p-3 font-semibold disabled:opacity-50">
-        {envoi ? 'Redirection vers le paiement…' : 'Procéder au paiement (5 000 XOF)'}
-      </button>
-      <p className="text-xs text-slate-500">Le paiement est traité par FedaPay. Aucune donnée de carte n’est saisie sur ce site.</p>
-    </form>
+    <div className="page">
+      <form className="card" onSubmit={soumettre}>
+        <h1>Mes prévisions annuelles 2027</h1>
+
+        <label className="field">Nom et prénoms complets
+          <input required value={fullName} onChange={(e) => setFullName(e.target.value)} />
+        </label>
+
+        <label className="field">Date de naissance (facultative)
+          <input type="date" value={birthdate} onChange={(e) => setBirthdate(e.target.value)} />
+        </label>
+
+        {birthdate && (
+          <>
+            <label className="field">Signe
+              <select value={signId} onChange={(e) => setSignId(e.target.value)}>
+                {SIGNES.map((s) => <option key={s} value={s}>{s}</option>)}
+              </select>
+            </label>
+            <label className="consent">
+              <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
+              <span>J’accepte que ma date de naissance soit utilisée uniquement pour calculer mon année personnelle et les repères astrologiques de mon étude.</span>
+            </label>
+          </>
+        )}
+
+        <label className="field">E-mail ou téléphone
+          <input required value={contact} onChange={(e) => setContact(e.target.value)} />
+        </label>
+
+        {erreur && <p role="alert" className="erreur">{erreur}</p>}
+
+        <button className="btn" disabled={envoi}>
+          {envoi ? 'Redirection vers le paiement…' : 'Procéder au paiement (5 000 XOF)'}
+        </button>
+        <p className="note">Le paiement est traité par FedaPay. Aucune donnée de carte n’est saisie sur ce site.</p>
+      </form>
+    </div>
   );
 }
 
@@ -96,17 +108,17 @@ function Suivi({ reference }: { reference: string }) {
     else setErreur(`Téléchargement impossible (${r.status}).`);
   }
 
-  if (erreur) return <p className="p-6 text-rose-700">{erreur}</p>;
+  if (erreur) return <div className="suivi"><p className="erreur">{erreur}</p></div>;
   return (
-    <div className="max-w-md mx-auto p-6 space-y-4">
-      <h1 className="text-xl font-bold">Suivi de commande {reference}</h1>
-      <p className="text-sm">Statut : {statut || '…'}</p>
+    <div className="suivi">
+      <h1>Suivi de commande {reference}</h1>
+      <p>Statut : {statut || '…'}</p>
       {statut === 'completed' && (
-        <ul className="space-y-2">
-          {docs.includes('pdf_36_pages') && <li><button onClick={() => ouvrir('pdf_36_pages')} className="underline">Télécharger le document (PDF)</button></li>}
-          {docs.includes('receipt_pdf') && <li><button onClick={() => ouvrir('receipt_pdf')} className="underline">Télécharger le reçu</button></li>}
+        <ul>
+          {docs.includes('pdf_36_pages') && <li><button className="lien" onClick={() => ouvrir('pdf_36_pages')}>Télécharger le document (PDF)</button></li>}
+          {docs.includes('receipt_pdf') && <li><button className="lien" onClick={() => ouvrir('receipt_pdf')}>Télécharger le reçu</button></li>}
           {docs.filter((d) => d.startsWith('audio_')).map((d) => (
-            <li key={d}><button onClick={() => ouvrir(d)} className="underline">Écouter / télécharger {d}</button></li>
+            <li key={d}><button className="lien" onClick={() => ouvrir(d)}>Écouter / télécharger {d}</button></li>
           ))}
         </ul>
       )}
@@ -115,8 +127,7 @@ function Suivi({ reference }: { reference: string }) {
 }
 
 export default function App() {
-  const path = window.location.pathname;
-  if (path.startsWith('/suivi')) {
+  if (window.location.pathname.startsWith('/suivi')) {
     const ref = new URLSearchParams(window.location.search).get('ref') ?? localStorage.getItem('mpa_last_ref') ?? '';
     return <Suivi reference={ref} />;
   }
