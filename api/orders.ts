@@ -10,7 +10,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ error: 'Méthode non autorisée' }); }
   const v = validateOrderInput(req.body);
   if (!v.valid) return res.status(400).json({ error: v.error });
-  const { fullName, birthdate, contact, signId } = v.data;
+  const { fullName, birthdate, email, telephone, signId } = v.data;
 
   const reference = `AST2027-${crypto.randomBytes(4).toString('hex').toUpperCase()}`;
   const { rawToken, tokenHash } = generateAccessToken();
@@ -19,9 +19,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   let orderId: number;
   try {
     const o = await pool.query(
-      `INSERT INTO orders (reference, token_hash, full_name, birthdate, contact, sign_id, status, annee)
-       VALUES ($1, $2, $3, $4, $5, $6, 'created', 2027) RETURNING id`,
-      [reference, tokenHash, fullName, birthdate ?? null, contact, signId]);
+      `INSERT INTO orders (reference, token_hash, full_name, birthdate, contact, email, telephone, sign_id, status, annee)
+       VALUES ($1, $2, $3, $4, $5, $5, $6, $7, 'created', 2027) RETURNING id`,
+      [reference, tokenHash, fullName, birthdate ?? null, email, telephone, signId]);
     orderId = o.rows[0].id;
   } catch (err) {
     console.error('Création de commande impossible :', err);
@@ -30,7 +30,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   let paiement;
   try {
-    paiement = await creerTransaction({ reference, nomClient: fullName, contact }, `${publicBaseUrl()}/api/return?ref=${reference}`);
+    paiement = await creerTransaction({ reference, nomClient: fullName, email, telephone },
+      `${publicBaseUrl()}/api/return?ref=${reference}`);
   } catch (err) {
     console.error('Passerelle FedaPay indisponible :', err);
     await pool.query(`UPDATE orders SET status = 'failed' WHERE id = $1`, [orderId]);
