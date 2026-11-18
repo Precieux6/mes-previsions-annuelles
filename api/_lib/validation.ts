@@ -1,9 +1,9 @@
-// Validation des entrées. La date de naissance est facultative : sans elle, la commande passe en mode « nom ».
+// Validation des entrées. Date de naissance facultative ; e-mail et téléphone obligatoires.
 export const SIGNES = ['belier', 'taureau', 'gemeaux', 'cancer', 'lion', 'vierge',
   'balance', 'scorpion', 'sagittaire', 'capricorne', 'verseau', 'poissons'] as const;
 export const SANS_SIGNE = 'nom_seul';
 
-export interface OrderInput { fullName: string; birthdate?: string; contact: string; signId: string }
+export interface OrderInput { fullName: string; birthdate?: string; email: string; telephone: string; signId: string }
 type Resultat = { valid: true; data: OrderInput } | { valid: false; error: string };
 
 function dateValide(iso: string): boolean {
@@ -20,10 +20,15 @@ export function validateOrderInput(body: unknown): Resultat {
   if (fullName.length < 2 || fullName.length > 120) return { valid: false, error: 'Nom complet requis (2 à 120 caractères).' };
   if (!/^[\p{L}' .-]+$/u.test(fullName)) return { valid: false, error: 'Le nom ne peut contenir que des lettres, espaces, apostrophes et tirets.' };
 
-  const contact = typeof b.contact === 'string' ? b.contact.trim() : '';
-  const estEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact);
-  const estTelephone = /^\+?[\d\s]{8,20}$/.test(contact);
-  if (!estEmail && !estTelephone) return { valid: false, error: 'Adresse e-mail ou numéro de téléphone valide requis.' };
+  const email = typeof b.email === 'string' ? b.email.trim().toLowerCase() : '';
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254) {
+    return { valid: false, error: 'Adresse e-mail valide requise.' };
+  }
+
+  const telephone = typeof b.telephone === 'string' ? b.telephone.replace(/\s+/g, '') : '';
+  if (!/^\+?\d{8,15}$/.test(telephone)) {
+    return { valid: false, error: 'Numéro de téléphone valide requis (8 à 15 chiffres, indicatif possible).' };
+  }
 
   let birthdate: string | undefined;
   if (b.birthdate !== undefined && b.birthdate !== null && b.birthdate !== '') {
@@ -40,5 +45,5 @@ export function validateOrderInput(body: unknown): Resultat {
     if (!(SIGNES as readonly string[]).includes(s)) return { valid: false, error: 'Signe astrologique invalide.' };
     signId = s;
   }
-  return { valid: true, data: { fullName, birthdate, contact, signId } };
+  return { valid: true, data: { fullName, birthdate, email, telephone, signId } };
 }
