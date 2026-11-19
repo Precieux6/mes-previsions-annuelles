@@ -1,29 +1,18 @@
-# Worker « Mes prévisions annuelles » : Node, Python, Chromium et Piper.
-# Compatible x86_64 et aarch64 (Oracle Cloud Ampere).
+# Worker « Mes prévisions annuelles » — Cloud Run (mode requête)
 FROM node:20-bookworm-slim
 
-ENV DEBIAN_FRONTEND=noninteractive
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      python3 chromium ca-certificates curl tar \
+      python3 chromium ca-certificates curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Piper : moteur de synthèse vocale, version à confirmer sur la page des releases.
+# Piper : moteur de synthèse vocale (vérifier la version sur la page des releases)
 ARG PIPER_VERSION=2023.11.14-2
-RUN set -eux; \
-    arch="$(uname -m)"; \
-    case "$arch" in \
-      x86_64)  pa=x86_64 ;; \
-      aarch64) pa=aarch64 ;; \
-      *) echo "Architecture non prise en charge : $arch"; exit 1 ;; \
-    esac; \
-    curl -fsSL -o /tmp/piper.tar.gz \
-      "https://github.com/rhasspy/piper/releases/download/${PIPER_VERSION}/piper_linux_${pa}.tar.gz"; \
-    tar -xzf /tmp/piper.tar.gz -C /opt; \
-    rm /tmp/piper.tar.gz; \
-    chmod +x /opt/piper/piper
+RUN curl -fsSL -o /tmp/piper.tar.gz \
+      https://github.com/rhasspy/piper/releases/download/${PIPER_VERSION}/piper_linux_x86_64.tar.gz \
+    && tar -xzf /tmp/piper.tar.gz -C /opt \
+    && rm /tmp/piper.tar.gz
 
-# Voix française (modèle ONNX et configuration).
+# Voix française (modèle ONNX + configuration)
 RUN mkdir -p /app/models \
     && curl -fsSL -o /app/models/fr_FR-siwis-medium.onnx \
        https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx \
@@ -41,4 +30,6 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 
+# Cloud Run fournit PORT (8080 par défaut)
+EXPOSE 8080
 CMD ["npx", "tsx", "worker/index.ts"]
