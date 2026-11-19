@@ -1,5 +1,5 @@
-// Worker « Mes prévisions annuelles » — mode requête (Cloud Run + Cloud Scheduler).
-// Chaque appel POST /traiter traite les commandes payées en attente, dans la limite d'un budget de temps.
+// Worker « Mes prévisions annuelles » — mode requête (Hugging Face Spaces + cron-job.org).
+// Chaque appel POST /traiter (protégé par le jeton X-Worker-Token) lance un lot en arrière-plan.
 import http from 'http';
 import { spawn } from 'child_process';
 import { readFileSync } from 'fs';
@@ -16,7 +16,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const MAX_TENTATIVES = 3;
 const SENTINELLE_SANS_DATE = 'nom_seul';
 const BUDGET_MS = 6 * 60 * 1000;          // on ne démarre pas de nouvelle commande au-delà
-const PORT = Number(process.env.PORT ?? 8080);
+const PORT = Number(process.env.PORT ?? 7860);
+const WORKER_TOKEN = process.env.WORKER_TOKEN ?? '';
 const pool = getPool();
 const MOIS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août',
   'septembre', 'octobre', 'novembre', 'décembre'];
@@ -150,7 +151,7 @@ async function traiterCommande(job: Job): Promise<void> {
   await pool.query(`UPDATE jobs SET status = 'completed', error_message = NULL WHERE id = $1`, [job.id]);
 }
 
-/** Réserve le prochain job en attente. Le verrou SKIP LOCKED évite qu'deux appels prennent le même job. */
+/** Réserve le prochain job en attente. Le verrou SKIP LOCKED évite que deux traitements prennent le même job. */
 async function reclamerJob(): Promise<Job | null> {
   const client = await pool.connect();
   try {
@@ -208,31 +209,34 @@ export async function traiterLot(): Promise<{ traites: number; echecs: number }>
   return { traites, echecs };
 }
 
+/** Lot en cours : un seul à la fois, même si cron-job.org sollicite le worker plusieurs fois. */
 let enCours = false;
 
-const serveur = http.createServer(async (req, res) => {
+function lancerLot(): void {
+  enCours = true;
+  traiterLot()
+    .then((r) => console.log('Lot terminé :', JSON.stringify(r)))
+    .catch((err) => console.error('Erreur de traitement :', err))
+    .finally(() => { enCours = false; });
+}
+
+const serveur = http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     return res.end('ok');
   }
   if (req.method === 'POST' && req.url === '/traiter') {
+    if (!WORKER_TOKEN || req.headers['x-worker-token'] !== WORKER_TOKEN) {
+      res.writeHead(401);
+      return res.end();
+    }
     if (enCours) {
       res.writeHead(202, { 'Content-Type': 'text/plain' });
       return res.end('traitement déjà en cours');
     }
-    enCours = true;
-    try {
-      const resultat = await traiterLot();
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(resultat));
-    } catch (err) {
-      console.error('Erreur de traitement :', err);
-      res.writeHead(500, { 'Content-Type': 'text/plain' });
-      res.end('erreur');
-    } finally {
-      enCours = false;
-    }
-    return;
+    lancerLot();
+    res.writeHead(202, { 'Content-Type': 'text/plain' });
+    return res.end('lot lancé');
   }
   res.writeHead(404);
   res.end();
