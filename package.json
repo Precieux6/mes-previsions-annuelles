@@ -8,6 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "worker": "tsx worker/index.ts",
+    "start": "tsx worker/index.ts",
     "rapport:test": "echo '{\"nom\":\"Précieux Trésor Tossou\",\"date_naissance\":null,\"signe\":null}' | python3 scripts/rapport_2027.py > /dev/null && echo 'rapport OK'",
     "banks:check": "python3 scripts/valider_banques_2027.py"
   },
