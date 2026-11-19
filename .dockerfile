@@ -1,4 +1,4 @@
-# Worker « Mes prévisions annuelles » — Cloud Run (mode requête)
+# Worker « Mes prévisions annuelles » — Hugging Face Spaces (SDK Docker)
 FROM node:20-bookworm-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -19,17 +19,21 @@ RUN mkdir -p /app/models \
     && curl -fsSL -o /app/models/fr_FR-siwis-medium.onnx.json \
        https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json
 
+# Hugging Face attend une application qui écoute sur le port 7860 et tourne avec un utilisateur non root
+RUN useradd -m -u 1000 user
 ENV PIPER_BIN=/opt/piper/piper \
     PIPER_MODEL_PATH=/app/models/fr_FR-siwis-medium.onnx \
     PYTHON_BIN=python3 \
     CHROME_PATH=/usr/bin/chromium \
-    NODE_ENV=production
+    NODE_ENV=production \
+    PORT=7860
 
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
+RUN chown -R user:user /app
 
-# Cloud Run fournit PORT (8080 par défaut)
-EXPOSE 8080
+USER user
+EXPOSE 7860
 CMD ["npx", "tsx", "worker/index.ts"]
