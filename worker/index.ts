@@ -1,4 +1,6 @@
-// Worker : produit les documents d'une commande payée (PDF, reçu, audios), les envoie sur R2 et clôt la commande.
+// Worker « Mes prévisions annuelles » — mode requête (Cloud Run + Cloud Scheduler).
+// Chaque appel POST /traiter traite les commandes payées en attente, dans la limite d'un budget de temps.
+import http from 'http';
 import { spawn } from 'child_process';
 import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
@@ -13,6 +15,8 @@ import { envoyerDocument } from '../packages/storage/r2';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const MAX_TENTATIVES = 3;
 const SENTINELLE_SANS_DATE = 'nom_seul';
+const BUDGET_MS = 6 * 60 * 1000;          // on ne démarre pas de nouvelle commande au-delà
+const PORT = Number(process.env.PORT ?? 8080);
 const pool = getPool();
 const MOIS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août',
   'septembre', 'octobre', 'novembre', 'décembre'];
@@ -59,7 +63,6 @@ function lireCommun(): ContenuCommun {
   const g = sec('grandes_tendances');
   const th = sec('tendances_thematiques');
   const cg = sec('conseils_generaux');
-  const an = sec('anges');
   const sy = sec('synthese');
   const anges = JSON.parse(readFileSync(join(ROOT, 'contenu', '2027', 'anges_2027.json'), 'utf8')).anges as
     Array<{ nom: string; debut: string; fin: string }>;
@@ -74,7 +77,7 @@ function lireCommun(): ContenuCommun {
     thematiques: th.themes.map((t: { libelle: string; phrases: string[] }) => ({ libelle: t.libelle, phrases: t.phrases })),
     anges: anges.map((a) => `${a.nom} : du ${fmt(a.debut)} au ${fmt(a.fin)}`),
     conseils_generaux: cg.phrases,
-    synthese: sy.paragraphes ?? an.paragraphes ?? [],
+    synthese: sy.paragraphes ?? [],
   };
 }
 
@@ -116,8 +119,7 @@ async function traiterCommande(job: Job): Promise<void> {
   const transits = dateNaissance ? getTropicalSnapshot(new Date('2027-01-01T12:00:00Z')) : {};
 
   // 1. Document de 36 pages
-  const donnees: DonneesPDF = { rapport, dateNaissance, commun, transits };
-  const pdf = await genererPdf(donnees);
+  const pdf = await genererPdf({ rapport, dateNaissance, commun, transits } as DonneesPDF);
   const clePdf = `documents/${cmd.reference}/pdf_36_pages.pdf`;
   const envoiPdf = await envoyerDocument(clePdf, pdf, 'application/pdf');
   await enregistrerDocument(cmd.id, 'pdf_36_pages', clePdf, envoiPdf.sizeBytes, envoiPdf.sha256, 'application/pdf');
@@ -148,6 +150,7 @@ async function traiterCommande(job: Job): Promise<void> {
   await pool.query(`UPDATE jobs SET status = 'completed', error_message = NULL WHERE id = $1`, [job.id]);
 }
 
+/** Réserve le prochain job en attente. Le verrou SKIP LOCKED évite qu'deux appels prennent le même job. */
 async function reclamerJob(): Promise<Job | null> {
   const client = await pool.connect();
   try {
@@ -157,7 +160,8 @@ async function reclamerJob(): Promise<Job | null> {
        ORDER BY id LIMIT 1 FOR UPDATE SKIP LOCKED`, [MAX_TENTATIVES]);
     const job = r.rows[0];
     if (!job) { await client.query('COMMIT'); return null; }
-    await client.query(`UPDATE jobs SET status = 'processing', attempts = attempts + 1 WHERE id = $1`, [job.id]);
+    await client.query(
+      `UPDATE jobs SET status = 'processing', attempts = attempts + 1, started_at = now() WHERE id = $1`, [job.id]);
     await client.query('COMMIT');
     return job;
   } catch (e) {
@@ -177,21 +181,61 @@ async function echecJob(job: Job, err: unknown) {
   if (definitif) await pool.query(`UPDATE orders SET status = 'failed' WHERE id = $1`, [job.order_id]);
 }
 
-async function boucle() {
-  console.log('Worker « Mes prévisions annuelles » démarré.');
-  await pool.query(`UPDATE jobs SET status = 'pending' WHERE status = 'processing'`);
-  for (;;) {
-    let job: Job | null = null;
-    try {
-      job = await reclamerJob();
-      if (!job) { await new Promise((r) => setTimeout(r, 5000)); continue; }
-      await traiterCommande(job);
-      console.log(`Job ${job.id} terminé.`);
-    } catch (err) {
-      if (job) await echecJob(job, err).catch((e) => console.error('Mise à jour du job impossible :', e));
-      else { console.error('Erreur de file :', err); await new Promise((r) => setTimeout(r, 10000)); }
-    }
-  }
+/** Un job resté « processing » depuis plus de 30 minutes (instance arrêtée en plein travail) repasse en attente. */
+async function reprendreJobsBloques() {
+  await pool.query(`UPDATE jobs SET status = 'pending'
+                    WHERE status = 'processing' AND started_at < now() - interval '30 minutes'`);
 }
 
-boucle();
+/** Traite les jobs en attente tant que le budget de temps n'est pas dépassé. */
+export async function traiterLot(): Promise<{ traites: number; echecs: number }> {
+  const debut = Date.now();
+  let traites = 0;
+  let echecs = 0;
+  await reprendreJobsBloques();
+  while (Date.now() - debut < BUDGET_MS) {
+    const job = await reclamerJob();
+    if (!job) break;
+    try {
+      await traiterCommande(job);
+      traites++;
+      console.log(`Job ${job.id} terminé.`);
+    } catch (err) {
+      echecs++;
+      await echecJob(job, err).catch((e) => console.error('Mise à jour du job impossible :', e));
+    }
+  }
+  return { traites, echecs };
+}
+
+let enCours = false;
+
+const serveur = http.createServer(async (req, res) => {
+  if (req.method === 'GET' && req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    return res.end('ok');
+  }
+  if (req.method === 'POST' && req.url === '/traiter') {
+    if (enCours) {
+      res.writeHead(202, { 'Content-Type': 'text/plain' });
+      return res.end('traitement déjà en cours');
+    }
+    enCours = true;
+    try {
+      const resultat = await traiterLot();
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(resultat));
+    } catch (err) {
+      console.error('Erreur de traitement :', err);
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('erreur');
+    } finally {
+      enCours = false;
+    }
+    return;
+  }
+  res.writeHead(404);
+  res.end();
+});
+
+serveur.listen(PORT, () => console.log(`Worker « Mes prévisions annuelles » à l'écoute sur le port ${PORT}.`));
