@@ -1,8 +1,12 @@
 node_modules
 dist
 .git
+.gitignore
 .env
 .env.*
+.vercel
+.vercelignore
 __pycache__
 *.pyc
-.vercel
+scripts/__pycache__
+deploy
