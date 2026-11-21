@@ -14,9 +14,10 @@ export interface MoisDonnees {
   mois: string; libelle_cycle: 'personnel' | 'universel'; annee_personnelle: number; mois_personnel: number;
   ciel: string; tonalite: string; tendances: Record<string, string[]>; conseils: Conseil[];
 }
+export interface AnneeUniverselle { maitre: number; reduit: number }
 export interface Profil {
   nom: string; mode: 'date' | 'nom'; signe: string | null; libelle_cycle: 'personnel' | 'universel';
-  annee_personnelle: number; annee_universelle: number;
+  annee_personnelle: number; annee_universelle: AnneeUniverselle;
   nombre_expression: number; nombre_ame: number; nombre_intime: number;
 }
 export interface Rapport { profil: Profil; revelation: string[]; mois: MoisDonnees[] }
@@ -49,6 +50,7 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const pied = (n: number) => `<div class="pied">Mes prévisions annuelles 2027 — document confidentiel — page ${n} / ${NB_PAGES}</div>`;
 const page = (corps: string) => `<section class="page">${corps}</section>`;
 const majuscule = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const universelleLibelle = (u: AnneeUniverselle) => `${u.maitre} (nombre maître), réduit à ${u.reduit}`;
 
 /** Répartit des éléments sur n pages, en équilibrant la longueur de texte. */
 function repartir(items: Item[], n: number): Item[][] {
@@ -93,6 +95,7 @@ function couverture(d: DonneesPDF): string {
         <p><strong>Établi pour :</strong> ${esc(p.nom)}</p>
         ${lignes}
         <p><strong>${cycle} :</strong> ${p.annee_personnelle}</p>
+        <p><strong>Année universelle 2027 :</strong> ${esc(universelleLibelle(p.annee_universelle))}</p>
       </div>
     </div>`);
 }
@@ -128,13 +131,13 @@ function pageCentrale(d: DonneesPDF, n: number): string {
     return page(`<h2>Transits de référence (1er janvier 2027)</h2>
       <table><tr><th>Planète</th><th>Signe</th><th>Degré</th><th>Mouvement</th></tr>${lignes}</table>${pied(n)}`);
   }
-  const lignes: Array<[string, number]> = [
+  const lignes: Array<[string, string | number]> = [
     ["Nombre d'expression (prénoms et nom)", p.nombre_expression],
     ['Élan spirituel (voyelles du nom)', p.nombre_ame],
     ['Nombre intime (consonnes du nom)', p.nombre_intime],
-    ['Cycle universel 2027', p.annee_universelle],
+    ['Année universelle 2027', universelleLibelle(p.annee_universelle)],
   ];
-  const t = lignes.map(([l, v]) => `<tr><td>${esc(l)}</td><td>${v}</td></tr>`).join('');
+  const t = lignes.map(([l, v]) => `<tr><td>${esc(l)}</td><td>${esc(String(v))}</td></tr>`).join('');
   return page(`<h2>Les nombres de votre nom</h2>
     <p>Ce profil s'appuie uniquement sur vos prénoms et votre nom complets.</p>
     <table><tr><th>Repère</th><th>Nombre</th></tr>${t}</table>${pied(n)}`);
