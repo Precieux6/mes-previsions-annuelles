@@ -1,0 +1,49 @@
+{
+  "version": "2027.2",
+  "source": "Géomancie & Astrologie : manuscrit des 16 signes Mêdji (document de référence). Découpage 15 premiers / 15 derniers jours.",
+  "regle": "Dates au format MM-JJ, bornes incluses, sans année : la table est réutilisable chaque année. Un intervalle dont le début est après la fin traverse le 31 décembre (Capricorne). Chaque jour de l'année appartient à un seul numéro ; le contrôle spirit:check vérifie la couverture.",
+  "decoupage_des_signes": {
+    "gemeaux": "15 premiers jours : Woli (03) ; 15 derniers jours : Sa (10)",
+    "taureau": "15 premiers jours : Tula (13) ; 15 derniers jours : Guda (09)",
+    "cancer": "15 premiers jours : Gbè (01) ; 15 derniers jours : Yèkou (02)",
+    "lion": "15 premiers jours : Losso (05) ; 15 derniers jours : Winlin (06)",
+    "scorpion": "15 premiers jours : Ka (11) ; 15 derniers jours : Guda (09)",
+    "sagittaire": "15 premiers jours : Fu (16) ; 15 derniers jours : Sa (10)"
+  },
+  "signes_medji": [
+    { "numero": "01", "nom": "Gbè - Medji", "periodes": [
+      { "signe": "cancer", "moitie": "15 premiers jours", "debut": "06-21", "fin": "07-06" } ] },
+    { "numero": "02", "nom": "Yèkou - Medji", "periodes": [
+      { "signe": "cancer", "moitie": "15 derniers jours", "debut": "07-07", "fin": "07-22" } ] },
+    { "numero": "03", "nom": "Woli - Medji", "periodes": [
+      { "signe": "gemeaux", "moitie": "15 premiers jours", "debut": "05-21", "fin": "06-05" } ] },
+    { "numero": "04", "nom": "Di - Medji", "periodes": [
+      { "signe": "capricorne", "moitie": "signe complet", "debut": "12-22", "fin": "01-19" } ] },
+    { "numero": "05", "nom": "Losso - Medji", "periodes": [
+      { "signe": "lion", "moitie": "15 premiers jours", "debut": "07-23", "fin": "08-07" } ] },
+    { "numero": "06", "nom": "Winlin - Medji", "periodes": [
+      { "signe": "lion", "moitie": "15 derniers jours", "debut": "08-08", "fin": "08-22" } ] },
+    { "numero": "07", "nom": "Abla - Medji", "periodes": [
+      { "signe": "balance", "moitie": "signe complet", "debut": "09-23", "fin": "10-22" } ] },
+    { "numero": "08", "nom": "Aklan - Medji", "periodes": [
+      { "signe": "verseau", "moitie": "signe complet", "debut": "01-20", "fin": "02-18" } ] },
+    { "numero": "09", "nom": "Guda - Medji", "periodes": [
+      { "signe": "taureau", "moitie": "15 derniers jours", "debut": "05-06", "fin": "05-20" },
+      { "signe": "scorpion", "moitie": "15 derniers jours", "debut": "11-07", "fin": "11-21" } ] },
+    { "numero": "10", "nom": "Sa - Medji", "periodes": [
+      { "signe": "gemeaux", "moitie": "15 derniers jours", "debut": "06-06", "fin": "06-20" },
+      { "signe": "sagittaire", "moitie": "15 derniers jours", "debut": "12-07", "fin": "12-21" } ] },
+    { "numero": "11", "nom": "Ka - Medji", "periodes": [
+      { "signe": "scorpion", "moitie": "15 premiers jours", "debut": "10-23", "fin": "11-06" } ] },
+    { "numero": "12", "nom": "Troukpin - Medji", "periodes": [
+      { "signe": "vierge", "moitie": "signe complet", "debut": "08-23", "fin": "09-22" } ] },
+    { "numero": "13", "nom": "Tula - Medji", "periodes": [
+      { "signe": "taureau", "moitie": "15 premiers jours", "debut": "04-20", "fin": "05-05" } ] },
+    { "numero": "14", "nom": "Lete - Medji", "periodes": [
+      { "signe": "belier", "moitie": "signe complet", "debut": "03-21", "fin": "04-19" } ] },
+    { "numero": "15", "nom": "Tchè - Medji", "periodes": [
+      { "signe": "poissons", "moitie": "signe complet", "debut": "02-19", "fin": "03-20" } ] },
+    { "numero": "16", "nom": "Fu - Medji", "periodes": [
+      { "signe": "sagittaire", "moitie": "15 premiers jours", "debut": "11-22", "fin": "12-06" } ] }
+  ]
+}
