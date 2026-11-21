@@ -70,9 +70,13 @@ def mettre_a_jour_relecture_annuel(dry_run):
         elif deja[0].get("texte") != texte:
             sys.exit(f"relecture_annuel_2027.json : entrée annee_universelle/{cle} différente. "
                      "Corriger à la main avant de relancer.")
-
-    if "nb_textes" in donnees:
+    if donnees.get("reserve") != RESERVE:
+        donnees["reserve"] = RESERVE
+        modifie = True
+      
+    if "nb_textes" in donnees and donnees["nb_textes"] != len(donnees["textes"]):
         donnees["nb_textes"] = len(donnees["textes"])
+        modifie = True
     if not modifie:
         print("relecture_annuel_2027.json : déjà à jour.")
         return False
