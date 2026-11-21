@@ -63,8 +63,8 @@ function lireCommun(): ContenuCommun {
   };
   const g = sec('grandes_tendances');
   const th = sec('tendances_thematiques');
-  const cg = sec('conseils_generaux');
   const cy = sec('cycles_personnels');
+  const cg = sec('conseils_generaux');
   const sy = sec('synthese');
   const anges = JSON.parse(readFileSync(join(ROOT, 'contenu', '2027', 'anges_2027.json'), 'utf8')).anges as
     Array<{ nom: string; debut: string; fin: string }>;
@@ -121,7 +121,7 @@ async function traiterCommande(job: Job): Promise<void> {
   const rapport = await genererRapport({ nom: cmd.full_name, date_naissance: dateNaissance, signe });
   const transits = dateNaissance ? getTropicalSnapshot(new Date('2027-01-01T12:00:00Z')) : {};
 
-  // 1. Document de 36 pages
+  // 1. Document de 38 pages
   const pdf = await genererPdf({ rapport, dateNaissance, commun, transits } as DonneesPDF);
   const clePdf = `documents/${cmd.reference}/pdf_36_pages.pdf`;
   const envoiPdf = await envoyerDocument(clePdf, pdf, 'application/pdf');
