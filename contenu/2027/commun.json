@@ -1,6 +1,6 @@
 {
-  "version": "2027.1",
-  "description": "Partie commune à tous les clients : identique pour chaque commande, générée une seule fois.",
+  "version": "2027.2",
+  "description": "Partie commune à tous les clients : identique pour chaque commande. Fusion de commun.json et sections.json.",
   "sections": [
     {
       "id": "presentation",
@@ -24,6 +24,7 @@
         "Le monde agricole est invité à la surveillance. Les cultures peuvent être menacées par des insectes, des oiseaux ou des rongeurs qui se déplacent. La prévention, la surveillance régulière des champs et les mesures prises à temps protègent les récoltes et les investissements.",
         "L'été est une phase charnière. Jupiter quitte le Lion pour la Vierge le 26 juillet 2027 : l'élan de confiance du premier semestre se transforme en exigence d'organisation. L'éclipse totale du 2 août, en Lion, marque un moment de bascule dans la vie personnelle et collective ; elle appelle à la prudence plutôt qu'à la précipitation.",
         "Mars entre en Balance le 15 juillet, puis en Scorpion le 2 septembre et en Sagittaire le 16 octobre : les initiatives gagnent à être choisies selon leur sens, et les différends d'intérêts se règlent par la négociation. Vénus traverse le Lion, la Vierge puis la Balance entre fin juillet et septembre, favorisant les relations harmonieuses et les projets partagés.",
+        "Pluton est en Verseau pendant toute l'année 2027. Ce mouvement de fond touche aux ressources partagées, aux réseaux et aux transformations collectives, et invite à la réflexion plutôt qu'à la précipitation.",
         "Mercure rétrograde à nouveau du 8 au 29 octobre : la période est propice à la révision des accords, des budgets et des promesses. Un point d'étape sur les engagements prend tout son sens à cette saison.",
         "À l'automne et en fin d'année, Saturne rétrograde du 11 août au 25 décembre, et Neptune du 11 juillet au 16 décembre. Ces mouvements invitent à consolider ce qui tient, à clarifier les intentions et à distinguer le souhaité du vérifié. Vénus entre en Verseau le 20 décembre, ouvrant une fin d'année tournée vers les réseaux et les projets collectifs.",
         "Les maladies à surveiller cette année sont les troubles de la tension artérielle, les accidents cardio-vasculaires, les douleurs sciatiques, les maladies du foie, les embolies pulmonaires, les troubles digestifs et gastro-intestinaux, les hernies, l'appendicite, les lésions cutanées et les ulcères. Chacune demande un suivi médical régulier et un avis professionnel dès les premiers signes. Les questions de grossesse et de santé reproductive, ainsi que la prévention et le dépistage des infections sexuellement transmissibles, méritent aussi un suivi attentif.",
@@ -72,8 +73,9 @@
         }
       ],
       "annee_universelle": [
-        "L'année universelle 2027 se calcule en additionnant ses chiffres : 2 + 0 + 2 + 7 = 11, puis 1 + 1 = 2. Le chiffre 2 symbolise le duo, l'association et l'harmonie.",
-        "Cette année invite à privilégier la qualité des relations plutôt que les résultats immédiats. Elle favorise ce qui est appelé à grandir dans le temps : unions, projets familiaux, partenariats, création et engagements porteurs de sens.",
+        "L'année 2027 porte une double lecture numérologique. Sa somme donne 2 + 0 + 2 + 7 = 11, nombre maître. En réduisant encore, 1 + 1 = 2, nombre de l'association et de l'harmonie. Les deux lectures sont prises en compte.",
+        "Le nombre maître 11 invite à une vision plus haute : l'intuition, l'inspiration et la responsabilité envers les autres prennent une place particulière. Il demande de ne pas se disperser et de transformer les idées en actes utiles à la communauté.",
+        "Le chiffre 2, qui en découle, favorise la qualité des relations plutôt que les résultats immédiats. Il met en avant ce qui est appelé à grandir dans le temps : unions, projets familiaux, partenariats, création et engagements porteurs de sens.",
         "Le chiffre 2 révèle aussi les désaccords et les jeux d'influence latents. Il demande du discernement, de la patience et une volonté réelle de coopérer, pour transformer les tensions en compréhension mutuelle.",
         "Sur le plan collectif, l'année encourage le dialogue, la concertation et la recherche de projets fondés sur l'intérêt commun. Elle met en avant la solidarité, l'équité et la défense des plus vulnérables, et rappelle que les réalisations durables naissent de la complémentarité et de l'entraide.",
         "Pour progresser pendant l'année, trois pratiques ressortent : l'écoute attentive et la reformulation, l'expression régulière de la gratitude, et un temps quotidien de réflexion sur les relations importantes."
@@ -81,13 +83,14 @@
       "notes_redaction": [
         "Dates corrigées et vérifiées : Jupiter quitte le Lion le 26 juillet 2027 ; la période est limitée à 2027.",
         "Version corrigée et ton validés par M. Tossou.",
-        "Divinités intégrées : Hèviesso, Sakpata, Gou, Nan, Hoho (les Jumeaux) et les divinités familiales.",
+        "Divinités intégrées : Hèviesso, Sakpata, Gou, Nan, Hoho (les Jumeaux) et les divinités familiales. Attribution par jour en attente (voir jours_naissance.json, a_verifier).",
         "Maladies : affections du document d'origine reprises telles quelles, avec avis professionnel. Les mentions de santé reproductive et d'infections sexuellement transmissibles sont formulées sous l'angle du suivi et du dépistage.",
         "Décès, disparitions et séparations : formulés directement comme épreuves à traverser, sans date ni cause.",
         "Incidents, conflits familiaux et d'héritage, cultures et insectes : repris sans adoucissement particulier.",
         "Autres points : adoucis (occultisme, intimité, foncier, sécurité, finances).",
         "Idées extraites de la source compilée, reformulées : aucune citation ni phrase reprise.",
-        "Règle « pas de prédiction de décès » : levée sur décision de M. Tossou ; mention maintenue comme possibilité générale, avec exhortation à prendre soin de soi et à rester dans les normes."
+        "Règle « pas de prédiction de décès » : levée sur décision de M. Tossou ; mention maintenue comme possibilité générale, avec exhortation à prendre soin de soi et à rester dans les normes.",
+        "Fusion de commun.json et sections.json : la section cycles_personnels reprend les neuf cycles de sections.json. Le paragraphe sur Pluton et la double lecture de l'année universelle sont ajoutés. sections.json peut être supprimé."
       ],
       "calendrier_transits": [
         "6 février : éclipse annulaire (Verseau)",
@@ -114,6 +117,24 @@
         "Nan",
         "Hoho (les Jumeaux)",
         "les divinités familiales"
+      ]
+    },
+    {
+      "id": "cycles_personnels",
+      "titre": "Année personnelle et cycle universel",
+      "pages": 2,
+      "statut": "valide",
+      "paragraphes": [
+        "Le cycle de l'année se calcule à partir de la date de naissance : on additionne le jour, le mois et l'année 2027, chacun réduit à un chiffre. Sans date de naissance, le cycle universel de 2027 s'applique : 2 + 0 + 2 + 7 = 11, nombre maître, réduit à 2. Les deux lectures sont prises en compte. Les neuf textes ci-dessous décrivent les cycles possibles.",
+        "Année personnelle 1 : lancement d'un tout nouveau cycle de neuf ans, initiatives audacieuses et autonomie. L'année invite à lancer ce que l'on repoussait, avec confiance en soi. Il est important de ne pas tout vouloir faire seul : choisissez deux ou trois priorités pour éviter de vous disperser. En fin d'année, chaque décision prise avec courage aura posé la première pierre de la suite.",
+        "Année personnelle 2 : patience, association, diplomatie et consolidation des partenariats. L'année favorise les projets à deux, les décisions prises en concertation et les alliances durables. Le rythme est plus lent que d'habitude : accepter cette lenteur évite les frustrations et prépare mieux la suite. Vous récolterez les fruits de votre écoute, à condition de rester attentif à vos propres besoins.",
+        "Année personnelle 3 : créativité, expression, rencontres inspirantes et expansion sociale. Vos idées circulent facilement et les occasions de sorties, d'échanges et de découvertes se multiplient. Le risque est de disperser votre énergie entre trop de projets : choisissez ceux qui vous font vraiment vibrer. Notez les personnes et les opportunités qui se présentent, elles compteront pour la suite.",
+        "Année personnelle 4 : effort, structure, rigueur et construction concrète des fondations d'avenir. C'est le moment de mettre de l'ordre dans vos finances, votre organisation et vos engagements. Les progrès peuvent sembler lents ; chaque tâche accomplie avec méthode compte pour l'avenir. En fin de cycle, la régularité aura construit quelque chose de solide, sur lequel vous pourrez vous appuyer.",
+        "Année personnelle 5 : vent du changement, voyages, opportunités inattendues et liberté retrouvée. Vous pouvez être amené à voyager, à changer d'environnement ou à modifier vos habitudes. Cette instabilité peut être source de stress ; garder quelques repères stables vous aidera à profiter de la nouveauté. À la fin du cycle, vous aurez gagné en liberté et en expérience, à condition d'avoir choisi les changements qui vous ressemblent.",
+        "Année personnelle 6 : foyer, responsabilités familiales et choix affectifs structurants. Les relations proches occupent une place importante, et vous êtes sollicité pour aider, soutenir ou arbitrer. Attention à ne pas vous épuiser à porter les attentes de tous : vos propres besoins méritent aussi votre attention. En fin de cycle, les engagements pris avec soin auront renforcé vos liens et votre stabilité.",
+        "Année personnelle 7 : parenthèse d'introspection, études, repos et bilan intellectuel ou spirituel. L'année invite au retrait, à l'étude et à la réflexion, pour prendre du recul sur votre vie. C'est une période favorable à l'apprentissage et aux bilans. Le risque est de vous isoler ou de vous laisser gagner par le doute : des moments de partage restent précieux. Les réponses trouvées pendant ces mois guideront vos décisions suivantes.",
+        "Année personnelle 8 : récoltes matérielles, réussite financière et concrétisation de projets d'envergure. Vos efforts passés peuvent se traduire par une reconnaissance financière ou professionnelle, si vous restez cohérent dans vos choix. Le piège est de vous laisser absorber par la performance : gardez du temps pour vous et vos proches. En fin de cycle, votre autorité et votre maîtrise auront grandi, à condition d'avoir utilisé vos ressources avec justice.",
+        "Année personnelle 9 : achèvement d'un grand cycle, tri et préparation de la renaissance. Certaines relations, activités ou habitudes peuvent arriver à leur terme ; il est utile de les accompagner avec gratitude. Lâcher ce qui ne vous sert plus peut être douloureux ; accepter ces départs ouvre la place à ce qui doit naître ensuite. Avant le prochain cycle, prenez le temps de vous reposer et de préparer la nouvelle étape avec clarté."
       ]
     },
     {
