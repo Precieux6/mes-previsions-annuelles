@@ -832,7 +832,19 @@
       "cle": "fixe",
       "texte": "Retenez une intention pour l'année et relisez-la à chaque mois : c'est le fil qui relie cette révélation à vos prévisions."
     }
-  ],
+      },
+    {
+      "type": "revelation",
+      "bloc": "annee_universelle",
+      "cle": "maitre",
+      "texte": "L'année 2027 porte le nombre maître 11 : une vision plus haute, où l'intuition et la responsabilité envers les autres prennent une place particulière."
+    },
+    {
+      "type": "revelation",
+      "bloc": "annee_universelle",
+      "cle": "reduit",
+      "texte": "Réduite à 2, cette même année invite à l'association, à la patience et à la qualité des relations."
+    }
   "date_approbation": "2026-11-18",
-  "reserve": "Signature écrite de M. Folly Valère Tossou non recueillie : à rattacher au document de validation."
+  "reserve": "Signature de M. Folly Valère Tossou non requise : la base de données produit une analyse personnalisée. La validation des contenus repose sur les champs approuve et approuve_par."
 }
