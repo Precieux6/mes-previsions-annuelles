@@ -38,6 +38,16 @@ def reduire(n: int, garder_maitres: bool = False) -> int:
     return n
 
 
+def annee_universelle() -> dict:
+    """Double portée de l'année : nombre maître (11) et réduction (2), lus ensemble."""
+    somme = sum(int(c) for c in str(ANNEE))
+    maitre = reduire(somme, garder_maitres=True)
+    return {"maitre": maitre, "reduit": reduire(maitre)}
+
+
+UNIVERSELLE = annee_universelle()
+
+
 def lettres(nom: str) -> str:
     nom = nom.replace("œ", "oe").replace("Œ", "OE").replace("æ", "ae").replace("Æ", "AE")
     return re.sub(r"[^a-z]", "", norm(nom))
@@ -104,8 +114,8 @@ def rapport(entree: dict) -> dict:
         mode, ap, cycle = "date", annee_personnelle(date), "personnel"
         element = ELEMENT[signe]
     else:
-        mode, ap, cycle = "nom", reduire(reduire(ANNEE), True), "universel"
-        ap = reduire(ap)
+        # Sans date : le cycle est l'année universelle, réduite à 2 pour les calculs mensuels.
+        mode, ap, cycle = "nom", UNIVERSELLE["reduit"], "universel"
         signe, element = None, None
 
     mois_sortie = []
@@ -131,19 +141,19 @@ def rapport(entree: dict) -> dict:
 
     profil_dict = {
         "nom": nom, "mode": mode, "signe": signe, "libelle_cycle": cycle,
-        "annee_personnelle": ap, "annee_universelle": 11,
-        "nombre_expression": nb["expression"], "nombre_ame": nb["ame"], "nombre_intime": nb["intime"]
+        "annee_personnelle": ap,
+        "annee_universelle": dict(UNIVERSELLE),
+        "nombre_expression": nb["expression"], "nombre_ame": nb["ame"], "nombre_intime": nb["intime"],
     }
     if date:
         try:
-            spirituel = analyser_profil_spirituel(date)
-            profil_dict["spirituel"] = spirituel
-        except Exception:
-            pass
+            profil_dict["spirituel"] = analyser_profil_spirituel(date)
+        except Exception as e:
+            print(f"rapport_2027 : profil spirituel ignoré ({e})", file=sys.stderr)
 
     return {
         "profil": profil_dict,
-        "revelation": revelation(ap, nb["expression"], nb["ame"], element),
+        "revelation": revelation(ap, nb["expression"], nb["ame"], element, UNIVERSELLE),
         "mois": mois_sortie,
     }
 
