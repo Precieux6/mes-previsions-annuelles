@@ -1,17 +1,68 @@
 // src/lib/spiritualProfile.ts
-// Profil spirituel : toutes les données viennent des fichiers de contenu/2027.
-// Aucune table en dur : le Mêdji se lit dans geomancie_periodes.json, son texte dans geomancie_medji.json.
+// Profil spirituel : toutes les données viennent de contenu/2027. Aucune table en dur.
 import periodesJson from '../../contenu/2027/geomancie_periodes.json';
 import medjiJson from '../../contenu/2027/geomancie_medji.json';
 import joursJson from '../../contenu/2027/jours_naissance.json';
+
+// ---------- Types calqués sur la structure réelle des fichiers ----------
+
+interface Sourcee { valeur: string; source: string }
+
+interface FichierPeriodes {
+  signes_medji: Array<{
+    numero: string;
+    nom: string;
+    periodes: Array<{ signe: string; moitie: string; debut: string; fin: string }>;
+  }>;
+}
+
+interface EntreeMedji {
+  // Clé lue dans geomancie_medji.json. Voir la note de vérification ci-dessous.
+  numéro: string;
+  nom: string;
+  titre: string;
+  signes_zodiacaux: Array<{ signe: string; moitie: string }>;
+  faits: Record<string, string[]>;
+  conseil_2027: string;
+  origine_conseil: string;
+}
+
+interface FichierMedji {
+  signes_medji: EntreeMedji[];
+}
+
+interface Archange {
+  nom: string;
+  source: string;
+  attribut: string;
+  attribut_source: string;
+}
+
+interface JourNaissance {
+  jour: string;
+  ordre: number;
+  planete: Sourcee;
+  archange: Archange;
+  divinite_protectrice: Sourcee;
+  influences_planetaires: unknown;
+  // Les autres champs ne sont pas typés ici : ils sont lus avec chaine() et listeChaines().
+  [cle: string]: unknown;
+}
+
+interface FichierJours {
+  jours: Record<string, JourNaissance>;
+}
+
+// ---------- Types exportés ----------
 
 export interface SigneMedji {
   numero: string;
   nom: string;
   titre: string;
-  prophetie: string;
+  prophetie: string;      // dérivé des faits « caractère et qualités » (le champ prophétie n'existe plus)
   conseil_2027: string;
-  traits: string[];
+  signes_zodiacaux: Array<{ signe: string; moitie: string }>;
+  faits: Record<string, string[]>;
 }
 
 export interface ProfilSpirituel {
@@ -22,78 +73,42 @@ export interface ProfilSpirituel {
   planete_regente: string;
   divinite_protectrice: string | null;
   couleurs_chance: string[];
-  animal_porte_bonheur: string;
+  animal_porte_bonheur: string | null;
   mots_cles: string[];
   psaume: string | null;
   interdictions: string[];
   metiers_recommandes: string[];
-  vigilances_sante: string;
+  vigilances_sante: string | null;
   signe_medji: SigneMedji;
   chemin_de_vie: number;
-}
-
-// ---------- Types des fichiers JSON (seuls les champs utilisés sont décrits) ----------
-
-interface PeriodeMedji {
-  signe: string;
-  moitie: string;
-  debut: string; // MM-JJ
-  fin: string;   // MM-JJ
-}
-
-interface EntreeMedjiPeriodes {
-  numero: string;
-  nom: string;
-  periodes: PeriodeMedji[];
-}
-
-interface FichierPeriodes {
-  signes_medji: EntreeMedjiPeriodes[];
-}
-
-interface FichierMedji {
-  signes_medji: Array<{
-    numero: string;
-    nom: string;
-    titre: string;
-    prophetie: string;
-    conseil_2027: string;
-    traits: string[];
-  }>;
-}
-
-interface JourNaissance {
-  jour: string;
-  planete: string;
-  archange: string;
-  archange_attribut: string;
-  divinite_protectrice: string | null;
-  couleurs: string[];
-  animal_porte_bonheur: string;
-  mots_cles: string[];
-  psaume: string | null;
-  interdictions: string[];
-  metiers_recommandes: string[];
-  vigilances_sante: string;
-}
-
-interface FichierJours {
-  jours: Record<string, JourNaissance>;
 }
 
 const PERIODES = periodesJson as FichierPeriodes;
 const MEDJI = medjiJson as FichierMedji;
 const JOURS = (joursJson as FichierJours).jours;
 
+// ---------- Lecture tolérante des champs ----------
+
+/** Texte d'un champ : chaîne directe, ou objet { valeur }. */
+function chaine(v: unknown): string | null {
+  if (typeof v === 'string') return v;
+  if (v && typeof v === 'object' && typeof (v as Sourcee).valeur === 'string') return (v as Sourcee).valeur;
+  return null;
+}
+
+/** Liste de chaînes ; renvoie [] si le champ est absent ou n'est pas une liste. */
+function listeChaines(v: unknown): string[] {
+  return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : [];
+}
+
 // ---------- Mêdji ----------
 
-/** Vrai si la clé « MM-JJ » tombe dans l'intervalle [debut, fin], bornes incluses.
- *  Si debut est après fin, l'intervalle traverse le 31 décembre (Capricorne). */
+/** Vrai si « MM-JJ » tombe dans [debut, fin], bornes incluses. Si debut > fin, l'intervalle traverse le 31 décembre. */
 function dansIntervalle(cle: string, debut: string, fin: string): boolean {
   return debut <= fin ? cle >= debut && cle <= fin : cle >= debut || cle <= fin;
 }
 
-/** Numéro Mêdji (« 01 » à « 16 ») pour une date donnée, d'après geomancie_periodes.json. */
+/** Numéro Mêdji (« 01 » à « 16 ») pour une date, d'après geomancie_periodes.json. */
 export function getNumeroMedji(month: number, day: number): string {
   const cle = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
   for (const entree of PERIODES.signes_medji) {
@@ -101,23 +116,21 @@ export function getNumeroMedji(month: number, day: number): string {
       return entree.numero;
     }
   }
-  // Ne doit pas arriver : spirit:check vérifie que chaque jour de l'année est couvert.
-  throw new Error(`Aucun signe Mêdji pour le ${cle}.`);
+  throw new Error(`Aucun signe Mêdji pour le ${cle} (voir geomancie_periodes.json).`);
 }
 
 export function getMedjiSign(month: number, day: number): SigneMedji {
   const numero = getNumeroMedji(month, day);
-  const texte = MEDJI.signes_medji.find((s) => s.numero === numero);
-  if (!texte) {
-    throw new Error(`Texte absent dans geomancie_medji.json pour le Mêdji ${numero}.`);
-  }
+  const e = MEDJI.signes_medji.find((s) => s.numéro === numero);
+  if (!e) throw new Error(`Texte absent dans geomancie_medji.json pour le Mêdji ${numero}.`);
   return {
-    numero: texte.numero,
-    nom: texte.nom,
-    titre: texte.titre,
-    prophetie: texte.prophetie,
-    conseil_2027: texte.conseil_2027,
-    traits: texte.traits,
+    numero: e.numéro,
+    nom: e.nom,
+    titre: e.titre,
+    prophetie: (e.faits.caractere_et_qualites ?? []).join(' '),
+    conseil_2027: e.conseil_2027,
+    signes_zodiacaux: e.signes_zodiacaux,
+    faits: e.faits,
   };
 }
 
@@ -150,8 +163,9 @@ export function analyserProfilClient(dateIso: string): ProfilSpirituel | null {
   const d = new Date(`${dateIso}T12:00:00Z`);
   if (Number.isNaN(d.getTime())) return null;
 
-  const jour = JOURS[CLES_JOURS[d.getUTCDay()]];
-  if (!jour) throw new Error(`Données du jour absentes dans jours_naissance.json : ${CLES_JOURS[d.getUTCDay()]}`);
+  const cle = CLES_JOURS[d.getUTCDay()];
+  const jour = JOURS[cle];
+  if (!jour) throw new Error(`Données du jour absentes dans jours_naissance.json : ${cle}`);
 
   const month = d.getUTCMonth() + 1;
   const day = d.getUTCDate();
@@ -159,17 +173,17 @@ export function analyserProfilClient(dateIso: string): ProfilSpirituel | null {
   return {
     date_naissance: dateIso,
     jour_semaine: jour.jour,
-    archange: jour.archange,
-    archange_attribut: jour.archange_attribut,
-    planete_regente: jour.planete,
-    divinite_protectrice: jour.divinite_protectrice,
-    couleurs_chance: jour.couleurs,
-    animal_porte_bonheur: jour.animal_porte_bonheur,
-    mots_cles: jour.mots_cles,
-    psaume: jour.psaume,
-    interdictions: jour.interdictions,
-    metiers_recommandes: jour.metiers_recommandes,
-    vigilances_sante: jour.vigilances_sante,
+    archange: jour.archange.nom,
+    archange_attribut: jour.archange.attribut,
+    planete_regente: jour.planete.valeur,
+    divinite_protectrice: chaine(jour.divinite_protectrice),
+    couleurs_chance: listeChaines(jour.couleurs),
+    animal_porte_bonheur: chaine(jour.animal_porte_bonheur),
+    mots_cles: listeChaines(jour.mots_cles),
+    psaume: chaine(jour.psaume),
+    interdictions: listeChaines(jour.interdictions),
+    metiers_recommandes: listeChaines(jour.metiers_recommandes),
+    vigilances_sante: chaine(jour.vigilances_sante),
     signe_medji: getMedjiSign(month, day),
     chemin_de_vie: getCheminDeVie(dateIso),
   };
