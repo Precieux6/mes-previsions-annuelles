@@ -1,0 +1,34 @@
+{
+  "version": "2027.1",
+  "annee": 2027,
+  "calcul": {
+    "chiffres": [2, 0, 2, 7],
+    "somme": 11,
+    "maitre": 11,
+    "reduction": 2,
+    "regle": "Les deux lectures sont prises en compte ensemble. Le nombre maître 11 est conservé pour la lecture de l'année ; sa réduction (1 + 1 = 2) donne la lecture courante utilisée pour les calculs mensuels du mode nom."
+  },
+  "lectures": {
+    "maitre": {
+      "nombre": 11,
+      "texte": "L'année 2027 porte le nombre maître 11 : une vision plus haute, où l'intuition et la responsabilité envers les autres prennent une place particulière.",
+      "statut": "à valider"
+    },
+    "reduit": {
+      "nombre": 2,
+      "texte": "Réduite à 2, cette même année invite à l'association, à la patience et à la qualité des relations.",
+      "statut": "à valider"
+    }
+  },
+  "usages": [
+    "contenu/2027/revelation.json : bloc annee_universelle (mêmes phrases que lectures)",
+    "contenu/2027/commun.json : section grandes_tendances, paragraphes annee_universelle",
+    "scripts/rapport_2027.py : profil.annee_universelle = {maitre, reduit}",
+    "packages/generator/pdf.ts : couverture et page centrale"
+  ],
+  "annee_personnelle": {
+    "statut": "à trancher",
+    "question": "Le nombre maître 11 est-il conservé pour l'année personnelle ? Tant que la réponse n'est pas donnée, l'année personnelle est réduite à un chiffre (1 à 9)."
+  },
+  "synchronisation": "Les textes de lectures doivent rester identiques à ceux du bloc annee_universelle de revelation.json. scripts/verifier_spirituel_2027.py contrôle cette correspondance."
+}
