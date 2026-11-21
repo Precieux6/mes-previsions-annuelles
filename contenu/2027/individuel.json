@@ -1,13 +1,9 @@
 {
-  "version": "2027.1",
+  "version": "2027.2",
   "description": "Partie individuelle : calculée à partir des données du client.",
   "entrees": {
-    "obligatoire": [
-      "nom_complet"
-    ],
-    "facultative": [
-      "date_naissance"
-    ]
+    "obligatoire": ["nom_complet"],
+    "facultative": ["date_naissance"]
   },
   "parties": [
     {
@@ -17,28 +13,37 @@
       "phrases_max": 8,
       "sources": [
         "numerologie : nombre d'expression, nombre d'âme, nombre intime (nom et prénoms complets)",
-        "année personnelle si date de naissance, sinon cycle universel 2027",
-        "transits tropicaux de 2027 uniquement si date de naissance"
+        "année personnelle si date de naissance, sinon année universelle réduite (2)",
+        "année universelle en double lecture : nombre maître 11 et réduction 2",
+        "élément solaire du signe si date de naissance"
       ],
-      "statut": "valide",
+      "statut": "valide ; bloc annee_universelle à valider",
       "fichier": "contenu/2027/revelation.json",
       "script": "scripts/revelation_2027.py"
+    },
+    {
+      "id": "profil_spirituel",
+      "titre": "Profil spirituel (jour de naissance, signe Mêdji, archange de période)",
+      "format": "bloc",
+      "conditions": "date de naissance renseignée",
+      "sources": [
+        "jour de naissance : contenu/2027/jours_naissance.json",
+        "signe Mêdji : contenu/2027/geomancie_medji.json, découpage dans contenu/2027/geomancie_periodes.json",
+        "archange de période : contenu/2027/anges_2027.json (valable chaque année)"
+      ],
+      "statut": "en attente de relecture ; divinités mardi, jeudi et vendredi à confirmer",
+      "script": "scripts/profil_spirituel.py",
+      "miroir_client": "src/lib/spiritualProfile.ts (même source de données)"
     },
     {
       "id": "previsions_mensuelles",
       "titre": "Prévisions mensuelles 2027",
       "format": "par_mois_et_par_theme",
       "phrases_par_theme": 10,
-      "themes": [
-        "finances",
-        "sante",
-        "amour_famille",
-        "vie_familiale_sociale",
-        "travail"
-      ],
+      "themes": ["finances", "sante", "amour_famille", "vie_sociale", "travail"],
       "source": "banques 2027 mensuel/ (moteur rapport_2027.py)",
       "statut": "valide",
-      "notes": "Mode nom : critère élargi pour les conseils (6 minimum par domaine et par mois au lieu de 1)."
+      "notes": "Conseils : deux par domaine et par mois, en mode date comme en mode nom."
     }
   ]
 }
