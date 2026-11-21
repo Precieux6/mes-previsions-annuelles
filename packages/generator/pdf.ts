@@ -5,7 +5,7 @@ import { PDFDocument } from 'pdf-lib';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 
-export const NB_PAGES = 36;
+export const NB_PAGES = 38;
 const MOIS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août',
   'septembre', 'octobre', 'novembre', 'décembre'];
 
@@ -31,6 +31,7 @@ export interface ContenuCommun {
     calendrier: string[];
   };
   thematiques: Array<{ libelle: string; phrases: string[] }>;
+  cycles: string[];
   anges: string[];
   conseils_generaux: string[];
   synthese: string[];
@@ -173,6 +174,8 @@ export function construireHtml(d: DonneesPDF): string {
   ajouter(sectionEnPages('Grandes tendances 2027', itemsGrandes(d.commun.grandes), 3, n));
   ajouter([pageCentrale(d, n)]);
   ajouter(sectionEnPages("Tendances de l'année par thème", itemsThematiques(d.commun.thematiques), 3, n));
+  ajouter(sectionEnPages('Année personnelle et cycle universel',
+    d.commun.cycles.map((t) => ({ k: 'p' as const, t })), 2, n));
   ajouter(sectionEnPages('Votre révélation annuelle 2027',
     d.rapport.revelation.map((t) => ({ k: 'p' as const, t })), 1, n));
   ajouter(sectionEnPages("Les anges de l'année 2027", d.commun.anges.map((t) => ({ k: 'c' as const, t })), 2, n));
