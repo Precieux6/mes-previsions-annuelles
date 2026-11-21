@@ -659,13 +659,18 @@ function Suivi({ reference }: { reference: string }) {
                 <div className="spiritual-box">
                   <span className="spiritual-box-title">Jour & Archange Régent</span>
                   <strong>{orderSpiritualProfile.jour_semaine} · Archange {orderSpiritualProfile.archange}</strong>
-                  <p className="form-hint">Planète : {orderSpiritualProfile.planete_regente} · Force : {orderSpiritualProfile.divinite_protectrice}</p>
+                  <p className="form-hint">
+                    Planète : {orderSpiritualProfile.planete_regente ?? '–'}
+                    {orderSpiritualProfile.divinite_protectrice && <> · Force : {orderSpiritualProfile.divinite_protectrice}</>}
+                  </p>
                 </div>
+                {orderSpiritualProfile.psaume && (
                 <div className="spiritual-box">
                   <span className="spiritual-box-title">Psaume d'Autorité</span>
                   <strong>{orderSpiritualProfile.psaume}</strong>
                   <p className="form-hint">À méditer régulièrement pour activer vos bénédictions en 2027.</p>
                 </div>
+              )}
                 <div className="spiritual-box">
                   <span className="spiritual-box-title">Couleurs & Animal Alliés</span>
                   <strong>{orderSpiritualProfile.couleurs_chance.join(', ')}</strong>
