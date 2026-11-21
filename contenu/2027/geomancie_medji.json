@@ -1,182 +1,536 @@
 {
-  "version": "2027.1",
-  "source": "Association Géomancie & Astrologie — Transcription intégrale du manuscrit des 16 signes Mêdji et leurs correspondances zodiacales",
+  "version": "2027.3",
+  "source": "Géomancie & Astrologie : transcription du manuscrit des 16 signes Mêdji (document de référence, 3 pages). Faits repris intégralement et reformulés. Les conseil_2027 sont une rédaction du projet, non issue du manuscrit.",
+  "statut": "faits complets ; formulations en attente de relecture ; conseil_2027 à valider",
+  "periodes_ref": "contenu/2027/geomancie_periodes.json",
+  "categories_de_faits": [
+    "caractere_et_qualites",
+    "amour_et_union",
+    "famille_et_descendance",
+    "reussite_et_vie_sociale",
+    "sante_et_longevite",
+    "epreuves_et_evenements",
+    "mises_en_garde"
+  ],
   "signes_medji": [
     {
       "numero": "01",
       "nom": "Gbè - Medji",
-      "signe_zodiacal": "cancer",
-      "periode": "15 premiers jours",
-      "jours_plage": "21 juin – 6 juillet",
-      "titre": "Le Guerrier Triomphant et la Victoire après l'Épreuve",
-      "prophetie": "Né dans Gbè, l'homme connaîtra un peu de souffrance au début. Il sera d'une audace particulière et aura une grande autorité. Il sera un lutteur riche, un beau guerrier, connaîtra la gloire et réussira dans tout ce qu'il entreprendra. Il sera juste, honnête et fort. Il perdra un homme qui vaut beaucoup pour lui, et au contraire une femme, l'un de ses soutiens, mais d'une grande renommée.",
-      "traits": ["Audace", "Autorité naturelle", "Succès durable", "Honnêteté", "Épreuves formatrices"],
-      "conseil_2027": "Votre force réside dans votre résilience. Malgré les pertes du passé, 2027 vous couronne comme un bâtisseur d'honneur soutenu par des alliances féminines de grand prestige."
+      "titre": "Gbè - Medji · Cancer",
+      "signes_zodiacaux": [{ "signe": "cancer", "moitie": "15 premiers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Audace particulière et forte autorité.",
+          "Juste, honnête et fort.",
+          "Agit mal après avoir accompli une bonne action."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [
+          "Perd des enfants : des filles pour un homme, des fils pour une femme."
+        ],
+        "reussite_et_vie_sociale": [
+          "Lutteur riche et beau guerrier.",
+          "Connaît la gloire et réussit dans tout ce qu'il entreprend.",
+          "Egoïste, mais d'une grande renommée."
+        ],
+        "sante_et_longevite": [],
+        "epreuves_et_evenements": [
+          "Un peu de souffrance au début de la vie."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Votre force réside dans votre résilience. Malgré les pertes du passé, 2027 vous couronne comme un bâtisseur d'honneur soutenu par des alliances féminines de grand prestige.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "02",
       "nom": "Yèkou - Medji",
-      "signe_zodiacal": "cancer",
-      "periode": "15 derniers jours",
-      "jours_plage": "7 juillet – 22 juillet",
-      "titre": "Le Chef Respecté et le Grand Voyageur",
-      "prophetie": "Sait se faire respecter, respecte la parole donnée mais reste parfois bavard et indiscret. Chef qui aura la gloire et l'honneur. On peut lui faire confiance. Intelligent, il sera un chef populaire, mais connaîtra des déceptions. Grand voyageur, il passera très peu de temps dans sa ville natale. Turbulent et fort, longévité probable mais sera souvent éprouvé dans sa santé.",
-      "traits": ["Fidélité à la parole", "Popularité", "Voyages lointains", "Leadership", "Vigilance santé"],
-      "conseil_2027": "En 2027, apprenez la maîtrise du silence. Votre renommée s'étendra par-delà les frontières si vous canalisez vos paroles et prenez soin de votre vitalité."
+      "titre": "Yèkou - Medji · Cancer",
+      "signes_zodiacaux": [{ "signe": "cancer", "moitie": "15 derniers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Respecte la parole donnée, on peut lui faire confiance.",
+          "Très intelligent, turbulent et fort.",
+          "Bavard et indiscret."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Bon chef, il connaît la gloire et l'honneur.",
+          "Populaire, mais confronté à des déceptions.",
+          "Grand voyageur, il passe peu de temps dans sa ville natale."
+        ],
+        "sante_et_longevite": [
+          "Longévité probable.",
+          "Souvent malade."
+        ],
+        "epreuves_et_evenements": [
+          "Des déceptions dans sa vie publique."
+        ],
+        "mises_en_garde": [
+          "Surveiller sa parole : les indiscrétions lui causent des torts."
+        ]
+      },
+      "conseil_2027": "En 2027, apprenez la maîtrise du silence. Votre renommée s'étendra par-delà les frontières si vous canalisez vos paroles et prenez soin de votre vitalité.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "03",
-      "nom": "Winlin - Medji",
-      "signe_zodiacal": "gemeaux",
-      "periode": "15 premiers jours",
-      "jours_plage": "21 mai – 5 juin",
-      "titre": "L'Étoile Montante et l'Éclat après l'Austerité",
-      "prophetie": "L'homme né sous ce signe gagnera l'estime de tout le monde. Sa vie sera très rude dans son enfance et très éclatante quand il grandira. Ses projets seront embrassés avec un emploi très brillant, au-dessus de toutes les religions. Il occupera une place de choix dans sa ville natale. Son autorité sera incontestable et il aura une place privilégiée dans sa famille.",
-      "traits": ["Estime universelle", "Ascension éclatante", "Haute position", "Autorité familiale"],
-      "conseil_2027": "Vos épreuves d'autrefois deviennent vos galons en 2027. Vos compétences seront reconnues au plus haut niveau sans distinction d'origine."
+      "nom": "Woli - Medji",
+      "titre": "Woli - Medji · Gémeaux",
+      "signes_zodiacaux": [{ "signe": "gemeaux", "moitie": "15 premiers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Autorité incontestable.",
+          "Recherche la pratique de toutes les religions."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [
+          "Place privilégiée dans sa famille."
+        ],
+        "reussite_et_vie_sociale": [
+          "Gagne l'estime de tous.",
+          "Emploi très brillant à l'âge adulte.",
+          "Ses projets se réalisent souvent.",
+          "Place privilégiée dans sa ville natale."
+        ],
+        "sante_et_longevite": [],
+        "epreuves_et_evenements": [
+          "Enfance très rude, suivie d'une vie adulte éclatante."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Vos épreuves d'autrefois deviennent vos galons en 2027. Vos compétences seront reconnues au plus haut niveau sans distinction d'origine.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "04",
       "nom": "Di - Medji",
-      "signe_zodiacal": "capricorne",
-      "periode": "signe complet",
-      "jours_plage": "22 décembre – 19 janvier",
-      "titre": "Le Sage Réservé et la Réussite Silencieuse",
-      "prophetie": "L'homme sous ce signe recherche l'indépendance et la réussite dans la discrétion. Il aura une bonne épouse. Mais les peines et les difficultés seront nombreuses et de toutes natures. On est fort en apparence, mais c'est un masque, car on garde ses peines secrètes. Grande conscience professionnelle, dévouement pour son prochain quel que soit son rang social. La vie sera dure au départ, mais brillante plus tard.",
-      "traits": ["Discrétion", "Dévouement admirable", "Patience", "Réussite tardive et solide"],
-      "conseil_2027": "Déposez le masque de la solitude. Votre rigueur professionnelle sera récompensée par une assise matérielle incontournable cette année."
+      "titre": "Di - Medji · Capricorne",
+      "signes_zodiacaux": [{ "signe": "capricorne", "moitie": "signe complet" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Fait face en apparence, avec bon cœur, et garde ses peines pour lui.",
+          "Aime son prochain, quel que soit son rang social.",
+          "Grande confiance professionnelle."
+        ],
+        "amour_et_union": [
+          "Aura une bonne épouse."
+        ],
+        "famille_et_descendance": [
+          "Occupe une place importante dans sa famille et dans son pays."
+        ],
+        "reussite_et_vie_sociale": [
+          "La réussite dans la vie est évidente.",
+          "Jouit de la confiance de ses amis et collaborateurs.",
+          "Lenteurs et impuissances à réaliser."
+        ],
+        "sante_et_longevite": [
+          "Subit des contraintes morales ou physiques."
+        ],
+        "epreuves_et_evenements": [
+          "Peines nombreuses et de toute nature.",
+          "Difficultés légales ou administratives.",
+          "Vie sombre au départ, brillante plus tard.",
+          "Alternance de périodes favorables et défavorables."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Déposez le masque de la solitude. Votre rigueur professionnelle sera récompensée par une assise matérielle incontournable cette année.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "05",
       "nom": "Losso - Medji",
-      "signe_zodiacal": "lion",
-      "periode": "15 premiers jours",
-      "jours_plage": "23 juillet – 7 août",
-      "titre": "Le Justicier Passionné et l'Œil de Clairvoyance",
-      "prophetie": "L'homme né sous ce signe est passionné, sévère, appliquant à la lettre la loi du talion. Dans chaque problème ou domaine, il ne sera pas sans visiter les deux côtés. Comme devant un miroir, on aimera tout le monde et se confiera facilement. On sera beaucoup aidé par son intuition qui est très développée. Le succès est toujours équitable, mais attention aux dépenses inutiles.",
-      "traits": ["Passion ardente", "Intuition aiguë", "Sens strict de la justice", "Générosité à tempérer"],
-      "conseil_2027": "Votre sixième sens est votre arme absolue. En 2027, évitez de vous immiscer dans les conflits financiers d'autrui pour préserver votre propre trésor."
+      "titre": "Losso - Medji · Lion",
+      "signes_zodiacaux": [{ "signe": "lion", "moitie": "15 premiers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Indiscret et vindicatif.",
+          "Applique strictement la loi du talion.",
+          "Persévérant, aime tout le monde et se confie facilement à ses camarades.",
+          "Intuition très développée."
+        ],
+        "amour_et_union": [
+          "Union peu favorable."
+        ],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Succès instable.",
+          "Prises de position liées à des intérêts avec son entourage."
+        ],
+        "sante_et_longevite": [],
+        "epreuves_et_evenements": [
+          "Condition de pauvreté.",
+          "Vie pleine de vicissitudes, avec des difficultés dans tous les domaines."
+        ],
+        "mises_en_garde": [
+          "Tendance aux dépenses inutiles."
+        ]
+      },
+      "conseil_2027": "Votre sixième sens est votre arme absolue. En 2027, évitez de vous immiscer dans les conflits financiers d'autrui pour préserver votre propre trésor.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "06",
-      "nom": "Winlin - Medji (Lion)",
-      "signe_zodiacal": "lion",
-      "periode": "15 derniers jours",
-      "jours_plage": "8 août – 22 août",
-      "titre": "Le Bâtisseur Vénéré et la Gloire par le Travail",
-      "prophetie": "L'homme né sous ce signe sera franc et direct, mais hautement estimé par tout son entourage. Au début de sa vie, il souffrira pour être heureux plus tard. Il est juste et correct envers tout le monde, modeste et charitable. Il s'élèvera au-dessus de son milieu d'origine par son savoir-faire, le respect et le travail assidu.",
-      "traits": ["Franchise royale", "Charité", "Élévation sociale", "Respect du labeur"],
-      "conseil_2027": "Votre savoir-faire et votre droiture forcent l'admiration. 2027 marque l'étape où vous récoltez les fruits des sacrifices consentis."
+      "nom": "Winlin - Medji",
+      "titre": "Winlin - Medji · Lion",
+      "signes_zodiacaux": [{ "signe": "lion", "moitie": "15 derniers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Parfois brutal, mais estimé de tout son entourage.",
+          "Franc, juste et correct envers tous."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Devient riche et charitable.",
+          "S'élève au-dessus de son milieu grâce à son savoir-faire, au respect qu'il inspire et à son travail."
+        ],
+        "sante_et_longevite": [],
+        "epreuves_et_evenements": [
+          "Souffre au début de sa vie, pour être heureux plus tard."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Votre savoir-faire et votre droiture forcent l'admiration. 2027 marque l'étape où vous récoltez les fruits des sacrifices consentis.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "07",
-      "nom": "Ablà - Medji",
-      "signe_zodiacal": "balance",
-      "periode": "signe complet",
-      "jours_plage": "23 septembre – 22 octobre",
-      "titre": "L'Équilibre Souverain et le Triomphe de la Rigueur",
-      "prophetie": "Né sous ce signe, l'homme aura heureusement une bonne épouse et de bonnes habitudes. Il sera un peu malheureux et austère au début, mais jouira d'une longue santé. Il connaîtra la réussite et le bonheur dans les derniers jours de sa vie. Néanmoins, il agira toujours avec force et rigueur pour connaître le triomphe dans tous les domaines.",
-      "traits": ["Bonne alliance maritale", "Rigueur", "Longue santé", "Victoire sur le temps"],
-      "conseil_2027": "Cultivez l'harmonie dans vos contrats. Votre persévérance méthodique vous hisse vers des sommets stables et enviables."
+      "nom": "Abla - Medji",
+      "titre": "Abla - Medji · Balance",
+      "signes_zodiacaux": [{ "signe": "balance", "moitie": "signe complet" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Caractère parfois dur.",
+          "Ambitieux, accorde peu d'attention à autrui.",
+          "Agit avec force et vigueur."
+        ],
+        "amour_et_union": [
+          "Aura une bonne épouse."
+        ],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Triomphe dans plusieurs domaines au cours de son existence."
+        ],
+        "sante_et_longevite": [
+          "Maladies brèves.",
+          "Vie longue."
+        ],
+        "epreuves_et_evenements": [
+          "Une part de malheur.",
+          "Malheureux au dernier jour de sa vie."
+        ],
+        "mises_en_garde": [
+          "Ses habitudes sont bonnes : à entretenir."
+        ]
+      },
+      "conseil_2027": "Cultivez l'harmonie dans vos contrats. Votre persévérance méthodique vous hisse vers des sommets stables et enviables.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "08",
       "nom": "Aklan - Medji",
-      "signe_zodiacal": "verseau",
-      "periode": "signe complet",
-      "jours_plage": "20 janvier – 18 février",
-      "titre": "L'Homme d'Honneur et le Sage Solitaire",
-      "prophetie": "Celui qui naît sous ce signe sera un homme d'honneur, réfléchi, sûr de lui-même, parfois avare de ses mots. Orgueilleux, tenace, fort, aimé de tous, pondéré et solitaire. Il aura beaucoup d'afflictions avant de connaître le bonheur durable. Longévité probable, mais en fonction des tracas qui éprouvent sa santé.",
-      "traits": ["Honneur inviolable", "Profondeur d'esprit", "Résistance mentale", "Victoire sur l'adversité"],
-      "conseil_2027": "Ne laissez pas la mélancolie assombrir votre horizon. 2027 vous réserve une percée lumineuse après des années de réflexion solitaire."
+      "titre": "Aklan - Medji · Verseau",
+      "signes_zodiacaux": [{ "signe": "verseau", "moitie": "signe complet" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Homme d'honneur, réfléchi et sûr de lui.",
+          "Pondéré, tenace, fort, aimé de tous.",
+          "Solitaire et mélancolique par moments.",
+          "Orgueilleux, avare de ses biens."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [
+          "Deuils et héritages jalonnent son existence."
+        ],
+        "reussite_et_vie_sociale": [],
+        "sante_et_longevite": [
+          "Longévité probable, à condition de soigner sa santé avec vigilance."
+        ],
+        "epreuves_et_evenements": [
+          "Beaucoup d'afflictions avant le bonheur durable.",
+          "Alternance de hauts et de bas.",
+          "Peines."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Ne laissez pas la mélancolie assombrir votre horizon. 2027 vous réserve une percée lumineuse après des années de réflexion solitaire.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "09",
       "nom": "Guda - Medji",
-      "signe_zodiacal": "taureau / scorpion",
-      "periode": "15 derniers jours",
-      "jours_plage": "6 mai – 20 mai & 7 nov – 21 nov",
-      "titre": "Le Juge Ferme et la Puissance Vigorante",
-      "prophetie": "L'homme né sous l'influence de ce signe sera un juge ferme et agira avec beaucoup de vigueur. Sa renommée, son caractère ferme et sûr de lui-même le caractériseront. Il cherchera toujours à s'étendre malgré les obstacles. Il enregistrera des tourments et des contraintes, mais son autorité morale l'emportera.",
-      "traits": ["Volonté de fer", "Jugement impartial", "Audace expansive", "Prudence vitale"],
-      "conseil_2027": "La fermeté doit s'accompagner de souplesse diplomatique. Veillez sur votre santé et prenez le temps de respirer pour déjouer les tensions."
+      "titre": "Guda - Medji · Taureau / Scorpion",
+      "signes_zodiacaux": [
+        { "signe": "taureau", "moitie": "15 derniers jours" },
+        { "signe": "scorpion", "moitie": "15 derniers jours" }
+      ],
+      "faits": {
+        "caractere_et_qualites": [
+          "Juge intègre, honnête et sûr de lui.",
+          "Cherche à tout connaître.",
+          "Agit avec beaucoup de rigueur.",
+          "Caractère parfois égoïste ou orgueilleux."
+        ],
+        "amour_et_union": [
+          "Union défavorable."
+        ],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Sa renommée s'étend."
+        ],
+        "sante_et_longevite": [
+          "Perturbations dans sa santé."
+        ],
+        "epreuves_et_evenements": [
+          "Beaucoup d'ennuis et d'ennemis.",
+          "Tourments et contraintes de toutes sortes.",
+          "Mauvaise évolution de sa situation.",
+          "Risque d'accident inattendu.",
+          "Risque de mort subite."
+        ],
+        "mises_en_garde": [
+          "Surveiller sa santé et son environnement."
+        ]
+      },
+      "conseil_2027": "La fermeté doit s'accompagner de souplesse diplomatique. Veillez sur votre santé et prenez le temps de respirer pour déjouer les tensions.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "10",
       "nom": "Sa - Medji",
-      "signe_zodiacal": "gemeaux",
-      "periode": "15 derniers jours",
-      "jours_plage": "6 juin – 20 juin",
-      "titre": "Le Mage Inspiré et le Secours Providentiel",
-      "prophetie": "Le sujet sous ce signe sera dynamique et grand voyageur. Malgré de durs débuts, il arrivera à la réussite éclatante. Il vivra souvent loin de sa terre natale, aura une robuste santé et finira sa vie dans le bonheur. Attiré par les sciences occultes ou mystiques, il s'y adonnera avec énergie. Sous ce signe prodige, il ne doit jamais désespérer, car la providence lui vient toujours en aide.",
-      "traits": ["Voyages au loin", "Sciences mystiques", "Protection divine infaillible", "Générosité d'esprit"],
-      "conseil_2027": "Gardez une foi inébranlable. Même face aux situations apparemment bloquées, une intervention providentielle viendra vous délivrer."
+      "titre": "Sa - Medji · Gémeaux / Sagittaire",
+      "signes_zodiacaux": [
+        { "signe": "gemeaux", "moitie": "15 derniers jours" },
+        { "signe": "sagittaire", "moitie": "15 derniers jours" }
+      ],
+      "faits": {
+        "caractere_et_qualites": [
+          "Nerveux.",
+          "Très intelligent, il s'intéresse aux recherches et aux sciences occultes.",
+          "Agit avec énergie et force.",
+          "Riche et prodigue, juge très avisé."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Grand voyageur, il vit loin de sa terre ou de sa ville natale.",
+          "Réussit après des débuts difficiles."
+        ],
+        "sante_et_longevite": [
+          "Robuste santé."
+        ],
+        "epreuves_et_evenements": [
+          "Débuts difficiles."
+        ],
+        "mises_en_garde": [
+          "Ne jamais se décourager devant les échecs de la vie."
+        ]
+      },
+      "conseil_2027": "Gardez une foi inébranlable. Même face aux situations apparemment bloquées, une intervention providentielle viendra vous délivrer.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "11",
-      "nom": "Tula - Medji",
-      "signe_zodiacal": "scorpion",
-      "periode": "15 premiers jours",
-      "jours_plage": "23 octobre – 6 novembre",
-      "titre": "Le Charme Magnétique et le Stratège Redoutable",
-      "prophetie": "Sous les influences de ce signe, l'homme sera ambitieux et d'un esprit combatif. Il aura un charme immense et sera aimé de tout le monde, puis connaîtra des heurts dans son entourage. Intelligent, il sera à la tête d'une nombreuse famille et connaîtra la richesse. Persévérant, l'échec ne le rebute pas et il fait preuve d'une ruse magistrale.",
-      "traits": ["Magnétisme fascinant", "Intelligence tactique", "Opulence familiale", "Combativité"],
-      "conseil_2027": "Mettez votre puissante intelligence au service de la paix. La clémence envers vos rivaux vous attirera une protection durable."
+      "nom": "Ka - Medji",
+      "titre": "Ka - Medji · Scorpion",
+      "signes_zodiacaux": [{ "signe": "scorpion", "moitie": "15 premiers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Ambitieux, irréfléchi, d'esprit belliqueux.",
+          "Dédain envers autrui.",
+          "Persévérant : l'échec ne le rebute pas.",
+          "Use de ruse face à ses adversaires."
+        ],
+        "amour_et_union": [],
+        "famille_et_descendance": [
+          "Père d'une nombreuse famille."
+        ],
+        "reussite_et_vie_sociale": [
+          "Connaît le bonheur et la richesse.",
+          "Intelligent."
+        ],
+        "sante_et_longevite": [],
+        "epreuves_et_evenements": [
+          "Heurts et difficultés avec son entourage.",
+          "Fin subite ou malheureuse."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Mettez votre puissante intelligence au service de la paix. La clémence envers vos rivaux vous attirera une protection durable.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "12",
-      "nom": "Turukpen - Medji",
-      "signe_zodiacal": "vierge",
-      "periode": "signe complet",
-      "jours_plage": "23 août – 22 septembre",
-      "titre": "Le Juste Équitable et le Chef de Collectivité",
-      "prophetie": "Celui qui naît sous ce signe sera un excellent juge, agissant toujours avec équité. Le début de sa vie sera laborieux, mais la fin sera excellente et bénie. Très intelligent, il se rendra chef d'une grande collectivité. Rarement malade, il voyagera beaucoup. Sur le plan matériel, il doit surmonter les scrupules et hésitations excessives.",
-      "traits": ["Équité irréprochable", "Commandement communautaire", "Santé préservée", "Sagesse méthodique"],
-      "conseil_2027": "Osez trancher sans peur ! Vos hésitations sont vos seuls freins. La collectivité attend vos décisions pour avancer."
+      "nom": "Troukpin - Medji",
+      "titre": "Troukpin - Medji · Vierge",
+      "signes_zodiacaux": [{ "signe": "vierge", "moitie": "signe complet" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Excellent juge, toujours équitable.",
+          "Très intelligent.",
+          "Hésitation permanente, par crainte et par excès de scrupules."
+        ],
+        "amour_et_union": [
+          "Difficultés sentimentales."
+        ],
+        "famille_et_descendance": [
+          "Nombreux enfants mort-nés.",
+          "Peu ou pas d'enfants vivants."
+        ],
+        "reussite_et_vie_sociale": [
+          "Devient chef d'une grande collectivité ou d'une grande puissance.",
+          "Réalisations matérielles lentes."
+        ],
+        "sante_et_longevite": [
+          "Rarement malade."
+        ],
+        "epreuves_et_evenements": [
+          "Début de vie malheureux, fin de vie bonne."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Osez trancher sans peur ! Vos hésitations sont vos seuls freins. La collectivité attend vos décisions pour avancer.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "13",
-      "nom": "Lete - Medji",
-      "signe_zodiacal": "taureau",
-      "periode": "15 premiers jours",
-      "jours_plage": "20 avril – 5 mai",
-      "titre": "L'Architecte des Grands Travaux et l'Homme d'Influence",
-      "prophetie": "Les hommes sous ce signe voyageront souvent et deviendront des hommes d'une immense influence. Ils s'adonneront fréquemment à de grands travaux d'infrastructure ou de création. Très persévérants et travailleurs, ce sont des administrateurs d'élite jouissant d'une autorité incontournable.",
-      "traits": ["Influence majeure", "Bâtisseur de projets", "Persévérance", "Autorité administrative"],
-      "conseil_2027": "2027 est votre année pour lancer les chantiers d'envergure. Gardez vos projets secrets jusqu'à leur concrétisation pour éviter les jalousies."
+      "nom": "Tula - Medji",
+      "titre": "Tula - Medji · Taureau",
+      "signes_zodiacaux": [{ "signe": "taureau", "moitie": "15 premiers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Persévérant et travailleur.",
+          "Excellent administrateur, jouit d'une grande autorité.",
+          "Jaloux de ses prérogatives.",
+          "Parfois égoïste, mais bienveillant.",
+          "Bavard, indiscret.",
+          "Indifférent aux événements malheureux, il dédaigne parfois son entourage."
+        ],
+        "amour_et_union": [
+          "Attiré par les relations multiples, ce qui peut lui créer de sérieux ennemis."
+        ],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Voyage souvent.",
+          "Devient chef d'une grande influence."
+        ],
+        "sante_et_longevite": [],
+        "epreuves_et_evenements": [
+          "Sérieux ennemis, en raison de ses relations multiples."
+        ],
+        "mises_en_garde": [
+          "Ses indiscrétions peuvent lui causer de fâcheux inconvénients."
+        ]
+      },
+      "conseil_2027": "2027 est votre année pour lancer les chantiers d'envergure. Gardez vos projets secrets jusqu'à leur concrétisation pour éviter les jalousies.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "14",
-      "nom": "Sete - Medji",
-      "signe_zodiacal": "belier",
-      "periode": "signe complet",
-      "jours_plage": "21 mars – 19 avril",
-      "titre": "Le Flambeau Intrépide et le Guide Familial",
-      "prophetie": "Né sous ce signe, il sera beaucoup consulté par sa famille et ses pairs. Il occupera une place prépondérante dans sa ville natale. Il n'aura peur de rien, pas même de l'inconnu. Très ambitieux, bouillant, impatient, animé d'une grande passion qui lui vaudra des succès retentissants et la renommée.",
-      "traits": ["Courage héroïque", "Rôle de conseiller suprême", "Renommée", "Passion ardente"],
-      "conseil_2027": "Votre bravoure ouvre toutes les portes. Veillez simplement à tempérer vos impatiences dans le domaine du cœur pour préserver la paix."
+      "nom": "Lete - Medji",
+      "titre": "Lete - Medji · Bélier",
+      "signes_zodiacaux": [{ "signe": "belier", "moitie": "signe complet" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Courageux, têtu, n'a peur de rien, pas même de la mort.",
+          "Très viril, énergique, bouillant, impatient.",
+          "Confiance en soi, combatif.",
+          "Très ambitieux."
+        ],
+        "amour_et_union": [
+          "Difficultés sentimentales.",
+          "Le cœur et les passions dominent chez lui l'intérêt général."
+        ],
+        "famille_et_descendance": [
+          "Très considéré par sa famille et par ses parents.",
+          "Possibilité de veuvage."
+        ],
+        "reussite_et_vie_sociale": [
+          "Occupe une place importante dans sa ville natale."
+        ],
+        "sante_et_longevite": [
+          "Souvent malade, malgré une longévité probable."
+        ],
+        "epreuves_et_evenements": [
+          "Heurts et luttes personnelles.",
+          "Dédain parfois de la part de son entourage."
+        ],
+        "mises_en_garde": []
+      },
+      "conseil_2027": "Votre bravoure ouvre toutes les portes. Veillez simplement à tempérer vos impatiences dans le domaine du cœur pour préserver la paix.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "15",
-      "nom": "Ka - Medji",
-      "signe_zodiacal": "poissons",
-      "periode": "signe complet",
-      "jours_plage": "19 février – 20 mars",
-      "titre": "Le Mystique Résilient et la Paix Après l'Épreuve",
-      "prophetie": "L'homme sous l'influence de ce signe deviendra un réformateur et un esprit libre. Patient face aux batailles de la vie, il aura du mal au départ, mais obtiendra un bonheur profond plus tard. Devenu riche, la sérénité s'installera. Mystérieux par nature, il possède une conscience tranquille.",
-      "traits": ["Profondeur mystique", "Résilience", "Sérénité conquise", "Sensibilité élevée"],
-      "conseil_2027": "Vos intuitions spirituelles sont exactes. En 2027, ancrez-vous dans le respect scrupuleux des lois morales pour sceller votre tranquillité financière."
+      "nom": "Tchè - Medji",
+      "titre": "Tchè - Medji · Poissons",
+      "signes_zodiacaux": [{ "signe": "poissons", "moitie": "signe complet" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Grand révolutionnaire, prétentieux, qui aime la guerre.",
+          "Jouet de la société et des événements, à cause de son instinct et de ses sentiments.",
+          "Misanthrope par nature, mais à la conscience tranquille."
+        ],
+        "amour_et_union": [
+          "Inconstant dans ses sentiments : l'union lui est peu favorable.",
+          "Doit s'interdire l'inceste."
+        ],
+        "famille_et_descendance": [],
+        "reussite_et_vie_sociale": [
+          "Devenu riche, il peut être ruiné par la prodigalité."
+        ],
+        "sante_et_longevite": [
+          "Risque et probabilité de mort subite."
+        ],
+        "epreuves_et_evenements": [
+          "Souffre un peu, puis obtient le bonheur plus tard."
+        ],
+        "mises_en_garde": [
+          "Éviter l'inceste.",
+          "Surveiller les dépenses lorsqu'il s'enrichit."
+        ]
+      },
+      "conseil_2027": "Vos intuitions spirituelles sont exactes. En 2027, ancrez-vous dans le respect scrupuleux des lois morales pour sceller votre tranquillité financière.",
+      "origine_conseil": "projet, à valider"
     },
     {
       "numero": "16",
       "nom": "Fu - Medji",
-      "signe_zodiacal": "sagittaire",
-      "periode": "signe complet",
-      "jours_plage": "22 novembre – 21 décembre",
-      "titre": "Le Commandeur Dévoué et le Gardien de l'Ordre",
-      "prophetie": "Une forte autorité sur ses proches. Il se sacrifiera volontiers pour le bien des siens. Une haute place dans sa cité lui est réservée. Caractère autoritaire mais animé d'un esprit loyal, franc et ordonné. Fort attaché à ses prérogatives, à la discipline et à l'équité dans toutes les choses.",
-      "traits": ["Loyauté sans faille", "Esprit de discipline", "Dévouement protecteur", "Sens de la hiérarchie"],
-      "conseil_2027": "Votre sens de l'honneur est votre plus bel atout. En 2027, ouvrez davantage votre cœur à la tendresse pour équilibrer votre autorité naturelle."
+      "titre": "Fu - Medji · Sagittaire",
+      "signes_zodiacaux": [{ "signe": "sagittaire", "moitie": "15 premiers jours" }],
+      "faits": {
+        "caractere_et_qualites": [
+          "Caractère rigoureux, donc belliqueux.",
+          "Intelligent et de bon cœur.",
+          "Franc, loyal et ambitieux.",
+          "Attaché à ses prérogatives, aux hiérarchies, à la discipline et à l'ordre.",
+          "Égoïste."
+        ],
+        "amour_et_union": [
+          "Son égoïsme l'empêche de trouver le bonheur sentimental."
+        ],
+        "famille_et_descendance": [
+          "Forte autorité sur ses parents.",
+          "Haute place dans sa famille."
+        ],
+        "reussite_et_vie_sociale": [
+          "Haute place dans sa ville."
+        ],
+        "sante_et_longevite": [
+          "Longévité probable, sous contrôle de soi-même."
+        ],
+        "epreuves_et_evenements": [
+          "Vie satisfaisante au début, malheureuse à la fin."
+        ],
+        "mises_en_garde": [
+          "Garder le contrôle de soi."
+        ]
+      },
+      "conseil_2027": "Votre sens de l'honneur est votre plus bel atout. En 2027, ouvrez davantage votre cœur à la tendresse pour équilibrer votre autorité naturelle.",
+      "origine_conseil": "projet, à valider"
     }
   ]
 }
