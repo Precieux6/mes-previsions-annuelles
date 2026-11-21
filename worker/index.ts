@@ -64,6 +64,7 @@ function lireCommun(): ContenuCommun {
   const g = sec('grandes_tendances');
   const th = sec('tendances_thematiques');
   const cg = sec('conseils_generaux');
+  const cy = sec('cycles_personnels');
   const sy = sec('synthese');
   const anges = JSON.parse(readFileSync(join(ROOT, 'contenu', '2027', 'anges_2027.json'), 'utf8')).anges as
     Array<{ nom: string; debut: string; fin: string }>;
@@ -76,6 +77,7 @@ function lireCommun(): ContenuCommun {
       calendrier: g.calendrier_transits ?? [],
     },
     thematiques: th.themes.map((t: { libelle: string; phrases: string[] }) => ({ libelle: t.libelle, phrases: t.phrases })),
+    cycles: cy.paragraphes,
     anges: anges.map((a) => `${a.nom} : du ${fmt(a.debut)} au ${fmt(a.fin)}`),
     conseils_generaux: cg.phrases,
     synthese: sy.paragraphes ?? [],
