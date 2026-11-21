@@ -1,6 +1,6 @@
 {
-  "version": "2027.1",
-  "description": "Révélation annuelle individuelle, rédigée en bloc. Chaque bloc est choisi selon une donnée du client. Ordre du plan : intro, cycle, expression, âme, élément solaire (si date), clôture. Maximum 8 phrases.",
+  "version": "2027.2",
+  "description": "Révélation annuelle individuelle, rédigée en blocs. Chaque bloc est choisi selon une donnée du client. Ordre du plan : intro, cycle, expression, âme, élément solaire (si date), année universelle (double lecture, deux phrases), clôture. Maximum 8 phrases.",
   "phrases_max": 8,
   "plan": [
     {
@@ -67,6 +67,14 @@
       }
     },
     {
+      "bloc": "annee_universelle",
+      "source": "annee_universelle_2027",
+      "phrases": {
+        "maitre": "L'année 2027 porte le nombre maître 11 : une vision plus haute, où l'intuition et la responsabilité envers les autres prennent une place particulière.",
+        "reduit": "Réduite à 2, cette même année invite à l'association, à la patience et à la qualité des relations."
+      }
+    },
+    {
       "bloc": "cloture",
       "source": "fixe",
       "phrases": [
@@ -74,5 +82,5 @@
       ]
     }
   ],
-  "statut": "valide"
+  "statut": "valide ; bloc annee_universelle à valider (deux phrases nouvelles)"
 }
