@@ -64,9 +64,13 @@ def nombres_nom(nom: str) -> dict:
     }
 
 
-def annee_personnelle(date: str) -> int:
+def annee_personnelle(date: str) -> dict:
+    """Année personnelle en double lecture : somme des chiffres du jour, du mois et de 2027.
+    Le nombre maître (11, 22, 33) est conservé s'il apparaît, puis réduit à 1-9."""
     _, mois, jour = date.split("-")
-    return reduire(reduire(int(jour)) + reduire(int(mois)) + reduire(ANNEE))
+    total = sum(int(c) for c in jour + mois + str(ANNEE))
+    maitre = reduire(total, garder_maitres=True)
+    return {"maitre": maitre, "reduit": reduire(maitre)}
 
 
 def score(f: dict, regs: list) -> int:
@@ -111,13 +115,17 @@ def rapport(entree: dict) -> dict:
     if date:
         if signe not in SIGNES:
             raise ValueError(f"Signe inconnu : {signe}")
-        mode, ap, cycle = "date", annee_personnelle(date), "personnel"
+        apd = annee_personnelle(date)
+        mode, cycle = "date", "personnel"
+        ap = apd["reduit"]
         element = ELEMENT[signe]
     else:
-        # Sans date : le cycle est l'année universelle, réduite à 2 pour les calculs mensuels.
-        mode, ap, cycle = "nom", UNIVERSELLE["reduit"], "universel"
+        # Sans date : cycle universel, lu en double (11 maître, réduit à 2).
+        apd = dict(UNIVERSELLE)
+        mode, cycle = "nom", "universel"
+        ap = UNIVERSELLE["reduit"]
         signe, element = None, None
-
+              
     mois_sortie = []
     for m in range(1, 13):
         id_mois = f"2027-{m:02d}"
@@ -142,6 +150,7 @@ def rapport(entree: dict) -> dict:
     profil_dict = {
         "nom": nom, "mode": mode, "signe": signe, "libelle_cycle": cycle,
         "annee_personnelle": ap,
+        "annee_personnelle_maitre": apd["maitre"],
         "annee_universelle": dict(UNIVERSELLE),
         "nombre_expression": nb["expression"], "nombre_ame": nb["ame"], "nombre_intime": nb["intime"],
     }
