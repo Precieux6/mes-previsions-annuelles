@@ -1,26 +1,44 @@
 #!/usr/bin/env python3
-"""Module d'analyse spirituelle, géomantique (Fâ - 16 Mêdji) et des jours de naissance.
-Intègre les enseignements traditionnels de référence transmis par M. Tossou Valère.
+"""Profil spirituel : jour de naissance, signe Mêdji (Fâ) et archange de période.
+
+Sources (contenu/2027/) — source unique, partagée avec src/lib/spiritualProfile.ts :
+- jours_naissance.json      : référence « Tout savoir sur votre jour de naissance », complétée par « L'influence des jours de naissance ».
+- geomancie_medji.json      : 16 signes Mêdji (manuscrit de référence).
+- geomancie_periodes.json   : découpage des signes en périodes (MM-JJ).
+- anges_2027.json           : périodes des archanges, valables chaque année (MM-JJ).
 """
-import json, os, datetime
+import datetime
+import json
+import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(HERE, "..")
+CONTENU = os.path.join(HERE, "..", "contenu", "2027")
 
-with open(os.path.join(ROOT, "contenu", "2027", "jours_naissance.json"), encoding="utf-8") as f:
-    JOURS_DATA = json.load(f)["jours"]
 
-with open(os.path.join(ROOT, "contenu", "2027", "geomancie_medji.json"), encoding="utf-8") as f:
-    MEDJI_LIST = json.load(f)["signes_medji"]
+def _charger(nom: str) -> dict:
+    with open(os.path.join(CONTENU, nom), encoding="utf-8") as f:
+        return json.load(f)
 
-MEDJI_BY_NUM = {m["numero"]: m for m in MEDJI_LIST}
 
-JOURS_CLEFS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+JOURS = _charger("jours_naissance.json")["jours"]
+MEDJI = {m["numero"]: m for m in _charger("geomancie_medji.json")["signes_medji"]}
+PERIODES = _charger("geomancie_periodes.json")["signes_medji"]
+ANGES = _charger("anges_2027.json")["anges"]
+
+JOURS_CLES = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+ORDRE_FAITS = [
+    "caractere_et_qualites",
+    "amour_et_union",
+    "famille_et_descendance",
+    "reussite_et_vie_sociale",
+    "sante_et_longevite",
+    "epreuves_et_evenements",
+]
+MAITRES = {11, 22, 33}
 
 
 def reduire_nombre(n: int, garder_maitres: bool = True) -> int:
-    maitres = {11, 22, 33}
-    while n > 9 and not (garder_maitres and n in maitres):
+    while n > 9 and not (garder_maitres and n in MAITRES):
         n = sum(int(c) for c in str(n))
     return n
 
@@ -30,112 +48,119 @@ def calculer_chemin_de_vie(date_iso: str) -> int:
     return reduire_nombre(sum(chiffres), garder_maitres=True)
 
 
+def _valeur(bloc):
+    """Valeur d'un bloc {valeur | texte | reference, source}. None si absent."""
+    if bloc is None:
+        return None
+    if isinstance(bloc, (str, list)):
+        return bloc
+    for cle in ("valeur", "texte", "reference"):
+        if bloc.get(cle) is not None:
+            return bloc[cle]
+    return None
+
+
+def _liste(v) -> list:
+    if v is None:
+        return []
+    if isinstance(v, str):
+        return [v]
+    return [str(x) for x in v]
+
+
+def _interdictions(bloc) -> list:
+    """Gère les deux formes : liste directe, ou sous-listes (alimentaires, vestimentaires...)."""
+    if not bloc:
+        return []
+    if bloc.get("valeur") is not None:
+        return _liste(bloc["valeur"])
+    out = []
+    for cle, v in bloc.items():
+        if cle != "source" and isinstance(v, list):
+            out += _liste(v)
+    return out
+
+
+def _md(mois: int, jour: int) -> str:
+    return f"{mois:02d}-{jour:02d}"
+
+
+def _dans_periode(md: str, debut: str, fin: str) -> bool:
+    if debut <= fin:
+        return debut <= md <= fin
+    return md >= debut or md <= fin  # période qui traverse le 31 décembre
+
+
+def _periode_medji(mois: int, jour: int):
+    md = _md(mois, jour)
+    for signe in PERIODES:
+        for p in signe["periodes"]:
+            if _dans_periode(md, p["debut"], p["fin"]):
+                return signe["numero"], p
+    raise ValueError(f"Aucune période Mêdji pour {md}")
+
+
+def _archange_periode(mois: int, jour: int):
+    md = _md(mois, jour)
+    for a in ANGES:
+        if a["debut"][5:] <= md <= a["fin"][5:]:
+            return {"nom": a["nom"], "debut": a["debut"][5:], "fin": a["fin"][5:]}
+    return None
+
+
+def _signe_medji(numero: str, periode: dict) -> dict:
+    m = MEDJI[numero]
+    faits = m["faits"]
+    return {
+        "numero": numero,
+        "nom": m["nom"],
+        "titre": m["titre"],
+        "prophetie": " ".join(p for c in ORDRE_FAITS for p in faits.get(c, [])),
+        "conseil_2027": m["conseil_2027"],
+        "traits": faits.get("caractere_et_qualites", [])[:4],
+        "mises_en_garde": faits.get("mises_en_garde", []),
+        "faits": faits,
+        "signe_periode": {"signe": periode["signe"], "moitie": periode["moitie"]},
+    }
+
+
 def determiner_medji(mois: int, jour: int) -> dict:
-    """Détermine le signe Mêdji du Fâ selon le mois et le jour."""
-    # Bélier (21 mars – 19 avril)
-    if (mois == 3 and jour >= 21) or (mois == 4 and jour <= 19):
-        return MEDJI_BY_NUM["14"]  # Sete - Medji
-
-    # Taureau (20 avril – 20 mai)
-    if mois == 4 and jour >= 20:
-        return MEDJI_BY_NUM["13"]  # Lete - Medji (15 premiers jours)
-    if mois == 5 and jour <= 5:
-        return MEDJI_BY_NUM["13"]
-    if mois == 5 and 6 <= jour <= 20:
-        return MEDJI_BY_NUM["09"]  # Guda - Medji (15 derniers jours)
-
-    # Gémeaux (21 mai – 20 juin)
-    if mois == 5 and jour >= 21:
-        return MEDJI_BY_NUM["03"]  # Winlin - Medji (15 premiers jours)
-    if mois == 6 and jour <= 5:
-        return MEDJI_BY_NUM["03"]
-    if mois == 6 and 6 <= jour <= 20:
-        return MEDJI_BY_NUM["10"]  # Sa - Medji (15 derniers jours)
-
-    # Cancer (21 juin – 22 juillet)
-    if mois == 6 and jour >= 21:
-        return MEDJI_BY_NUM["01"]  # Gbè - Medji (15 premiers jours)
-    if mois == 7 and jour <= 6:
-        return MEDJI_BY_NUM["01"]
-    if mois == 7 and 7 <= jour <= 22:
-        return MEDJI_BY_NUM["02"]  # Yèkou - Medji (15 derniers jours)
-
-    # Lion (23 juillet – 22 août)
-    if mois == 7 and jour >= 23:
-        return MEDJI_BY_NUM["05"]  # Losso - Medji (15 premiers jours)
-    if mois == 8 and jour <= 7:
-        return MEDJI_BY_NUM["05"]
-    if mois == 8 and 8 <= jour <= 22:
-        return MEDJI_BY_NUM["06"]  # Winlin - Medji (Lion)
-
-    # Vierge (23 août – 22 septembre)
-    if (mois == 8 and jour >= 23) or (mois == 9 and jour <= 22):
-        return MEDJI_BY_NUM["12"]  # Turukpen - Medji
-
-    # Balance (23 septembre – 22 octobre)
-    if (mois == 9 and jour >= 23) or (mois == 10 and jour <= 22):
-        return MEDJI_BY_NUM["07"]  # Ablà - Medji
-
-    # Scorpion (23 octobre – 21 novembre)
-    if mois == 10 and jour >= 23:
-        return MEDJI_BY_NUM["11"]  # Tula - Medji (15 premiers jours)
-    if mois == 11 and jour <= 6:
-        return MEDJI_BY_NUM["11"]
-    if mois == 11 and 7 <= jour <= 21:
-        return MEDJI_BY_NUM["09"]  # Guda - Medji (15 derniers jours)
-
-    # Sagittaire (22 novembre – 21 décembre)
-    if (mois == 11 and jour >= 22) or (mois == 12 and jour <= 21):
-        return MEDJI_BY_NUM["16"]  # Fu - Medji
-
-    # Capricorne (22 décembre – 19 janvier)
-    if (mois == 12 and jour >= 22) or (mois == 1 and jour <= 19):
-        return MEDJI_BY_NUM["04"]  # Di - Medji
-
-    # Verseau (20 janvier – 18 février)
-    if (mois == 1 and jour >= 20) or (mois == 2 and jour <= 18):
-        return MEDJI_BY_NUM["08"]  # Aklan - Medji
-
-    # Poissons (19 février – 20 mars)
-    return MEDJI_BY_NUM["15"]  # Ka - Medji
+    """Signe Mêdji correspondant à un mois et un jour (sans année)."""
+    numero, periode = _periode_medji(mois, jour)
+    return _signe_medji(numero, periode)
 
 
 def analyser_profil_spirituel(date_iso: str) -> dict:
-    """Analyse complète d'une date de naissance (ISO AAAA-MM-JJ)."""
+    """Profil complet d'une date de naissance (ISO AAAA-MM-JJ)."""
     d = datetime.date.fromisoformat(date_iso)
-    jour_idx = d.weekday()  # 0: lundi ... 6: dimanche
-    cle_jour = JOURS_CLEFS[jour_idx]
-    infos_jour = JOURS_DATA[cle_jour]
-
-    medji = determiner_medji(d.month, d.day)
-    chemin_de_vie = calculer_chemin_de_vie(date_iso)
-
+    j = JOURS[JOURS_CLES[d.weekday()]]
+    archange = j["archange"]
+    psaume = j.get("psaume") or {}
+    numero, periode = _periode_medji(d.month, d.day)
     return {
         "date_naissance": date_iso,
-        "jour_semaine": infos_jour["jour"],
-        "archange": infos_jour["archange"],
-        "archange_attribut": infos_jour["archange_attribut"],
-        "planete_regente": infos_jour["planete"],
-        "divinite_protectrice": infos_jour["divinite_protectrice"],
-        "couleurs_chance": infos_jour["couleurs"],
-        "animal_porte_bonheur": infos_jour["animal_porte_bonheur"],
-        "mots_cles": infos_jour["mots_cles"],
-        "psaume": infos_jour["psaume"],
-        "interdictions": infos_jour["interdictions"],
-        "metiers_recommandes": infos_jour["metiers_recommandes"],
-        "vigilances_sante": infos_jour["vigilances_sante"],
-        "signe_medji": {
-            "numero": medji["numero"],
-            "nom": medji["nom"],
-            "titre": medji["titre"],
-            "prophetie": medji["prophetie"],
-            "conseil_2027": medji["conseil_2027"],
-            "traits": medji["traits"]
-        },
-        "chemin_de_vie": chemin_de_vie
+        "jour_semaine": j["jour"],
+        "archange": archange["nom"],
+        "archange_attribut": archange.get("attribut"),
+        "archange_alias": archange.get("alias"),
+        "archange_periode": _archange_periode(d.month, d.day),
+        "planete_regente": _valeur(j.get("planete")),
+        "divinite_protectrice": _valeur(j.get("divinite_protectrice")),
+        "couleurs_chance": _liste(_valeur(j.get("couleurs"))),
+        "animal_porte_bonheur": _valeur(j.get("animal_porte_bonheur")),
+        "mots_cles": _liste(_valeur(j.get("mots_cles"))),
+        "psaume": psaume.get("reference"),
+        "oracle": _valeur(j.get("oracle")),
+        "interdictions": _interdictions(j.get("interdictions")),
+        "metiers_recommandes": _liste(_valeur(j.get("metiers_recommandes")))
+        + _liste(_valeur(j.get("metiers_complement"))),
+        "vigilances_sante": _valeur(j.get("precautions_sante")),
+        "nature_et_vocation": _valeur(j.get("nature_et_vocation")),
+        "jour_ideal_pour": _valeur(j.get("jour_ideal_pour")),
+        "signe_medji": _signe_medji(numero, periode),
+        "chemin_de_vie": calculer_chemin_de_vie(date_iso),
     }
 
 
 if __name__ == "__main__":
-    test = analyser_profil_spirituel("2002-07-05")
-    print(json.dumps(test, ensure_ascii=False, indent=2))
+    print(json.dumps(analyser_profil_spirituel("2002-07-05"), ensure_ascii=False, indent=2))
