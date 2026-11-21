@@ -1,6 +1,6 @@
 {
   "version": "2027.2",
-  "annee_personnelle": "jour + mois + année en cours, chaque élément réduit à 1-9 ; les nombres maîtres ne sont pas conservés (décision en attente pour le nombre maître 11, voir statut)",
+  "annee_personnelle": "somme des chiffres du jour, du mois et de 2027 ; le nombre maître (11, 22, 33) est conservé s'il apparaît, puis réduit à 1-9. Double lecture : nombre maître et réduit, prises en compte ensemble.",
   "mois_personnel": "année personnelle + numéro du mois civil, réduit à 1-9",
   "annee_universelle_2027": {
     "somme": 11,
@@ -10,9 +10,10 @@
     "portee": "commune à tous les souscripteurs",
     "usage": "révélation (blocs annee_universelle) et section commune (grandes tendances)"
   },
-  "annee_personnelle_maitre": {
-    "statut": "à trancher",
-    "question": "Le nombre maître 11 est-il conservé pour l'année personnelle, comme pour l'année universelle ?"
+    "annee_personnelle_maitre": {
+    "statut": "tranché",
+    "decision": "double lecture : nombre maître et réduction, comme pour l'année universelle",
+    "texte_manquant": "la révélation utilise les textes de cycle 1 à 9 ; le texte du nombre maître personnel reste à rédiger et valider"
   },
   "nom": "expression, âme, intime : méthode pythagoricienne retenue ; les nombres maîtres 11, 22 et 33 sont conservés",
   "table_cabalistique": {
