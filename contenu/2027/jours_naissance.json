@@ -1,0 +1,204 @@
+{
+  "version": "2027.1",
+  "source": "Guide spirituel, astrologique et symbolique des sept jours de la semaine — Enseignements de référence",
+  "jours": {
+    "lundi": {
+      "jour": "Lundi",
+      "planete": "La Lune",
+      "archange": "Gabriel",
+      "archange_attribut": "Force de Dieu",
+      "divinite_protectrice": "Sakpatè (Sakpata)",
+      "symboles_plantes": ["Baobab", "Canard", "Pigeon blanc"],
+      "couleurs": ["Blanc", "Pourpre"],
+      "animal_porte_bonheur": "Le chat (à défaut, mettre sa peau dans votre chambre)",
+      "mots_cles": ["Imagination", "Audace", "Connaissance"],
+      "psaume": "Psaume 103",
+      "nature_vocation": "En rapport étroit avec les fleuves et l'eau. Les natifs du lundi sont sensibles, créatifs et messagers sur terre. Ils font souvent des rêves prémonitoires et peuvent développer des dons de voyance ou de médiumnité. Le lundi symbolise le foyer, la sensualité et la fécondité.",
+      "protection_devoirs": "Le dieu protecteur est Sakpatè, auquel il convient d'adresser vœux et prières. Pour réussir, ils doivent respecter et assister les personnes âgées ('l'obéissance précède la gloire') et honorer leur mère biologique (offrir une poule noire en présent).",
+      "interdictions": [
+        "Ne jamais tuer ni verser le sang (avortement strictement prohibé)",
+        "Ne pas laisser d'eaux sales stagner chez soi",
+        "Éviter la solitude destructrice"
+      ],
+      "metiers_recommandes": [
+        "Psychologie",
+        "Investigation / Profiler",
+        "Métiers de l'enfance et de la maternité",
+        "Mode et création",
+        "Écriture et musique"
+      ],
+      "vigilances_sante": "Hypersensibilité émotionnelle, risques d'infections et sensibilité liée aux phases de la lune."
+    },
+    "mardi": {
+      "jour": "Mardi",
+      "planete": "Mars",
+      "archange": "Samaël (Camaël)",
+      "archange_attribut": "Prince Supérieur",
+      "divinite_protectrice": "Gou (Feu et Fer)",
+      "symboles_plantes": ["L'Armoise (plante porte-bonheur)"],
+      "couleurs": ["Rouge", "Blanc (calme)", "Jaune (rayonnement)"],
+      "animal_porte_bonheur": "L'Aigle (à défaut, mettez une plume d'aigle dans votre chambre)",
+      "mots_cles": ["Combattre", "Lutter", "Donner", "Aimer", "Désirer"],
+      "psaume": "Psaume 110 (répéter : 'Il brise les têtes des rois, tout est plein de cadavres')",
+      "nature_vocation": "Régis par Mars, symbole de feu, d'énergie combative et de conquête. Guerriers nés, compétiteurs intrépides, ils sont toujours prêts à défendre des causes audacieuses. Leaders naturels dotés d'une grande franchise.",
+      "protection_devoirs": "Souvent enviés, jalousés et poursuivis sans motif valable en raison de leur éclat, la purification spirituelle régulière leur est indispensable pour briser le mauvais œil.",
+      "interdictions": [
+        "Éviter le port de vêtements rouges au quotidien",
+        "Éviter formellement la consommation d'huile rouge",
+        "Ne jamais verser le sang (avortement compris)",
+        "Éviter l'alcool, les mauvaises fréquentations et les bavardages stériles",
+        "Éviter les crises de colère répétitives"
+      ],
+      "metiers_recommandes": [
+        "Commerce d'envergure",
+        "Chirurgie et médecine de pointe",
+        "Armée et maintien de l'ordre",
+        "Automobile et aviation",
+        "Mouvements humanitaires et commandement"
+      ],
+      "vigilances_sante": "Surveiller la tension artérielle, prévenir l'hypertension et les risques cardio-vasculaires liés aux emportements."
+    },
+    "mercredi": {
+      "jour": "Mercredi",
+      "planete": "Mercure (Élément Air / Vent)",
+      "archange": "Michaël (Mikaël)",
+      "archange_attribut": "Qui est comme Dieu",
+      "divinite_protectrice": "Messagers du Ciel et du Vent",
+      "symboles_plantes": ["Communication", "Intelligence rapide"],
+      "couleurs": ["Gris", "Cendre"],
+      "animal_porte_bonheur": "La panthère (à défaut, petite pièce de peau dans la chambre)",
+      "mots_cles": ["Voyager", "Bouger", "Parler", "Communiquer"],
+      "psaume": "Psaumes de prospérité et d'éloquence",
+      "nature_vocation": "Dotés d'un cerveau particulièrement vif et d'un instinct affûté. Réaction ultra-rapide, apprennent instantanément les secrets d'un métier. Excellents négociateurs, orateurs et communicateurs qui retombent toujours sur leurs pattes.",
+      "protection_devoirs": "S'abstenir formellement de s'ingérer dans les différends d'autrui et savoir garder le secret. Veiller à la stabilité affective et éviter l'éparpillement sentimental.",
+      "interdictions": [
+        "Interdiction de consommer de la viande de pintade",
+        "Interdiction de consommer du maïs grillé et du pop-corn",
+        "Interdiction de consommer de la pastèque et du vin de palme",
+        "Éviter absolument de porter la couleur noire",
+        "Éviter les compagnies de médisance sous peine de poursuites pour diffamation"
+      ],
+      "metiers_recommandes": [
+        "Communication, médias et journalisme",
+        "Commerce et négociation internationale",
+        "Informatique, télécoms et électricité",
+        "Langues étrangères et traduction",
+        "Écriture et édition"
+      ],
+      "vigilances_sante": "Vitalité nerveuse, prévention des faiblesses intimes masculines et soins gynécologiques pour les femmes."
+    },
+    "jeudi": {
+      "jour": "Jeudi",
+      "planete": "Jupiter",
+      "archange": "Tzadkiel (Tsadkiel)",
+      "archange_attribut": "Miséricorde divine",
+      "divinite_protectrice": "Hèviesso (Force royale du tonnerre)",
+      "symboles_plantes": ["Le Laurier (plante porte-chance)"],
+      "couleurs": ["Bleu Nuit", "Bleu Roi", "Orange"],
+      "animal_porte_bonheur": "Le cheval (à défaut, petite pièce de peau dans la chambre)",
+      "mots_cles": ["Optimisme", "Générosité", "Confiance", "Religion", "Amour"],
+      "psaume": "Psaume de protection royale",
+      "nature_vocation": "Sous l'égide de la plus grande planète. Autorité naturelle souveraine, tempérament de bâtisseur et d'entraîneur d'hommes. Leur oracle d'or enseigne : 'Ne laisse nulle part où la main ne passe et repasse' (ardeur infatigable au labeur).",
+      "protection_devoirs": "Personnalités à forte résonance mystique. Traiter impérativement toute influence aquatique (mariages spirituels de nuit) pour stabiliser le foyer. Entretenir une relation d'honneur avec son père.",
+      "interdictions": [
+        "Ne pas consommer de poisson après 18 heures",
+        "Éviter la plage, la baignade nocturne et la nage en mer",
+        "Éviter les habits noirs et rouges",
+        "Ne pas verser le sang et fuir l'orgueil démesuré",
+        "Éviter de trop s'admirer dans le miroir"
+      ],
+      "metiers_recommandes": [
+        "Magistrature et Droit (juge, avocat, notaire, huissier)",
+        "Commerce (indispensable comme activité majeure ou parallèle)",
+        "Enseignement supérieur et gouvernance",
+        "Médecine et sacerdoce spirituel"
+      ],
+      "vigilances_sante": "Foie, circulation et apaisement du système nerveux face au surmenage professionnel."
+    },
+    "vendredi": {
+      "jour": "Vendredi",
+      "planete": "Vénus",
+      "archange": "Haniel",
+      "archange_attribut": "Beauté et Grâce de Dieu",
+      "divinite_protectrice": "Nan / Mami (Mère des Eaux et de la Beauté)",
+      "symboles_plantes": ["La Verveine", "Cantique des Cantiques"],
+      "couleurs": ["Rose", "Vert émeraude"],
+      "animal_porte_bonheur": "Le cheval",
+      "mots_cles": ["Amour", "Désir", "Beauté", "Volonté", "Nature"],
+      "psaume": "Le Cantique des Cantiques & Psaumes d'Harmonie",
+      "nature_vocation": "Jour de la splendeur, de l'art et des liaisons harmonieuses. Magnétisme irrésistible, grande élégance innée et goût très raffiné pour l'esthétique, la décoration et les parfums. Les femmes y triomphent des épreuves conjugales pour atteindre la richesse à la maturité de leurs enfants.",
+      "protection_devoirs": "L'harmonie intérieure et l'absence de querelles tapageuses sont la condition absolue de leur prospérité. Protéger son aura contre les convoitises affectives.",
+      "interdictions": [
+        "Éviter formellement le gombo et la papaye (tueurs de chance majeurs)",
+        "Éviter impérativement la viande de porc et l'huile rouge",
+        "Fuir la médisance, la jalousie et les commérages",
+        "Prendre garde aux pièges des multiples aventures amoureuses"
+      ],
+      "metiers_recommandes": [
+        "Mode, haute couture et coiffure",
+        "Design graphique, photo et publicité",
+        "Décoration d'intérieur et artisanat d'art",
+        "Esthétique, cosmétique et bien-être",
+        "Métiers de la scène et relations publiques"
+      ],
+      "vigilances_sante": "Infections gynécologiques, vers intestinaux et équilibre lymphatique."
+    },
+    "samedi": {
+      "jour": "Samedi",
+      "planete": "Saturne (Jour du Sabbat / Repos sacré)",
+      "archange": "Tzaphkiel (Samaël)",
+      "archange_attribut": "Celui qui contemple les Mystères",
+      "divinite_protectrice": "Les Anciens de la Terre et du Temps",
+      "symboles_plantes": ["Plantes de longévité et de terre"],
+      "couleurs": ["Beige", "Blanc", "Violet", "Noir sobre"],
+      "animal_porte_bonheur": "Le chien (Fidélité et Service inconditionnel)",
+      "mots_cles": ["Compétence", "Fidélité", "Recherche", "Sagesse"],
+      "psaume": "Psaume de Sagesse : 'Cherchez d'abord le royaume des cieux et sa justice'",
+      "nature_vocation": "Travailleurs infatigables, patients et persévérants. Le temps est leur plus grand allié. Esprits profonds, têtus et discrets, tournant sept fois leur langue avant de parler. Feu intense sous la glace, doués pour les grandes responsabilités morales.",
+      "protection_devoirs": "Donner la priorité absolue au travail spirituel et à l'intégrité morale. Ne jamais trahir la confiance d'un supérieur sous peine de chute vertigineuse.",
+      "interdictions": [
+        "S'interdire strictement toute pratique de magie noire ou de vengeance occulte",
+        "Ne jamais enterrer d'objets dans le sol pour nuire",
+        "Éviter la viande de porc et l'huile rouge",
+        "Éviter le maïs grillé et le gombo",
+        "Ne pas trahir ses maîtres ni ses aînés"
+      ],
+      "metiers_recommandes": [
+        "Responsabilités religieuses, prêtrise et sacerdoce",
+        "Recherche scientifique et géologie",
+        "Enseignement fondamental et histoire",
+        "Corps médical et médecine des aînés",
+        "Agriculture et conservation de la nature"
+      ],
+      "vigilances_sante": "Articulations, os, colonne vertébrale, mélancolie et solitude."
+    },
+    "dimanche": {
+      "jour": "Dimanche",
+      "planete": "Le Soleil (Jour Aîné et Souverain)",
+      "archange": "Raphaël",
+      "archange_attribut": "Guérisseur de Dieu",
+      "divinite_protectrice": "Mahou / La Lumière Solaire Primordiale",
+      "symboles_plantes": ["L'Oranger (arbre de bénédiction et d'or)"],
+      "couleurs": ["Jaune éclatant", "Or", "Orange lumineux"],
+      "animal_porte_bonheur": "Le lion (à défaut, petite pièce de peau dans la chambre)",
+      "mots_cles": ["Briller", "Rayonner", "Amour", "Voyage", "Cadeau"],
+      "psaume": "Psaume 19 ('Les cieux racontent la gloire de Dieu') et Psaumes de Royauté",
+      "nature_vocation": "Chefs et rois par nature, destinés à commander et non à servir en sous-ordre. Idéalistes généreux, courageux et rayonnants. L'intuition est leur boussole infaillible vers les sommets.",
+      "protection_devoirs": "Très enviés et jalousés en raison de leur éclat naturel. Souvent attaqués dans l'ombre par ceux qu'ils ont aidés. Un mentor spirituel chevronné leur est indispensable pour préserver leur couronne.",
+      "interdictions": [
+        "Éviter absolument la consommation de porc et d'huile rouge",
+        "Éviter la viande rouge excessive et le saumon",
+        "Fuir l'ingratitude envers ses bienfaiteurs",
+        "Éviter les liaisons sentimentales déséquilibrées avec des personnes immatures"
+      ],
+      "metiers_recommandes": [
+        "Dirigeant d'entreprise et fondateur de projets",
+        "Haute finance, banque et joaillerie",
+        "Action politique et responsabilités publiques",
+        "Grand commerce international et hôtellerie",
+        "Enseignement magistral et diplomatie"
+      ],
+      "vigilances_sante": "Cœur et système cardio-vasculaire, colonne vertébrale, vision et yeux, hémorroïdes."
+    }
+  }
+}

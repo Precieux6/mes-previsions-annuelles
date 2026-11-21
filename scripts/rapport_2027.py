@@ -10,6 +10,7 @@ from assemble_2027 import assembler, DOMS
 from conseils_2027 import conseils_mensuels, publiable, est_conseil, VALIDES
 from tonalites_2027 import NOMBRE_VERS_REGISTRE, norm
 from revelation_2027 import revelation
+from profil_spirituel import analyser_profil_spirituel
 
 BANQUES = os.path.join(HERE, "..", "banks", "2027", "mensuel")
 ANNEE = 2027
@@ -128,10 +129,20 @@ def rapport(entree: dict) -> dict:
             "tendances": tendances, "conseils": conseils,
         })
 
+    profil_dict = {
+        "nom": nom, "mode": mode, "signe": signe, "libelle_cycle": cycle,
+        "annee_personnelle": ap, "annee_universelle": 11,
+        "nombre_expression": nb["expression"], "nombre_ame": nb["ame"], "nombre_intime": nb["intime"]
+    }
+    if date:
+        try:
+            spirituel = analyser_profil_spirituel(date)
+            profil_dict["spirituel"] = spirituel
+        except Exception:
+            pass
+
     return {
-        "profil": {"nom": nom, "mode": mode, "signe": signe, "libelle_cycle": cycle,
-                   "annee_personnelle": ap, "annee_universelle": 11,
-                   "nombre_expression": nb["expression"], "nombre_ame": nb["ame"], "nombre_intime": nb["intime"]},
+        "profil": profil_dict,
         "revelation": revelation(ap, nb["expression"], nb["ame"], element),
         "mois": mois_sortie,
     }

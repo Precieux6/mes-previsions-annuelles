@@ -8,21 +8,37 @@ const http = () =>
     timeout: 15000,
   });
 
-/** L'API FedaPay encapsule la transaction dans une enveloppe : on la déballe de façon défensive. */
 function unwrap(data: any): any {
   return data?.v1?.transaction ?? data?.v1 ?? data?.transaction ?? data;
 }
 
-export interface ParamsTransaction {
+export interface TransactionParams {
   reference: string;
   nomClient: string;
-  email: string;
-  telephone: string;
+  contact: string;
+  phone?: string;
+  email?: string;
+  paymentPhone?: string;
 }
 
-/** Crée la transaction FedaPay et renvoie l'URL de la page de paiement hébergée par FedaPay. */
-export async function creerTransaction(p: ParamsTransaction, callbackUrl: string) {
-  const [prenom, ...reste] = p.nomClient.trim().split(/\s+/);
+export async function creerTransaction(p: TransactionParams, callbackUrl: string) {
+  const parts = p.nomClient.trim().split(/\s+/);
+  const prenom = parts[0] || 'Client';
+  const nom = parts.slice(1).join(' ') || 'Precieux';
+
+  // Détermination du téléphone pour FedaPay
+  const rawPhone = p.paymentPhone || p.phone || (!p.contact.includes('@') ? p.contact : '');
+  const cleanPhone = rawPhone ? rawPhone.replace(/[^\d+]/g, '') : undefined;
+
+  // Détermination de l'e-mail
+  let emailVal = p.email;
+  if (!emailVal && p.contact.includes('@')) {
+    const found = p.contact.split('·').find((part) => part.includes('@'));
+    if (found) emailVal = found.trim();
+  }
+  if (!emailVal) {
+    emailVal = 'client@mesprevisions.bj';
+  }
 
   const { data } = await http().post('/transactions', {
     description: `${PAYMENT_CONFIG.produit} (${p.reference})`,
@@ -32,22 +48,26 @@ export async function creerTransaction(p: ParamsTransaction, callbackUrl: string
     custom_metadata: { reference: p.reference },
     customer: {
       firstname: prenom,
-      lastname: reste.join(' ') || 'Client',
-      email: p.email,
-      phone_number: { number: p.telephone, country: PAYMENT_CONFIG.pays },
+      lastname: nom,
+      email: emailVal,
+      phone_number: cleanPhone
+        ? {
+            number: cleanPhone,
+            country: PAYMENT_CONFIG.pays,
+          }
+        : undefined,
     },
   });
 
   const transaction = unwrap(data);
   const id = String(transaction.id);
-
   const { data: jeton } = await http().post(`/transactions/${id}/token`, {});
-  if (!jeton?.url) throw new Error("FedaPay n'a pas renvoyé d'URL de paiement.");
-
+  if (!jeton?.url) {
+    throw new Error("FedaPay n'a pas renvoyé d'URL de paiement.");
+  }
   return { transactionId: id, paymentUrl: String(jeton.url) };
 }
 
-/** Relit la transaction directement auprès de FedaPay : seule source de vérité du statut. */
 export async function verifierTransaction(id: string) {
   const { data } = await http().get(`/transactions/${id}`);
   const t = unwrap(data);

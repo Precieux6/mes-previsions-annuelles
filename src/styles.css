@@ -1,26 +1,869 @@
 :root {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #1e293b;
-  background: #f8fafc;
+  --bg-gradient: linear-gradient(135deg, #0e0d21 0%, #17153a 50%, #201c4e 100%);
+  --bg-page: #f4f3fa;
+  --surface: #ffffff;
+  --surface-subtle: #f8f7fc;
+  --ink: #1b1840;
+  --ink-secondary: #4a4668;
+  --muted: #736f94;
+  --line: #e3e0f0;
+  --accent: #2c256f;
+  --accent-hover: #1f1954;
+  --gold: #d4af37;
+  --gold-subtle: #fff9e6;
+  --gold-border: #f0deb0;
+  --success: #15803d;
+  --success-bg: #ecfdf5;
+  --danger: #b91c1c;
+  --danger-bg: #fef2f2;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 2px 8px rgba(27, 24, 64, 0.04);
+  --shadow-md: 0 8px 24px rgba(27, 24, 64, 0.08);
+  --shadow-lg: 0 16px 36px rgba(27, 24, 64, 0.12);
+  --font-serif: Georgia, 'Playfair Display', Cambria, serif;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
-* { box-sizing: border-box; }
-body { margin: 0; }
 
-.page { min-height: 100vh; display: flex; align-items: flex-start; justify-content: center; padding: 32px 16px; }
-.card { width: 100%; max-width: 460px; background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-.card h1 { font-size: 22px; color: #1e1b4b; margin: 0 0 18px; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.field { display: block; margin-bottom: 14px; font-size: 14px; font-weight: 600; color: #334155; }
-.field input, .field select { display: block; width: 100%; margin-top: 6px; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 14px; background: #fff; }
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--ink);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
 
-.consent { display: flex; gap: 8px; align-items: flex-start; font-size: 12px; color: #475569; margin: -4px 0 14px; }
+/* En-tête globale */
+.app-header {
+  background: var(--bg-gradient);
+  color: #ffffff;
+  padding: 32px 20px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-.btn { width: 100%; padding: 12px; border: 0; border-radius: 12px; background: #312e81; color: #fff; font-weight: 700; font-size: 15px; cursor: pointer; }
-.btn:disabled { opacity: .5; cursor: not-allowed; }
+.app-header::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
 
-.erreur { color: #be123c; background: #fff1f2; border: 1px solid #fecdd3; border-radius: 10px; padding: 8px 12px; font-size: 13px; margin-bottom: 12px; }
-.note { font-size: 12px; color: #64748b; margin-top: 12px; }
+.app-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #f1ef8c;
+}
 
-.suivi { max-width: 460px; margin: 32px auto; padding: 0 16px; }
-.suivi ul { padding-left: 18px; }
-.suivi .lien { background: none; border: 0; color: #312e81; text-decoration: underline; cursor: pointer; font-size: 14px; padding: 4px 0; }
+.app-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 5vw, 2.3rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.app-subtitle {
+  color: #c5c2e2;
+  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Conteneur principal */
+.app-container {
+  max-width: 620px;
+  margin: -24px auto 60px;
+  padding: 0 16px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Barre de progression / Étapes */
+.wizard-progress-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.wizard-steps-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.wizard-step-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.wizard-step-node.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.wizard-step-node.completed {
+  color: var(--success);
+}
+
+.wizard-step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-subtle);
+  border: 2px solid var(--line);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted);
+  transition: all 0.25s ease;
+}
+
+.wizard-step-node.active .wizard-step-circle {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(44, 37, 111, 0.15);
+}
+
+.wizard-step-node.completed .wizard-step-circle {
+  background: var(--success);
+  border-color: var(--success);
+  color: #ffffff;
+}
+
+.wizard-step-label {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .wizard-step-label {
+    display: block;
+  }
+}
+
+.wizard-progress-track {
+  height: 5px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.wizard-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, #4338ca 100%);
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+/* Cartes Dynamiques */
+.step-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 24px;
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-card-header {
+  margin-bottom: 22px;
+}
+
+.step-badge {
+  display: inline-block;
+  background: var(--surface-subtle);
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+}
+
+.step-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.step-card-desc {
+  font-size: 0.92rem;
+  color: var(--ink-secondary);
+}
+
+/* Champs de formulaires */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.form-label .optional {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-left: 4px;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--line);
+  background: var(--surface-subtle);
+  color: var(--ink);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(44, 37, 111, 0.12);
+}
+
+.form-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* Encadré d'information astrologique / date */
+.zodiac-preview-box {
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.zodiac-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.zodiac-icon {
+  font-size: 1.7rem;
+}
+
+.zodiac-text strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #78350f;
+}
+
+.zodiac-text span {
+  font-size: 0.82rem;
+  color: #92400e;
+}
+
+/* Consentement */
+.consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  line-height: 1.4;
+  margin: 14px 0 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.consent-checkbox {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* Récapitulatif */
+.summary-card {
+  background: var(--surface-subtle);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.summary-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 7px 0;
+  font-size: 0.92rem;
+  border-bottom: 1px dashed var(--line);
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.summary-label {
+  color: var(--muted);
+}
+
+.summary-value {
+  font-weight: 600;
+  color: var(--ink);
+  text-align: right;
+  word-break: break-word;
+}
+
+.summary-total {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-total .summary-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.summary-total .summary-value {
+  font-size: 1.35rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Actions & Boutons */
+.step-actions {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+@media (min-width: 480px) {
+  .step-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: var(--radius-md);
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(44, 37, 111, 0.25);
+  flex: 1;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 18px rgba(44, 37, 111, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--surface-subtle);
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--line);
+}
+
+.btn-skip {
+  background: none;
+  color: var(--muted);
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.88rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-skip:hover {
+  color: var(--ink);
+}
+
+/* Messages d'erreur et de succès */
+.form-error-msg {
+  background: var(--danger-bg);
+  border: 1px solid #fecaca;
+  color: var(--danger);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  justify-content: center;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------
+   COMPOSANT REÇU (Fidèle à la Capture 3)
+   ------------------------------------------------------------- */
+.receipt-wrapper {
+  margin: 16px 0 40px;
+}
+
+.receipt-card {
+  background: #ffffff;
+  border: 2px dashed #94a3b8;
+  border-radius: 4px;
+  padding: 36px 30px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto 24px;
+}
+
+.receipt-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #1b1840;
+  margin-bottom: 24px;
+}
+
+.receipt-rows {
+  margin-bottom: 24px;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e0f0;
+}
+
+.receipt-row:last-child {
+  border-bottom: none;
+}
+
+.receipt-label {
+  font-size: 0.92rem;
+  color: #615d85;
+}
+
+.receipt-value {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1b1840;
+  text-align: right;
+  word-break: break-word;
+}
+
+.receipt-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 24px;
+  padding-top: 16px;
+}
+
+.receipt-qr-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.receipt-qr-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+}
+
+.receipt-qr-placeholder {
+  width: 100px;
+  height: 100px;
+  background: var(--surface-subtle);
+  border-radius: 4px;
+}
+
+.receipt-qr-hint {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.receipt-sig-block {
+  text-align: right;
+}
+
+.receipt-sig-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #1b1840;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.receipt-sig-line {
+  height: 2px;
+  background: #1b1840;
+  width: 180px;
+  margin-left: auto;
+  margin-bottom: 6px;
+}
+
+.receipt-sig-name {
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  color: #615d85;
+  display: block;
+}
+
+.receipt-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+  .receipt-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.receipt-btn {
+  flex: 1;
+  padding: 13px 18px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  min-width: 160px;
+}
+
+.receipt-btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.receipt-btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.receipt-btn-secondary {
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  color: var(--ink);
+}
+
+.receipt-btn-secondary:hover {
+  background: var(--surface-subtle);
+}
+
+.receipt-btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.receipt-btn-whatsapp:hover {
+  background: #1ebd5b;
+}
+
+/* Carte de statut de commande */
+.status-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  max-width: 540px;
+  margin: 0 auto 24px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.status-badge.paid {
+  background: var(--success-bg);
+  color: var(--success);
+  border: 1px solid #bbf7d0;
+}
+
+.status-badge.processing {
+  background: var(--gold-subtle);
+  color: #92400e;
+  border: 1px solid var(--gold-border);
+}
+
+.doc-list {
+  list-style: none;
+  margin-top: 14px;
+}
+
+.doc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.doc-item:last-child {
+  border-bottom: none;
+}
+
+/* -------------------------------------------------------------
+   CARTE DE RÉVÉLATION SPIRITUELLE & GÉOMANCIE FÂ
+   ------------------------------------------------------------- */
+.spiritual-revelation-card {
+  background: #ffffff;
+  border: 1.5px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+  max-width: 540px;
+  margin: 0 auto 24px;
+  position: relative;
+}
+
+.spiritual-badge {
+  display: inline-block;
+  background: var(--gold-subtle);
+  color: #78350f;
+  border: 1px solid var(--gold-border);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.spiritual-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: #1b1840;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.spiritual-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: #92400e;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.spiritual-prophecy {
+  background: #fdfcf7;
+  border-left: 3px solid var(--gold);
+  padding: 14px 16px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 20px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.spiritual-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  .spiritual-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.spiritual-box {
+  background: var(--surface-subtle);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.spiritual-box-title {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.spiritual-box strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.spiritual-warnings {
+  background: #fef2f2;
+  border: 1px solid #fee2e2;
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.spiritual-warnings h4 {
+  font-size: 0.92rem;
+  color: #991b1b;
+  margin-bottom: 10px;
+}
+
+.spiritual-warnings ul {
+  list-style: none;
+  font-size: 0.88rem;
+  color: #7f1d1d;
+  line-height: 1.5;
+}
+
+.spiritual-warnings li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.spiritual-warnings li::before {
+  content: "•";
+  position: absolute;
+  left: 6px;
+  color: #dc2626;
+  font-weight: bold;
+}
