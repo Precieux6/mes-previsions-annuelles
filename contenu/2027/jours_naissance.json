@@ -1,13 +1,13 @@
 {
-  "version": "2027.2",
-  "source_principale": "Tout savoir sur votre jour de naissance : guide spirituel, astrologique et symbolique des sept jours de la semaine (document de référence).",
+  "version": "2027.3",
+  "source_principale": "Tout savoir sur votre jour de naissance : guide spirituel, astrologique et symbolique des sept jours de la semaine (document de référence, texte complet).",
   "source_complementaire": "L'influence des jours de naissance : guide des caractéristiques, archanges et énergies planétaires. Utilisée uniquement dans les blocs marqués « complement ».",
-  "regle_de_sourcage": "Chaque bloc porte un champ source. Les textes sont reformulés : aucune phrase des documents n'est reprise, sauf les citations courtes de psaumes.",
-  "statut": "en attente de relecture ; arbitrages listés dans a_verifier",
+  "regle_de_sourcage": "Chaque bloc porte un champ source. Les textes sont reformulés : aucune phrase des documents n'est reprise, sauf les citations courtes de psaumes et de versets.",
+  "statut": "en attente de relecture ; divinités des mardi, jeudi et vendredi à confirmer",
   "double_influence": {
-    "statut": "règle à confirmer",
-    "regle_proposee": "Chaque personne est influencée par deux archanges : celui de son jour de naissance (champ archange de ce fichier) et celui de sa période de naissance, lue dans contenu/2027/anges_2027.json à partir du mois et du jour de naissance.",
-    "question_ouverte": "La table 2027 est indexée par date. Confirmer si elle est réutilisée chaque année sur le même mois et jour."
+    "statut": "confirmée",
+    "regle": "Chaque personne est influencée par deux archanges : celui de son jour de naissance (champ archange de ce fichier) et celui de sa période de naissance, lue dans contenu/2027/anges_2027.json à partir du mois et du jour de naissance.",
+    "validite_annuelle": "La table des périodes est définie par mois et par jour, sans lien avec l'année : elle est réutilisable chaque année."
   },
   "jours": {
     "lundi": {
@@ -35,7 +35,7 @@
         "source": "reference"
       },
       "protection_et_devoirs": {
-        "texte": "Adresser ses vœux et ses prières à Sakpatè. Respecter et aider les personnes âgées, car l'obéissance précède la gloire. Offrir une poule noire à sa mère biologique.",
+        "texte": "Adresser ses vœux, ses doléances et ses prières à Sakpatè. Respecter et aider les personnes âgées, car l'obéissance précède la gloire. Offrir une poule noire à sa mère biologique.",
         "source": "reference"
       },
       "pratiques_recommandees": {
@@ -89,7 +89,11 @@
         "attribut": "Prince supérieur",
         "attribut_source": "complement"
       },
-      "divinite_protectrice": { "valeur": "Gou", "source": "commun" },
+      "divinite_protectrice": {
+        "valeur": "Gou",
+        "source": "commun",
+        "statut": "non confirmée par la ressource des jours"
+      },
       "symboles_plantes": { "valeur": ["L'Armoise (plante porte-bonheur)"], "source": "reference" },
       "couleurs": { "valeur": ["Blanc (calme)", "Jaune (rayonnement)"], "source": "reference" },
       "animal_porte_bonheur": {
@@ -113,7 +117,8 @@
       },
       "pratiques_recommandees": {
         "valeur": [
-          "Prier souvent avec le Psaume 110, en répétant plusieurs fois par semaine le verset ci-dessus."
+          "Prier souvent avec le Psaume 110, en répétant plusieurs fois par semaine le verset ci-dessus.",
+          "Porter du blanc pour apaiser les tensions intérieures, et du jaune pour rayonner."
         ],
         "source": "reference"
       },
@@ -177,7 +182,7 @@
       "mots_cles": { "valeur": ["Voyager", "Bouger", "Parler", "Communiquer"], "source": "complement" },
       "psaume": null,
       "nature_et_vocation": {
-        "texte": "Intellect vif, cerveau rapide et instinct affûté. Très bavards, ils excellent dans la communication. Instables comme le mercure, ils apprennent vite les secrets d'un métier, aiment le mystère et réussissent souvent aux jeux de hasard.",
+        "texte": "Intellect vif, cerveau rapide et instinct affûté. Très bavards, ils excellent dans la communication. Instables comme le mercure, ils apprennent vite les secrets d'un métier, aiment le mystère, et réussissent souvent aux jeux de hasard.",
         "source": "reference"
       },
       "protection_et_devoirs": {
@@ -228,7 +233,11 @@
         "attribut": "Miséricorde",
         "attribut_source": "complement"
       },
-      "divinite_protectrice": { "valeur": "Hèviesso", "source": "commun" },
+      "divinite_protectrice": {
+        "valeur": "Hèviesso",
+        "source": "commun",
+        "statut": "non confirmée par la ressource des jours"
+      },
       "symboles_plantes": { "valeur": ["Le Laurier (plante porte-chance)"], "source": "reference" },
       "couleurs": { "valeur": ["Bleu"], "source": "reference" },
       "animal_porte_bonheur": {
@@ -243,7 +252,7 @@
         "source": "reference"
       },
       "vie_mystique_et_affaires": {
-        "texte": "Personnalités mystérieuses, beaucoup deviennent guérisseurs ou hommes spirituels. Ils réussissent particulièrement dans le commerce, qui doit être leur activité principale ou parallèle.",
+        "texte": "Personnalités mystérieuses, beaucoup deviennent guérisseurs ou hommes spirituels. Ils réussissent particulièrement dans le commerce, qui doit être une activité parallèle, quelle que soit la profession choisie.",
         "source": "reference"
       },
       "protection_et_devoirs": {
@@ -251,7 +260,7 @@
         "source": "reference"
       },
       "vie_conjugale_et_entites_de_leau": {
-        "texte": "Risque élevé de divorces répétés. Comme les natifs du lundi et du vendredi, ils ont souvent des liens spirituels avec des entités aquatiques (sirènes, serpents, « époux ou épouses de nuit »), qu'il faut traiter avant le mariage.",
+        "texte": "Risque élevé de divorces répétés, qui touche de nombreux couples dans le monde. Comme les natifs du lundi et du vendredi, ils ont souvent des liens spirituels avec des entités aquatiques (sirènes, serpents, « époux ou épouses de nuit »), qu'il faut traiter avant le mariage.",
         "source": "reference"
       },
       "interdictions": {
@@ -268,7 +277,7 @@
         "source": "reference"
       },
       "precautions_sante": null,
-      "metiers_recommandes": { "valeur": ["Commerce"], "source": "reference" },
+      "metiers_recommandes": { "valeur": ["Commerce, en activité parallèle"], "source": "reference" },
       "metiers_complement": {
         "valeur": ["Droit (avocat, huissier, notaire, juge)", "Enseignement", "Médecine"],
         "source": "complement"
@@ -296,7 +305,11 @@
         "attribut": "Beauté de Dieu",
         "attribut_source": "complement"
       },
-      "divinite_protectrice": { "valeur": "Nan", "source": "commun" },
+      "divinite_protectrice": {
+        "valeur": "Nan",
+        "source": "commun",
+        "statut": "non confirmée par la ressource des jours"
+      },
       "symboles_plantes": { "valeur": ["La Verveine", "Cantique des Cantiques"], "source": "reference" },
       "couleurs": { "valeur": ["Rose", "Vert"], "source": "reference" },
       "animal_porte_bonheur": {
@@ -352,14 +365,16 @@
       "archange": {
         "nom": "Samaël",
         "source": "reference",
-        "alias": "Tzaphkiel",
-        "alias_source": "complement",
         "attribut": "Celui qui regarde",
         "attribut_source": "complement"
       },
       "divinite_protectrice": null,
       "symboles_plantes": null,
-      "couleurs": { "valeur": ["Beige", "Blanc"], "source": "reference" },
+      "couleurs": {
+        "valeur": ["Beige", "Blanc"],
+        "source": "reference",
+        "couleur_traditionnelle": { "valeur": "Noir", "port_deconseille": true, "source": "reference" }
+      },
       "animal_porte_bonheur": {
         "valeur": "Le chien (fidélité et service)",
         "source": "reference"
@@ -434,6 +449,7 @@
       },
       "mots_cles": { "valeur": ["Briller", "Rayonner", "Amour", "Voyage", "Cadeau"], "source": "complement" },
       "psaume": null,
+      "oracle": { "valeur": "L'habit ne fait pas le moine.", "source": "reference" },
       "nature_et_vocation": {
         "texte": "Chefs et rois par nature, ils aiment la gloire et le travail bien fait. Généreux envers ceux qui les valorisent, ils peuvent devenir orgueilleux ou égoïstes. Meneurs dévoués, ils sont pourtant peu aidés et souvent oubliés.",
         "source": "reference"
@@ -459,7 +475,7 @@
         "source": "reference"
       },
       "precautions_sante": {
-        "texte": "Attention aux affaires de justice, aux maladies cardio-vasculaires, aux maux de la colonne vertébrale, aux hémorroïdes et aux affections oculaires.",
+        "texte": "Attention aux affaires de justice, qui peuvent conduire en détention, aux maladies cardio-vasculaires, aux maux de la colonne vertébrale, aux hémorroïdes et aux affections oculaires.",
         "source": "reference"
       },
       "metiers_recommandes": {
@@ -482,13 +498,12 @@
     }
   },
   "a_verifier": [
-    "Archanges : la référence donne Camaël pour le mardi, Samaël pour le samedi et Tsadkiel pour le jeudi. Les alias et attributs viennent du guide complémentaire et restent facultatifs.",
-    "Couleurs : Mardi, le rouge est retiré (les vêtements rouges sont interdits). Samedi, le noir est retiré (les habits noirs sont interdits). Jeudi, seul le bleu est retenu, comme dans la référence.",
-    "Divinités : Lundi (Sakpatè), Mardi (Gou), Jeudi (Hèviesso) et Vendredi (Nan) viennent des grandes tendances validées (commun.json). Mercredi, Samedi et Dimanche n'ont pas de divinité dans les documents : les anciennes valeurs (Messagers du Ciel et du Vent, Anciens de la Terre et du Temps, Mahou) sont retirées faute de source. À confirmer avec M. Tossou.",
-    "Psaumes : seuls les psaumes de la référence sont conservés (Lundi 103, Mardi 110, précepte du samedi). Les anciens psaumes des autres jours sont retirés faute de source.",
-    "Santé : aucune précaution n'est donnée dans la référence pour le jeudi et le samedi. Les anciennes mentions (foie, circulation, articulations) sont retirées faute de source.",
+    "Divinités : confirmées absentes de la ressource pour le mercredi, le samedi et le dimanche (null). Les divinités du mardi (Gou), du jeudi (Hèviesso) et du vendredi (Nan) ne viennent pas de la ressource : statut « à confirmer ». Hoho (les Jumeaux) n'est rattachée à aucun jour. Point en suspens, à compléter par M. Tossou.",
+    "Samedi : la couleur traditionnelle noire est conservée comme information, mais le port d'habits noirs est interdit par la ressource. L'alias Tzaphkiel est retiré.",
+    "Psaumes : confirmés (lundi 103, mardi 110). Le précepte du samedi n'est pas un psaume.",
+    "Précautions de santé : confirmées absentes pour le jeudi et le samedi.",
+    "Archanges : confirmés par la ressource pour chaque jour (Gabriel, Camaël, Mikaël, Tsadkiel, Haniel, Samaël, Raphaël). Les attributs et alias viennent du guide complémentaire, à titre facultatif.",
     "Jour idéal : absent du guide complémentaire pour le dimanche. Influences planétaires : absentes pour le vendredi.",
-    "Le guide complémentaire et la référence présentent des différences sur la couleur du mardi et du samedi : les choix ci-dessus suivent la référence.",
-    "Psaume 110 : le verset cité est un extrait biblique du domaine public, donné dans un but de pratique religieuse."
+    "Double influence : règle confirmée, la table des périodes étant réutilisable chaque année."
   ]
 }
