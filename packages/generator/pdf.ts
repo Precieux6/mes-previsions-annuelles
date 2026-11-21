@@ -1,4 +1,4 @@
-// Document de 36 pages, corps 10 pt, interligne 1,2 (option C retenue).
+// Document de 38 pages : 36 pages précédentes + 2 pages de cycles personnels.
 // Chaque page a une hauteur fixe : un débordement fait échouer la génération.
 import puppeteer from 'puppeteer-core';
 import { PDFDocument } from 'pdf-lib';
@@ -17,7 +17,7 @@ export interface MoisDonnees {
 export interface AnneeUniverselle { maitre: number; reduit: number }
 export interface Profil {
   nom: string; mode: 'date' | 'nom'; signe: string | null; libelle_cycle: 'personnel' | 'universel';
-  annee_personnelle: number; annee_universelle: AnneeUniverselle;
+  annee_personnelle: number; annee_personnelle_maitre: number; annee_universelle: AnneeUniverselle;
   nombre_expression: number; nombre_ame: number; nombre_intime: number;
 }
 export interface Rapport { profil: Profil; revelation: string[]; mois: MoisDonnees[] }
@@ -51,7 +51,11 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const pied = (n: number) => `<div class="pied">Mes prévisions annuelles 2027 — document confidentiel — page ${n} / ${NB_PAGES}</div>`;
 const page = (corps: string) => `<section class="page">${corps}</section>`;
 const majuscule = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
-const universelleLibelle = (u: AnneeUniverselle) => `${u.maitre} (nombre maître), réduit à ${u.reduit}`;
+
+/** Année en double lecture : « 11 (nombre maître), réduit à 2 », ou simplement « 6 ». */
+export function libelleDouble(maitre: number, reduit: number): string {
+  return maitre > 9 ? `${maitre} (nombre maître), réduit à ${reduit}` : `${reduit}`;
+}
 
 /** Répartit des éléments sur n pages, en équilibrant la longueur de texte. */
 function repartir(items: Item[], n: number): Item[][] {
@@ -87,6 +91,9 @@ function couverture(d: DonneesPDF): string {
     ? '<p><strong>Mode :</strong> prénoms et nom complets (date de naissance non renseignée)</p>'
     : `<p><strong>Signe :</strong> ${esc(p.signe ?? '')}</p><p><strong>Date de naissance :</strong> ${esc(d.dateNaissance ?? '')}</p>`;
   const cycle = parNom ? 'Cycle universel 2027' : 'Année personnelle 2027';
+  const universelle = parNom
+    ? ''
+    : `<p><strong>Année universelle 2027 :</strong> ${esc(libelleDouble(p.annee_universelle.maitre, p.annee_universelle.reduit))}</p>`;
   return page(`
     <div class="cover" style="position:absolute;inset:0;padding:16mm 18mm">
       <h1>Mes prévisions annuelles</h1>
@@ -95,8 +102,8 @@ function couverture(d: DonneesPDF): string {
       <div class="meta">
         <p><strong>Établi pour :</strong> ${esc(p.nom)}</p>
         ${lignes}
-        <p><strong>${cycle} :</strong> ${p.annee_personnelle}</p>
-        <p><strong>Année universelle 2027 :</strong> ${esc(universelleLibelle(p.annee_universelle))}</p>
+        <p><strong>${cycle} :</strong> ${esc(libelleDouble(p.annee_personnelle_maitre, p.annee_personnelle))}</p>
+        ${universelle}
       </div>
     </div>`);
 }
@@ -136,7 +143,7 @@ function pageCentrale(d: DonneesPDF, n: number): string {
     ["Nombre d'expression (prénoms et nom)", p.nombre_expression],
     ['Élan spirituel (voyelles du nom)', p.nombre_ame],
     ['Nombre intime (consonnes du nom)', p.nombre_intime],
-    ['Année universelle 2027', universelleLibelle(p.annee_universelle)],
+    ['Année universelle 2027', libelleDouble(p.annee_universelle.maitre, p.annee_universelle.reduit)],
   ];
   const t = lignes.map(([l, v]) => `<tr><td>${esc(l)}</td><td>${esc(String(v))}</td></tr>`).join('');
   return page(`<h2>Les nombres de votre nom</h2>
@@ -165,7 +172,7 @@ function pagesMois(m: MoisDonnees, n: number): string[] {
 }
 
 /** Assemble le document. Plan : 1 couverture, 3 grandes tendances, 1 page centrale, 3 thèmes,
- *  1 révélation, 2 anges, 1 conseils et synthèse, puis 24 pages mensuelles = 36. */
+ *  2 cycles personnels, 1 révélation, 2 anges, 1 conseils et synthèse, puis 24 pages mensuelles = 38. */
 export function construireHtml(d: DonneesPDF): string {
   const pages: string[] = [couverture(d)];
   let n = 2;
