@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { PAYMENT_CONFIG, fedapayBaseUrl, fedapaySecret } from '../config/payments';
+import { PAYMENT_CONFIG, fedapaySecret, fedapayBaseUrl } from '../config/payments.js';
 
 const http = () =>
   axios.create({
