@@ -1,6 +1,6 @@
 // Confirmation d'un paiement : statut, montant, devise et référence relus auprès de FedaPay. Idempotent.
-import { getPool } from './db';
-import { verifierTransaction } from './providers/fedapay';
+import { getPool } from './db.js';
+import { verifierTransaction } from './providers/fedapay.js';
 
 export type EtatPaiement = 'paid' | 'pending' | 'failed';
 
