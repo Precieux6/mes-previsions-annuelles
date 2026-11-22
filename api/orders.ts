@@ -1,10 +1,10 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import crypto from 'crypto';
-import { getPool } from './_lib/db';
-import { validateOrderInput } from './_lib/validation';
-import { generateAccessToken } from './_lib/tokens';
-import { creerTransaction } from './_lib/providers/fedapay';
-import { PAYMENT_CONFIG, publicBaseUrl } from './_lib/config/payments';
+import { getPool } from './_lib/db.js';
+import { validateOrderInput } from './_lib/validation.js';
+import { generateAccessToken } from './_lib/tokens.js';
+import { creerTransaction } from './_lib/providers/fedapay.js';
+import { PAYMENT_CONFIG, publicBaseUrl } from './_lib/config/payments.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Content-Type', 'application/json');
